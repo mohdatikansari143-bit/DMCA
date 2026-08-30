@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trex Wallet – Privacy Policy</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ffffff; /* White Background */
+            color: #1f2937; /* Standard Dark Gray/Black Text */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.65;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .document-wrapper {
+            max-width: 1100px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 50px 55px;
+            border: 1px solid #e5e7eb; /* Standard clean light border */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.2s ease;
+        }
+
+        /* ---- all text bold (As per original design) ---- */
+        body,
+        .document-wrapper,
+        p,
+        li,
+        td,
+        th,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        .note-box,
+        .warning-box,
+        .header-center,
+        .footer-end {
+            font-weight: 600;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: #111827; /* Dark Gray / Black */
+            margin-top: 1.8em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: -0.02em;
+            margin-top: 0;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.55rem;
+            font-weight: 700;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.35em;
+            margin-top: 2.2em;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 1.6em;
+            color: #1f2937;
+        }
+
+        h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-top: 1.4em;
+            color: #374151;
+        }
+
+        p {
+            margin-bottom: 0.9em;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        a {
+            color: #2563eb; /* Standard Blue Link */
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .header-center {
+            text-align: center;
+            margin-bottom: 2.2em;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1.8em;
+        }
+
+        .logo-placeholder {
+            display: inline-block;
+            background: #f3f4f6;
+            color: #111827;
+            font-weight: 700;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            padding: 10px 28px;
+            border-radius: 60px;
+            margin-bottom: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .header-center .subhead {
+            font-size: 0.95rem;
+            color: #4b5563;
+            letter-spacing: 0.02em;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        .header-center .version-meta {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            font-weight: 600;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 1.4em 0 1.8em;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            min-width: 540px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #f3f4f6;
+            vertical-align: top;
+            font-weight: 600;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 700;
+            color: #111827;
+            letter-spacing: 0.02em;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        td {
+            color: #374151;
+        }
+
+        .table-wrap tr:last-child td {
+            border-bottom: none;
+        }
+
+        pre {
+            background: #f9fafb;
+            border-radius: 14px;
+            padding: 18px 22px;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: #1f2937;
+            border: 1px solid #e5e7eb;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin: 1.2em 0;
+            font-weight: 600;
+        }
+
+        ul,
+        ol {
+            padding-left: 1.6em;
+            margin-bottom: 1em;
+            color: #374151;
+            font-weight: 600;
+        }
+        li {
+            margin-bottom: 0.25em;
+            font-weight: 600;
+        }
+
+        .note-box {
+            background: #f3f4f6;
+            border-left: 4px solid #2563eb;
+            padding: 16px 22px;
+            border-radius: 10px;
+            margin: 1.4em 0;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .note-box strong {
+            color: #111827;
+            font-weight: 700;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 16px 22px;
+            border-radius: 10px;
+            margin: 1.4em 0;
+            color: #991b1b;
+            font-weight: 600;
+        }
+
+        .warning-box strong {
+            color: #7f1d1d;
+            font-weight: 700;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 2.2em 0;
+        }
+
+        .footer-end {
+            text-align: center;
+            margin-top: 3em;
+            padding-top: 2em;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+            color: #4b5563;
+            font-weight: 600;
+        }
+
+        .footer-end strong {
+            color: #111827;
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 16px 10px;
+            }
+            .document-wrapper {
+                padding: 24px 18px;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            .header-center .version-meta {
+                flex-direction: column;
+                gap: 4px;
+            }
+            pre {
+                font-size: 0.72rem;
+                padding: 14px 16px;
+            }
+            table {
+                font-size: 0.82rem;
+                min-width: 400px;
+            }
+            th,
+            td {
+                padding: 8px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .document-wrapper {
+                padding: 16px 12px;
+            }
+            table {
+                font-size: 0.75rem;
+                min-width: 300px;
+            }
+            th,
+            td {
+                padding: 6px 8px;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-wrapper">
+
+        <!-- ============================================================ -->
+        <!-- HEADER                                                         -->
+        <!-- ============================================================ -->
+        <div class="header-center">
+            <div class="logo-placeholder">TREX WALLET</div>
+            <h1>Privacy Policy</h1>
+            <div class="version-meta">
+                <span><strong>Last Updated:</strong> 15 August 2026</span>
+                <span><strong>Effective Date:</strong> 15 August 2026</span>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 1                                                      -->
+        <!-- ============================================================ -->
+        <h2>1. Introduction</h2>
+        <p>Welcome to Trex Wallet ("Trex", "we", "us", or "our"). Trex Wallet is a professional digital asset wallet and exchange platform that enables users to store, manage, convert Trex Coin to USDT (Tether), and execute digital asset exchanges. We are committed to protecting your privacy and ensuring the security of your personal data.</p>
+        <p>This Privacy Policy describes how we collect, use, store, disclose, and protect your personal data when you access or use the Trex Wallet mobile application, website, APIs, and related services (collectively, the "Services").</p>
+        <p>By using our Services, you acknowledge that you have read, understood, and agree to the collection and use of your personal data as described in this Privacy Policy. If you do not agree with this policy, please do not use our Services.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 2                                                      -->
+        <!-- ============================================================ -->
+        <h2>2. Personal Data We Collect</h2>
+        <p>We collect and process the following categories of personal data:</p>
+
+        <h3>2.1 Account Information</h3>
+        <ul>
+            <li>Full legal name, date of birth, nationality, and gender</li>
+            <li>Government-issued identification numbers (passport, national ID, driver's license)</li>
+            <li>Residential address and proof of address documentation</li>
+            <li>Email address, phone number, and authentication credentials</li>
+            <li>Account username, profile picture, and security settings</li>
+            <li>KYC (Know Your Customer) verification status and risk classification</li>
+        </ul>
+
+        <h3>2.2 Wallet and Blockchain Data</h3>
+        <ul>
+            <li>Digital wallet addresses generated through our Services</li>
+            <li>Public blockchain transaction records associated with your wallet</li>
+            <li>Trex Coin balances, USDT balances, and other supported digital asset holdings</li>
+            <li>Transaction hashes, timestamps, amounts, and counterparties</li>
+            <li>Smart contract interaction data</li>
+            <li>Network fees and gas usage records</li>
+        </ul>
+
+        <h3>2.3 Transaction and Exchange Data</h3>
+        <ul>
+            <li>Records of Trex Coin to USDT conversions</li>
+            <li>Exchange orders, trade history, and execution details</li>
+            <li>Deposit and withdrawal requests</li>
+            <li>Payment method information (bank account details, card information)</li>
+            <li>Transaction limits and trading preferences</li>
+            <li>Anti-money laundering (AML) screening results</li>
+        </ul>
+
+        <h3>2.4 Device and Technical Information</h3>
+        <ul>
+            <li>IP address, MAC address, and device identifiers</li>
+            <li>Operating system, browser type, and version</li>
+            <li>Device model, manufacturer, and hardware information</li>
+            <li>Mobile network information and carrier details</li>
+            <li>Login timestamps, session duration, and access logs</li>
+            <li>Geolocation data derived from IP address or GPS (with consent)</li>
+        </ul>
+
+        <h3>2.5 Communication Data</h3>
+        <ul>
+            <li>Customer support inquiries and chat transcripts</li>
+            <li>Email correspondence and social media interactions</li>
+            <li>Feedback, surveys, and complaint records</li>
+            <li>Marketing preferences and communication history</li>
+        </ul>
+
+        <h3>2.6 Biometric Data (Optional)</h3>
+        <ul>
+            <li>Facial recognition data for identity verification</li>
+            <li>Fingerprint data for device authentication (processed locally where possible)</li>
+        </ul>
+
+        <h3>2.7 Data from Third Parties</h3>
+        <ul>
+            <li>Identity verification results from KYC/AML service providers</li>
+            <li>Sanctions and politically exposed persons (PEP) screening results</li>
+            <li>Credit and fraud prevention agency reports</li>
+            <li>Public blockchain data and transaction analytics</li>
+            <li>Referral source information</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 3                                                      -->
+        <!-- ============================================================ -->
+        <h2>3. How We Use Your Personal Data</h2>
+        <p>We process your personal data for the following lawful purposes:</p>
+
+        <h3>3.1 Service Provision</h3>
+        <ul>
+            <li>To create, maintain, and secure your Trex Wallet account</li>
+            <li>To facilitate Trex Coin storage, transfers, and wallet management</li>
+            <li>To process Trex Coin to USDT conversions accurately and efficiently</li>
+            <li>To execute exchange transactions and settle trades</li>
+            <li>To display your portfolio balances, transaction history, and market data</li>
+            <li>To provide customer support and technical assistance</li>
+        </ul>
+
+        <h3>3.2 Legal and Regulatory Compliance</h3>
+        <ul>
+            <li>To comply with applicable anti-money laundering (AML) and counter-terrorism financing (CTF) laws</li>
+            <li>To perform customer due diligence (CDD) and enhanced due diligence (EDD)</li>
+            <li>To verify your identity and prevent identity fraud</li>
+            <li>To comply with tax reporting obligations (e.g., FATCA, CRS)</li>
+            <li>To respond to lawful requests from regulatory authorities, courts, and law enforcement</li>
+            <li>To maintain records required by financial services regulations</li>
+        </ul>
+
+        <h3>3.3 Security and Risk Management</h3>
+        <ul>
+            <li>To monitor for suspicious transactions and detect fraudulent activity</li>
+            <li>To prevent unauthorized access and account takeover attempts</li>
+            <li>To conduct blockchain transaction monitoring and analysis</li>
+            <li>To enforce our Terms of Service and acceptable use policies</li>
+            <li>To protect the integrity and security of our platform and users</li>
+        </ul>
+
+        <h3>3.4 Service Improvement and Analytics</h3>
+        <ul>
+            <li>To analyze usage patterns and improve platform functionality</li>
+            <li>To develop new features, products, and services</li>
+            <li>To conduct research on digital asset markets and user behavior</li>
+            <li>To troubleshoot technical issues and optimize performance</li>
+        </ul>
+
+        <h3>3.5 Marketing and Communications</h3>
+        <ul>
+            <li>To send service-related notifications (transaction confirmations, security alerts)</li>
+            <li>To provide updates on new features, promotions, and market insights (with your consent)</li>
+            <li>To administer referral programs and loyalty rewards</li>
+            <li>To personalize your experience based on your preferences and usage</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 4                                                      -->
+        <!-- ============================================================ -->
+        <h2>4. Legal Basis for Processing</h2>
+        <p>We process your personal data based on the following grounds:</p>
+        <ul>
+            <li><strong>Performance of Contract:</strong> Processing necessary to provide the Services under our Terms of Use</li>
+            <li><strong>Legal Obligation:</strong> Compliance with applicable laws, regulations, and regulatory guidance</li>
+            <li><strong>Legitimate Interests:</strong> Fraud prevention, security, network integrity, and service improvement</li>
+            <li><strong>Consent:</strong> Marketing communications and optional features (where required by law)</li>
+            <li><strong>Vital Interests:</strong> Protection of life or physical safety in emergency situations</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 5                                                      -->
+        <!-- ============================================================ -->
+        <h2>5. Disclosure of Personal Data</h2>
+        <p>We may disclose your personal data to the following categories of recipients:</p>
+
+        <h3>5.1 Service Providers and Vendors</h3>
+        <ul>
+            <li>Cloud hosting and data storage providers</li>
+            <li>Identity verification and KYC/AML screening services</li>
+            <li>Blockchain analytics and transaction monitoring firms</li>
+            <li>Payment processors and banking partners</li>
+            <li>Customer support and communication platforms</li>
+            <li>Cybersecurity and fraud detection services</li>
+            <li>Audit and compliance consultants</li>
+        </ul>
+
+        <h3>5.2 Regulatory and Government Authorities</h3>
+        <ul>
+            <li>Financial intelligence units and anti-money laundering agencies</li>
+            <li>Securities and financial regulatory bodies</li>
+            <li>Tax authorities and revenue services</li>
+            <li>Law enforcement agencies and courts</li>
+            <li>Self-regulatory organizations in the digital asset industry</li>
+        </ul>
+        <p>We will only disclose personal data to authorities when required by applicable law, regulation, legal process, or governmental request.</p>
+
+        <h3>5.3 Business Partners</h3>
+        <ul>
+            <li>Cryptocurrency exchanges and liquidity providers for order execution</li>
+            <li>USDT issuance and redemption partners</li>
+            <li>Trex Coin network validators and node operators</li>
+            <li>Merchants and service providers integrated with our platform</li>
+        </ul>
+
+        <h3>5.4 Business Transfers</h3>
+        <p>In the event of a merger, acquisition, reorganization, asset sale, or bankruptcy, your personal data may be transferred to the acquiring entity or successor organization, subject to confidentiality obligations.</p>
+
+        <h3>5.5 Affiliated Entities</h3>
+        <p>We may share personal data with our parent companies, subsidiaries, and affiliated entities for operational, compliance, and security purposes, consistent with this Privacy Policy.</p>
+
+        <h3>5.6 Other Users and Public Blockchain</h3>
+        <p>Please note that blockchain transactions are inherently public. Your wallet addresses, transaction amounts, and timestamps are recorded on public blockchains (such as the Trex Coin network and USDT blockchain) and are visible to anyone. We cannot control or delete information recorded on public blockchains.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 6                                                      -->
+        <!-- ============================================================ -->
+        <h2>6. Blockchain Data and Immutability</h2>
+        <div class="warning-box">
+            <strong>IMPORTANT NOTICE REGARDING BLOCKCHAIN TECHNOLOGY:</strong>
+        </div>
+        <p>The Services interact with public blockchain networks. When you initiate a transaction involving Trex Coin, USDT, or other digital assets, the transaction details (including wallet addresses, amounts, and timestamps) are permanently recorded on the respective blockchain ledger.</p>
+        <p>Due to the immutable and decentralized nature of blockchain technology:</p>
+        <ul>
+            <li>We cannot delete, modify, or erase transaction records from public blockchains</li>
+            <li>Your wallet address and transaction history remain publicly visible even after account deletion</li>
+            <li>Blockchain data exists independently of our Services and servers</li>
+            <li>Privacy features of public blockchains are limited by their underlying protocols</li>
+        </ul>
+        <p>By using our Services, you acknowledge and accept these inherent characteristics of blockchain technology.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 7                                                      -->
+        <!-- ============================================================ -->
+        <h2>7. International Data Transfers</h2>
+        <p>Your personal data may be transferred to, stored, and processed in countries other than your country of residence, including countries that may not have equivalent data protection laws. These transfers may occur because:</p>
+        <ul>
+            <li>Our servers and cloud infrastructure are located in multiple jurisdictions</li>
+            <li>Our service providers operate globally</li>
+            <li>Blockchain networks are decentralized and span multiple countries</li>
+            <li>Regulatory reporting may require data sharing with foreign authorities</li>
+        </ul>
+        <p>We implement appropriate safeguards for international transfers, including:</p>
+        <ul>
+            <li>Standard contractual clauses approved by relevant data protection authorities</li>
+            <li>Adequacy decisions where recognized by applicable law</li>
+            <li>Technical and organizational security measures</li>
+            <li>Data processing agreements with strict confidentiality obligations</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 8                                                      -->
+        <!-- ============================================================ -->
+        <h2>8. Data Retention</h2>
+        <p>We retain your personal data for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+        <p>Retention periods include:</p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Data Type</th><th>Retention Period</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Active Account Data</strong></td><td>Retained for the duration of your account activity plus applicable statutory periods</td></tr>
+                    <tr><td><strong>Transaction Records</strong></td><td>Retained for a minimum of 5 (five) years after transaction completion, or longer as required by financial regulations</td></tr>
+                    <tr><td><strong>KYC/AML Documentation</strong></td><td>Retained for 5 (five) years after account closure, or as mandated by anti-money laundering laws</td></tr>
+                    <tr><td><strong>Communication Records</strong></td><td>Retained for 3 (three) years from the date of communication</td></tr>
+                    <tr><td><strong>Blockchain Data</strong></td><td>Permanently retained on public blockchains (outside our control)</td></tr>
+                    <tr><td><strong>Deleted Account Data</strong></td><td>Personal identifiers are deleted or anonymized within 90 days of account closure, except where retention is legally required</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Factors influencing retention periods include:</p>
+        <ul>
+            <li>Legal and regulatory requirements</li>
+            <li>Financial record-keeping obligations</li>
+            <li>Fraud prevention and security needs</li>
+            <li>Dispute resolution and litigation holds</li>
+            <li>Contractual obligations</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 9                                                      -->
+        <!-- ============================================================ -->
+        <h2>9. Your Data Protection Rights</h2>
+        <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+
+        <h3>9.1 Right to Access</h3>
+        <p>You have the right to request copies of the personal data we hold about you.</p>
+
+        <h3>9.2 Right to Rectification</h3>
+        <p>You have the right to request correction of inaccurate or incomplete personal data.</p>
+
+        <h3>9.3 Right to Erasure ("Right to be Forgotten")</h3>
+        <p>You may request deletion of your personal data, subject to our legal and regulatory retention obligations. Note that we cannot erase data recorded on public blockchains.</p>
+
+        <h3>9.4 Right to Restrict Processing</h3>
+        <p>You may request that we limit the processing of your personal data in certain circumstances.</p>
+
+        <h3>9.5 Right to Data Portability</h3>
+        <p>You have the right to receive your personal data in a structured, commonly used, and machine-readable format.</p>
+
+        <h3>9.6 Right to Object</h3>
+        <p>You may object to processing based on legitimate interests or for direct marketing purposes.</p>
+
+        <h3>9.7 Right to Withdraw Consent</h3>
+        <p>Where processing is based on consent, you may withdraw consent at any time without affecting the lawfulness of prior processing.</p>
+
+        <h3>9.8 Right to Lodge a Complaint</h3>
+        <p>You have the right to file a complaint with your local data protection authority.</p>
+
+        <p>To exercise these rights, please contact us at Trexwalletcomp00@gmail.com or through the Data Rights Portal in your account settings. We will respond within the timeframe required by applicable law (typically 30 days).</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 10                                                     -->
+        <!-- ============================================================ -->
+        <h2>10. Data Security</h2>
+        <p>We implement comprehensive technical, administrative, and physical security measures to protect your personal data, including:</p>
+        <ul>
+            <li>AES-256 encryption for data at rest and TLS 1.3 for data in transit</li>
+            <li>Multi-factor authentication (MFA) and biometric login options</li>
+            <li>Cold storage solutions for majority of digital asset holdings</li>
+            <li>Regular security audits and penetration testing</li>
+            <li>Intrusion detection and real-time threat monitoring</li>
+            <li>Employee background checks and data access controls</li>
+            <li>Incident response and breach notification procedures</li>
+        </ul>
+        <p>Despite these measures, no internet-based service can guarantee absolute security. You are responsible for maintaining the confidentiality of your account credentials, private keys, and recovery phrases. We will never ask for your private keys or wallet recovery seed phrase.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 11                                                     -->
+        <!-- ============================================================ -->
+        <h2>11. Cookies and Tracking Technologies</h2>
+        <p>We use cookies, web beacons, and similar technologies to:</p>
+        <ul>
+            <li>Authenticate users and maintain secure sessions</li>
+            <li>Remember your preferences and settings</li>
+            <li>Analyze traffic patterns and improve user experience</li>
+            <li>Deliver relevant content and measure advertising effectiveness</li>
+        </ul>
+        <p>You can manage cookie preferences through your browser settings. Disabling certain cookies may affect the functionality of our Services.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 12                                                     -->
+        <!-- ============================================================ -->
+        <h2>12. Children's Privacy</h2>
+        <p>Our Services are not intended for individuals under the age of 18 (or the legal age of majority in your jurisdiction). We do not knowingly collect personal data from minors. If we discover that a minor has provided personal data, we will promptly delete such information and terminate the account.</p>
+        <p>Parents or guardians who believe their child has provided personal data without consent should contact us immediately at Trexwalletcomp00@gmail.com.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 13                                                     -->
+        <!-- ============================================================ -->
+        <h2>13. Third-Party Links and Services</h2>
+        <p>Our Services may contain links to third-party websites, applications, or services (including decentralized applications and external exchanges). This Privacy Policy does not apply to third-party services. We encourage you to review the privacy policies of any third-party services you interact with, including when converting Trex Coin to USDT through external liquidity pools.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 14                                                     -->
+        <!-- ============================================================ -->
+        <h2>14. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically to reflect changes in our practices, legal requirements, or Service functionality. When we make material changes, we will:</p>
+        <ul>
+            <li>Post the updated policy on our website and mobile application</li>
+            <li>Update the "Last Updated" date at the top of this document</li>
+            <li>Notify you via email or in-app notification for significant changes</li>
+        </ul>
+        <p>Your continued use of the Services after changes constitutes acceptance of the revised Privacy Policy. We encourage you to review this policy regularly.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 15                                                     -->
+        <!-- ============================================================ -->
+        <h2>15. Data Controller and Contact Information</h2>
+        <p><strong>For users in the European Economic Area (EEA), United Kingdom, and Switzerland:</strong><br />
+        Data Controller: Trex Wallet Europe Ltd.<br />
+        Registered Address: 135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada<br />
+        Email: Trexwalletcomp00@gmail.com</p>
+        <p><strong>For users in all other jurisdictions:</strong><br />
+        Data Controller: Trex Wallet Global Ltd.<br />
+        Registered Address: 135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada<br />
+        Email: Trexwalletcomp00@gmail.com</p>
+        <p><strong>Data Protection Officer (DPO):</strong><br />
+        Email: Trexwalletcomp00@gmail.com</p>
+        <p><strong>Customer Support:</strong><br />
+        Email: Trexwalletcomp00@gmail.com</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 16                                                     -->
+        <!-- ============================================================ -->
+        <h2>16. Dispute Resolution</h2>
+        <p>Any disputes arising from this Privacy Policy shall first be attempted to be resolved through good faith negotiations. If unresolved, disputes shall be subject to binding arbitration in accordance with the rules of ICC International Court of Arbitration, or litigation in the courts of Ontario, Canada, as specified in our Terms of Use.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 17                                                     -->
+        <!-- ============================================================ -->
+        <h2>17. Compliance Framework</h2>
+        <p>Trex Wallet operates in compliance with:</p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR) - for EEA/UK users</li>
+            <li>California Consumer Privacy Act (CCPA) / California Privacy Rights Act (CPRA) - for California residents</li>
+            <li>Personal Information Protection and Electronic Documents Act (PIPEDA) - for Canadian users</li>
+            <li>Applicable anti-money laundering (AML) and counter-terrorism financing (CTF) regulations</li>
+            <li>Financial Action Task Force (FATF) recommendations for virtual asset service providers</li>
+            <li>Local licensing requirements in jurisdictions where we operate</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 18                                                     -->
+        <!-- ============================================================ -->
+        <h2>18. Acknowledgment</h2>
+        <p>By using Trex Wallet, you acknowledge that:</p>
+        <ul>
+            <li>You have read and understood this Privacy Policy</li>
+            <li>You consent to the collection and processing of your personal data as described herein</li>
+            <li>You understand the risks and immutable nature of blockchain transactions</li>
+            <li>You are solely responsible for the security of your private keys and account credentials</li>
+            <li>You are using the Services in compliance with applicable laws in your jurisdiction</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER                                                         -->
+        <!-- ============================================================ -->
+        <div class="footer-end">
+            <hr />
+            <div style="font-size:1.2rem; font-weight:700; color:#111827;">Trex Wallet</div>
+            <div style="margin-top:6px;">Empowering Your Digital Asset Journey</div>
+            <div style="margin-top:10px; font-size:0.8rem; color:#6b7280;">
+                Copyright © 2026 Trex Wallet. All Rights Reserved.
+            </div>
+        </div>
+
+    </div>
+    <!-- end document-wrapper -->
+
+</body>
+</html>
