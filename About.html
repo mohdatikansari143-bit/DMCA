@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trex Wallet – About Us</title>
+    <!-- Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ffffff; /* Standard White Background */
+            color: #1f2937; /* Standard Dark Gray/Black Text */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .document-wrapper {
+            max-width: 800px; 
+            width: 100%;
+            background: transparent; 
+            padding: 40px 20px 60px 20px;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+        }
+
+        /* ---- Headings ---- */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #111827; /* Black/Dark Gray */
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: left; 
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px solid #e5e7eb; /* Standard Light Border */
+            padding-bottom: 8px;
+            margin-top: 48px;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #374151; /* Standard Readable text */
+            font-weight: 400;
+        }
+
+        p strong {
+            color: #111827;
+            font-weight: 600;
+        }
+
+        a {
+            color: #2563eb; /* Standard Blue accent */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s ease;
+        }
+        
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* ---- Brand Header ---- */
+        .header-center {
+            text-align: left; 
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 32px;
+        }
+
+        .logo-placeholder {
+            display: inline-block;
+            background: #f3f4f6; /* Light gray box */
+            color: #111827;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .header-center .subhead {
+            font-size: 0.9rem;
+            color: #4b5563;
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        .header-center .version-meta {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .header-center .version-meta span strong {
+            color: #111827;
+        }
+
+        /* ---- Modern Blockquote ---- */
+        blockquote {
+            font-size: 1.1rem;
+            color: #374151;
+            border-left: 3px solid #2563eb;
+            padding-left: 18px;
+            margin: 28px 0;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        /* ---- Tables ---- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 24px 0 32px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            min-width: 500px;
+        }
+
+        th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #f3f4f6;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #111827;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        td {
+            color: #374151;
+        }
+
+        td strong {
+            color: #111827;
+            font-weight: 500;
+        }
+
+        .table-wrap tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* ---- Lists ---- */
+        ul, ol {
+            padding-left: 1.5em;
+            margin-bottom: 28px;
+            color: #374151;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        li strong {
+            color: #111827;
+            font-weight: 500;
+        }
+
+        /* ---- Dividers ---- */
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 40px 0;
+        }
+
+        /* ---- Footer ---- */
+        .footer-end {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.85rem;
+            color: #4b5563;
+        }
+
+        .footer-end strong {
+            color: #111827;
+        }
+
+        /* ---- Responsive Styling ---- */
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            .document-wrapper {
+                padding: 30px 16px 50px 16px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            .header-center .version-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+            th, td {
+                padding: 12px 14px;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-wrapper">
+
+        <!-- ============================================================ -->
+        <!-- HEADER                                                         -->
+        <!-- ============================================================ -->
+        <div class="header-center">
+            <div class="logo-placeholder">TREX WALLET</div>
+            <h1>About Us — Company Overview</h1>
+            <div class="version-meta">
+                <span><strong>Founded:</strong> 2026</span>
+                <span><strong>Headquarters:</strong> Thunder Bay, Ontario, Canada</span>
+                <span><strong>Email:</strong> Trexwalletcomp00@gmail.com</span>
+                <span><strong>Classification:</strong> Private Digital Asset Platform</span>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 1: WHO WE ARE                                         -->
+        <!-- ============================================================ -->
+        <h2>1. Who We Are</h2>
+        <p>Trex Wallet is a <strong>professional digital asset wallet and exchange platform</strong> built to simplify cryptocurrency management for users worldwide. Headquartered in <strong>Thunder Bay, Ontario, Canada</strong>, we operate with a clear mission: to provide a secure, transparent, and user-friendly gateway for digital asset storage, conversion, and exchange.</p>
+        <p>Our platform is designed for both beginners and experienced crypto users who need a reliable solution to manage their digital wealth without complexity.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 2: MISSION                                            -->
+        <!-- ============================================================ -->
+        <h2>2. Our Mission</h2>
+        <blockquote>
+            “To empower every individual with seamless, secure, and transparent access to the digital asset economy.”
+        </blockquote>
+        <p>We believe that managing digital currencies should be straightforward, safe, and accessible to everyone — regardless of technical expertise or geographic location.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 3: WHAT WE DO                                         -->
+        <!-- ============================================================ -->
+        <h2>3. What We Do</h2>
+        <p>Trex Wallet offers a complete suite of digital asset services through a single, intuitive platform:</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Service</th><th>Description</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Digital Wallet</strong></td><td>Secure custodial storage for Trex Coin, USDT, and other supported cryptocurrencies.</td></tr>
+                    <tr><td><strong>Trex Coin ↔ USDT Conversion</strong></td><td>Instant, real-time conversion between Trex Coin and Tether (USDT) at transparent rates.</td></tr>
+                    <tr><td><strong>Exchange Services</strong></td><td>Send, receive, and withdraw digital assets to external wallets and third-party platforms.</td></tr>
+                    <tr><td><strong>Cross-Chain Support</strong></td><td>Transfer USDT across multiple blockchain networks (ERC-20, TRC-20, BEP-20).</td></tr>
+                    <tr><td><strong>Transaction History</strong></td><td>Complete records of all conversions, deposits, withdrawals, and transfers with export options.</td></tr>
+                    <tr><td><strong>Enterprise Security</strong></td><td>AES-256 encryption, multi-factor authentication (MFA), and cold storage for asset protection.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 4: WHY CHOOSE TREX WALLET                             -->
+        <!-- ============================================================ -->
+        <h2>4. Why Choose Trex Wallet</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Feature</th><th>Benefit</th></tr></thead>
+                <tbody>
+                    <tr><td>🔒 <strong>Security First</strong></td><td>Cold storage, MPC key management, and 24/7 threat monitoring protect your assets.</td></tr>
+                    <tr><td>⚡ <strong>Instant Conversion</strong></td><td>Convert Trex Coin to USDT in seconds with locked rates and transparent fees.</td></tr>
+                    <tr><td>🌍 <strong>Global Access</strong></td><td>Available to users worldwide, with multi-language support and cross-chain compatibility.</td></tr>
+                    <tr><td>📊 <strong>Full Transparency</strong></td><td>Clear fee structure, real-time rate display, and detailed transaction history.</td></tr>
+                    <tr><td>🛡️ <strong>Regulatory Compliant</strong></td><td>Full KYC/AML procedures, FATF-aligned policies, and data protection compliance.</td></tr>
+                    <tr><td>🤝 <strong>User Support</strong></td><td>Dedicated support team available via email for all inquiries and issues.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 5: COMPLIANCE                                         -->
+        <!-- ============================================================ -->
+        <h2>5. Our Commitment to Compliance</h2>
+        <p>Trex Wallet is committed to operating within the highest standards of legal and regulatory compliance:</p>
+        <ul>
+            <li><strong>Anti-Money Laundering (AML)</strong> and <strong>Counter-Terrorism Financing (CFT)</strong> policies.</li>
+            <li><strong>Know Your Customer (KYC)</strong> verification for all active accounts.</li>
+            <li><strong>Data Protection</strong> aligned with GDPR, PIPEDA, and global privacy standards.</li>
+            <li><strong>Sanctions Screening</strong> against UN, OFAC, EU, and other applicable lists.</li>
+            <li><strong>Transaction Monitoring</strong> using industry-leading blockchain analytics tools.</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 6: CONTACT INFORMATION                                -->
+        <!-- ============================================================ -->
+        <h2>6. Contact Information</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Department</th><th>Email</th><th>Response Time</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>General Support</strong></td><td>Trexwalletcomp00@gmail.com</td><td>24–48 hours</td></tr>
+                    <tr><td><strong>Legal &amp; Compliance</strong></td><td>Trexwalletcomp00@gmail.com</td><td>2–5 Business Days</td></tr>
+                    <tr><td><strong>Security Incidents</strong></td><td>Trexwalletcomp00@gmail.com</td><td>Priority — 2 hours</td></tr>
+                    <tr><td><strong>Data Protection Officer</strong></td><td>Trexwalletcomp00@gmail.com</td><td>30 days (per GDPR)</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p><strong>Mailing Address:</strong><br />
+        135 Algoma St<br />
+        Thunder Bay, Ontario, P7A 4T3<br />
+        Canada</p>
+
+        <p><strong>Country Code:</strong> +1</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 7: LEGAL NOTICE                                       -->
+        <!-- ============================================================ -->
+        <h2>7. Legal Notice</h2>
+        <p>Trex Wallet is a digital asset service provider operating under the laws of <strong>Ontario, Canada</strong>. We do not provide investment, financial, or tax advice. All digital asset transactions involve risk, and users are encouraged to conduct their own research before converting or exchanging assets.</p>
+        <p>For full terms of service, privacy policy, and risk disclosures, please refer to our complete legal documentation.</p>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER                                                         -->
+        <!-- ============================================================ -->
+        <div class="footer-end">
+            <hr class="divider" />
+            <div style="font-size:1.1rem; font-weight:600; letter-spacing:0.5px; color:#111827;">Trex Wallet</div>
+            <div style="margin-top:6px; color: #4b5563;">Empowering Your Digital Asset Journey</div>
+            <div style="margin-top:10px; font-size:0.8rem; color:#6b7280;">
+                © 2026 Trex Wallet. All Rights Reserved.
+            </div>
+        </div>
+
+    </div>
+    <!-- end document-wrapper -->
+
+</body>
+          </html>
