@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trex Wallet – Terms of Service</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ffffff; /* White Background */
+            color: #1f2937; /* Standard Dark Gray/Black Text */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.65;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .document-wrapper {
+            max-width: 1100px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 50px 55px;
+            border: 1px solid #e5e7eb; /* Standard clean light border */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.2s ease;
+        }
+
+        /* ---- all text bold (As per original design) ---- */
+        body,
+        .document-wrapper,
+        p,
+        li,
+        td,
+        th,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        .note-box,
+        .warning-box,
+        .header-center,
+        .footer-end {
+            font-weight: 600;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: #111827; /* Dark Gray / Black */
+            margin-top: 1.8em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: -0.02em;
+            margin-top: 0;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.55rem;
+            font-weight: 700;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.35em;
+            margin-top: 2.2em;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 1.6em;
+            color: #1f2937;
+        }
+
+        h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-top: 1.4em;
+            color: #374151;
+        }
+
+        p {
+            margin-bottom: 0.9em;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        a {
+            color: #2563eb; /* Standard Blue Link */
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .header-center {
+            text-align: center;
+            margin-bottom: 2.2em;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1.8em;
+        }
+
+        .logo-placeholder {
+            display: inline-block;
+            background: #f3f4f6;
+            color: #111827;
+            font-weight: 700;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            padding: 10px 28px;
+            border-radius: 60px;
+            margin-bottom: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .header-center .subhead {
+            font-size: 0.95rem;
+            color: #4b5563;
+            letter-spacing: 0.02em;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        .header-center .version-meta {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            font-weight: 600;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 1.4em 0 1.8em;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            min-width: 540px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #f3f4f6;
+            vertical-align: top;
+            font-weight: 600;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 700;
+            color: #111827;
+            letter-spacing: 0.02em;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        td {
+            color: #374151;
+        }
+
+        .table-wrap tr:last-child td {
+            border-bottom: none;
+        }
+
+        pre {
+            background: #f9fafb;
+            border-radius: 14px;
+            padding: 18px 22px;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: #1f2937;
+            border: 1px solid #e5e7eb;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin: 1.2em 0;
+            font-weight: 600;
+        }
+
+        ul,
+        ol {
+            padding-left: 1.6em;
+            margin-bottom: 1em;
+            color: #374151;
+            font-weight: 600;
+        }
+        li {
+            margin-bottom: 0.25em;
+            font-weight: 600;
+        }
+
+        .note-box {
+            background: #f3f4f6;
+            border-left: 4px solid #2563eb;
+            padding: 16px 22px;
+            border-radius: 10px;
+            margin: 1.4em 0;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .note-box strong {
+            color: #111827;
+            font-weight: 700;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 16px 22px;
+            border-radius: 10px;
+            margin: 1.4em 0;
+            color: #991b1b;
+            font-weight: 600;
+        }
+
+        .warning-box strong {
+            color: #7f1d1d;
+            font-weight: 700;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 2.2em 0;
+        }
+
+        .footer-end {
+            text-align: center;
+            margin-top: 3em;
+            padding-top: 2em;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+            color: #4b5563;
+            font-weight: 600;
+        }
+
+        .footer-end strong {
+            color: #111827;
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 16px 10px;
+            }
+            .document-wrapper {
+                padding: 24px 18px;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            .header-center .version-meta {
+                flex-direction: column;
+                gap: 4px;
+            }
+            pre {
+                font-size: 0.72rem;
+                padding: 14px 16px;
+            }
+            table {
+                font-size: 0.82rem;
+                min-width: 400px;
+            }
+            th,
+            td {
+                padding: 8px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .document-wrapper {
+                padding: 16px 12px;
+            }
+            table {
+                font-size: 0.75rem;
+                min-width: 300px;
+            }
+            th,
+            td {
+                padding: 6px 8px;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-wrapper">
+
+        <!-- ============================================================ -->
+        <!-- HEADER                                                         -->
+        <!-- ============================================================ -->
+        <div class="header-center">
+            <div class="logo-placeholder">TREX WALLET</div>
+            <h1>Terms of Service</h1>
+            <div style="font-size:1.1rem; color:#4b5563; margin-top:2px; font-weight:600;">TREX WALLET PLATFORM</div>
+            <div class="version-meta">
+                <span><strong>Effective Date:</strong> 15 August 2026</span>
+                <span><strong>Last Updated:</strong> 15 August 2026</span>
+                <span><strong>Version:</strong> 1.0</span>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TABLE OF CONTENTS                                              -->
+        <!-- ============================================================ -->
+        <h2>📋 Table of Contents</h2>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Section</th><th>Title</th></tr></thead>
+                <tbody>
+                    <tr><td>1.</td><td><a href="#sec1">Definitions and Interpretation</a></td></tr>
+                    <tr><td>2.</td><td><a href="#sec2">Acceptance of Terms</a></td></tr>
+                    <tr><td>3.</td><td><a href="#sec3">Eligibility and Account Registration</a></td></tr>
+                    <tr><td>4.</td><td><a href="#sec4">Services Description</a></td></tr>
+                    <tr><td>5.</td><td><a href="#sec5">Digital Asset Wallet Services</a></td></tr>
+                    <tr><td>6.</td><td><a href="#sec6">Trex Coin to USDT Conversion Services</a></td></tr>
+                    <tr><td>7.</td><td><a href="#sec7">Exchange Services</a></td></tr>
+                    <tr><td>8.</td><td><a href="#sec8">Fees and Payments</a></td></tr>
+                    <tr><td>9.</td><td><a href="#sec9">User Representations and Warranties</a></td></tr>
+                    <tr><td>10.</td><td><a href="#sec10">Prohibited Activities</a></td></tr>
+                    <tr><td>11.</td><td><a href="#sec11">Risk Disclosures and Acknowledgments</a></td></tr>
+                    <tr><td>12.</td><td><a href="#sec12">Intellectual Property Rights</a></td></tr>
+                    <tr><td>13.</td><td><a href="#sec13">Third-Party Services and Integrations</a></td></tr>
+                    <tr><td>14.</td><td><a href="#sec14">Security and Account Protection</a></td></tr>
+                    <tr><td>15.</td><td><a href="#sec15">Suspension and Termination</a></td></tr>
+                    <tr><td>16.</td><td><a href="#sec16">Limitation of Liability</a></td></tr>
+                    <tr><td>17.</td><td><a href="#sec17">Indemnification</a></td></tr>
+                    <tr><td>18.</td><td><a href="#sec18">Dispute Resolution and Arbitration</a></td></tr>
+                    <tr><td>19.</td><td><a href="#sec19">Governing Law and Jurisdiction</a></td></tr>
+                    <tr><td>20.</td><td><a href="#sec20">Force Majeure</a></td></tr>
+                    <tr><td>21.</td><td><a href="#sec21">Amendments to Terms</a></td></tr>
+                    <tr><td>22.</td><td><a href="#sec22">Severability</a></td></tr>
+                    <tr><td>23.</td><td><a href="#sec23">Entire Agreement</a></td></tr>
+                    <tr><td>24.</td><td><a href="#sec24">Contact Information</a></td></tr>
+                    <tr><td>—</td><td><a href="#acknowledgment">Acknowledgment and Consent</a></td></tr>
+                    <tr><td>—</td><td><a href="#appendices">Appendices</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 1                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec1">1. Definitions and Interpretation</h2>
+
+        <h3>1.1 Definitions</h3>
+        <p>In these Terms of Service ("Terms", "Agreement", or "ToS"), unless the context otherwise requires, the following terms shall have the meanings ascribed to them:</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>"Account"</strong></td><td>Means the user account registered on the Trex Wallet Platform through which the User accesses the Services.</td></tr>
+                    <tr><td><strong>"Applicable Law"</strong></td><td>Means all laws, statutes, regulations, ordinances, rules, codes, decrees, directives, judgments, decrees, or orders of any governmental authority, regulatory body, or self-regulatory organization applicable to the Services, the Platform, or the Parties.</td></tr>
+                    <tr><td><strong>"Blockchain"</strong></td><td>Means the distributed ledger technology underlying digital assets, including but not limited to the Trex Coin blockchain, Ethereum blockchain, TRON blockchain, and any other supported blockchain networks.</td></tr>
+                    <tr><td><strong>"Business Day"</strong></td><td>Means any day other than Saturday, Sunday, or any public holiday in the jurisdiction where Trex Wallet is registered.</td></tr>
+                    <tr><td><strong>"Conversion"</strong></td><td>Means the process of exchanging Trex Coin for USDT or vice versa through the Platform's conversion mechanism.</td></tr>
+                    <tr><td><strong>"Digital Asset"</strong></td><td>Means any digital representation of value that uses distributed ledger technology, including but not limited to cryptocurrencies, tokens, stablecoins, and other blockchain-based assets. This includes Trex Coin, USDT, and any other assets supported by the Platform from time to time.</td></tr>
+                    <tr><td><strong>"Exchange"</strong></td><td>Means the trading platform functionality provided by Trex Wallet that allows Users to buy, sell, or trade Digital Assets.</td></tr>
+                    <tr><td><strong>"Fiat Currency"</strong></td><td>Means government-issued currency that is designated as legal tender, such as USD, EUR, GBP, INR, AED, or any other supported currency.</td></tr>
+                    <tr><td><strong>"KYC"</strong></td><td>Means Know Your Customer, the process of verifying the identity of Users in compliance with Applicable Law.</td></tr>
+                    <tr><td><strong>"AML"</strong></td><td>Means Anti-Money Laundering, the set of procedures, laws, and regulations designed to halt the practice of generating income through illegal actions.</td></tr>
+                    <tr><td><strong>"Platform"</strong></td><td>Means the Trex Wallet mobile application, website, APIs, and any other digital interfaces through which the Services are provided.</td></tr>
+                    <tr><td><strong>"Private Key"</strong></td><td>Means the cryptographic key that grants access to and control over a Digital Asset wallet address and the assets held therein.</td></tr>
+                    <tr><td><strong>"Public Key" or "Wallet Address"</strong></td><td>Means the publicly visible cryptographic address associated with a Digital Asset wallet.</td></tr>
+                    <tr><td><strong>"Services"</strong></td><td>Means all products, services, features, content, and functionalities offered by Trex Wallet through the Platform, including but not limited to wallet services, conversion services, exchange services, staking (if applicable), and any other services provided from time to time.</td></tr>
+                    <tr><td><strong>"Smart Contract"</strong></td><td>Means self-executing code deployed on a Blockchain that automatically enforces the terms of an agreement.</td></tr>
+                    <tr><td><strong>"Trex Coin" or "TREX"</strong></td><td>Means the native digital asset of the Trex ecosystem, which may be stored, transferred, converted, or exchanged through the Platform.</td></tr>
+                    <tr><td><strong>"USDT" or "Tether"</strong></td><td>Means the stablecoin issued by Tether Limited, pegged to the value of the United States Dollar, supported on the Platform for conversion and exchange purposes.</td></tr>
+                    <tr><td><strong>"User", "You", or "Your"</strong></td><td>Means any individual or entity that accesses, registers for, or uses the Services.</td></tr>
+                    <tr><td><strong>"We", "Us", "Our", or "Trex Wallet"</strong></td><td>Means Trex Wallet Global Ltd., a company duly incorporated and existing under the laws of Ontario, Canada, with its registered office at 135 Algoma St.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>1.2 Interpretation</h3>
+        <ul>
+            <li>Headings are for convenience only and shall not affect interpretation.</li>
+            <li>Words importing the singular include the plural and vice versa.</li>
+            <li>References to "writing" or "written" include electronic communications.</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 2                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec2">2. Acceptance of Terms</h2>
+
+        <p><strong>2.1</strong> These Terms constitute a legally binding agreement between You and Trex Wallet regarding Your use of the Services. By accessing, registering for, or using any part of the Platform or Services, You acknowledge that You have read, understood, and agree to be bound by these Terms in their entirety.</p>
+
+        <p><strong>2.2</strong> If You do not agree to any provision of these Terms, You must immediately cease all use of the Platform and Services and close Your Account.</p>
+
+        <p><strong>2.3</strong> These Terms incorporate by reference our Privacy Policy, Cookie Policy, Risk Disclosure Statement, Fee Schedule, and any other policies or agreements published on the Platform (collectively, "Platform Policies").</p>
+
+        <p><strong>2.4</strong> In the event of any conflict between these Terms and any Platform Policy, these Terms shall prevail unless expressly stated otherwise.</p>
+
+        <p><strong>2.5</strong> We reserve the right to modify, amend, or update these Terms at any time. Continued use of the Services following any amendment constitutes acceptance of the revised Terms.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 3                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec3">3. Eligibility and Account Registration</h2>
+
+        <p><strong>3.1</strong> To use the Services, You must:</p>
+        <ul>
+            <li>(a) Be at least 18 years of age or the legal age of majority in Your jurisdiction, whichever is higher;</li>
+            <li>(b) Have the legal capacity to enter into binding contracts;</li>
+            <li>(c) Not be a resident of, or located in, any jurisdiction where the use of the Services is prohibited by Applicable Law;</li>
+            <li>(d) Not be listed on any sanctions list maintained by the United Nations, the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC), the European Union, the United Kingdom, or any other applicable sanctions authority;</li>
+            <li>(e) Not be a Politically Exposed Person (PEP) unless You have disclosed such status and completed enhanced due diligence;</li>
+            <li>(f) Provide accurate, complete, and up-to-date information during registration;</li>
+            <li>(g) Pass our identity verification (KYC) and anti-money laundering (AML) screening procedures.</li>
+        </ul>
+
+        <p><strong>3.2 Prohibited Jurisdictions:</strong> The Services are not available to residents of countries or territories subject to comprehensive sanctions. We reserve the right to restrict access from any jurisdiction at our sole discretion.</p>
+
+        <p><strong>3.3 Account Registration Process:</strong></p>
+        <ul>
+            <li>(a) You must complete the registration process by providing accurate personal information, including but not limited to Your full legal name, date of birth, residential address, email address, phone number, and government-issued identification.</li>
+            <li>(b) You agree to maintain the accuracy of Your Account information and promptly update any changes.</li>
+            <li>(c) We may require additional documentation or information at any time to verify Your identity or comply with regulatory requirements.</li>
+            <li>(d) We reserve the right to refuse registration, suspend, or terminate any Account at our sole discretion, including for failure to meet eligibility criteria or comply with KYC/AML requirements.</li>
+        </ul>
+
+        <p><strong>3.4 Account Security:</strong></p>
+        <ul>
+            <li>(a) You are solely responsible for maintaining the confidentiality of Your Account credentials, including passwords, PINs, two-factor authentication (2FA) codes, and any recovery phrases or seed phrases associated with Your wallet.</li>
+            <li>(b) You agree to notify us immediately of any unauthorized access to or use of Your Account.</li>
+            <li>(c) We will never ask for Your Private Key, seed phrase, or wallet password. Any such request should be treated as fraudulent.</li>
+            <li>(d) You acknowledge that we cannot recover lost Private Keys or seed phrases. Loss of these credentials may result in permanent loss of access to Your Digital Assets.</li>
+        </ul>
+
+        <p><strong>3.5 One Account Per User:</strong> Each natural person is permitted to maintain only one Account unless expressly authorized by us in writing. Multiple Accounts created by the same individual may be subject to suspension or termination.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 4                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec4">4. Services Description</h2>
+
+        <p><strong>4.1</strong> Trex Wallet provides the following Services through the Platform:</p>
+
+        <ul>
+            <li><strong>(a) Digital Asset Wallet Services:</strong>
+                <ul>
+                    <li>Secure storage of supported Digital Assets, including Trex Coin and USDT;</li>
+                    <li>Generation and management of wallet addresses;</li>
+                    <li>Sending and receiving Digital Assets;</li>
+                    <li>Transaction history and portfolio tracking;</li>
+                    <li>Real-time balance updates.</li>
+                </ul>
+            </li>
+            <li><strong>(b) Conversion Services:</strong>
+                <ul>
+                    <li>Conversion of Trex Coin to USDT;</li>
+                    <li>Conversion of USDT to Trex Coin;</li>
+                    <li>Real-time conversion rate display;</li>
+                    <li>Instant and scheduled conversion options.</li>
+                </ul>
+            </li>
+            <li><strong>(c) Exchange Services:</strong>
+                <ul>
+                    <li>Spot trading of Digital Asset pairs;</li>
+                    <li>Market, limit, and stop-limit order types;</li>
+                    <li>Order book access and market depth visualization;</li>
+                    <li>Trading history and performance analytics.</li>
+                </ul>
+            </li>
+            <li><strong>(d) Additional Services:</strong>
+                <ul>
+                    <li>Market data, price charts, and analytics tools;</li>
+                    <li>News and educational content;</li>
+                    <li>Customer support services;</li>
+                    <li>Any other services we may introduce from time to time.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>4.2 Service Availability:</strong> We strive to maintain 24/7 availability of the Services; however, we do not guarantee uninterrupted access. The Platform may be temporarily unavailable due to maintenance, technical issues, Blockchain network congestion, or events beyond our reasonable control.</p>
+
+        <p><strong>4.3 No Financial Advice:</strong> Nothing on the Platform constitutes financial, investment, legal, or tax advice. All trading and investment decisions are made at Your sole discretion and risk.</p>
+
+        <p><strong>4.4 No Custodial Relationship:</strong> Unless explicitly stated otherwise, we do not act as a custodian of Your Digital Assets. You retain control over Your Private Keys and Digital Assets stored in non-custodial wallets.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 5                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec5">5. Digital Asset Wallet Services</h2>
+
+        <p><strong>5.1 Wallet Creation:</strong> Upon registration, the Platform will generate one or more wallet addresses for supported Digital Assets. Each wallet is associated with a unique Public Key/Wallet Address.</p>
+
+        <p><strong>5.2 Non-Custodial Wallets:</strong> Where applicable, Trex Wallet provides non-custodial wallet services, meaning:</p>
+        <ul>
+            <li>(a) You control the Private Keys associated with Your wallet;</li>
+            <li>(b) We do not have access to or control over Your Private Keys;</li>
+            <li>(c) You are solely responsible for the security and backup of Your Private Keys and recovery phrases;</li>
+            <li>(d) We cannot recover lost Private Keys or restore access to wallets where Private Keys have been lost or forgotten.</li>
+        </ul>
+
+        <p><strong>5.3 Custodial Wallets:</strong> For certain Services, we may provide custodial wallet solutions where we hold Digital Assets on Your behalf. In such cases:</p>
+        <ul>
+            <li>(a) We will maintain appropriate security measures to safeguard custodial assets;</li>
+            <li>(b) Title to custodial Digital Assets remains with You at all times;</li>
+            <li>(c) We will not use Your custodial assets for our own purposes without Your explicit consent.</li>
+        </ul>
+
+        <p><strong>5.4 Deposits:</strong></p>
+        <ul>
+            <li>(a) To deposit Digital Assets into Your Trex Wallet, You must send the assets to the correct wallet address displayed on the Platform.</li>
+            <li>(b) You acknowledge that sending Digital Assets to an incorrect address may result in permanent loss of such assets.</li>
+            <li>(c) Deposits are subject to network confirmation requirements. The Platform will credit Your Account only after the required number of network confirmations.</li>
+            <li>(d) We reserve the right to reject deposits from suspicious sources or addresses associated with illicit activity.</li>
+        </ul>
+
+        <p><strong>5.5 Withdrawals:</strong></p>
+        <ul>
+            <li>(a) You may withdraw Digital Assets from Your Account to an external wallet address, subject to security verification procedures.</li>
+            <li>(b) Withdrawal requests are subject to processing times, network fees, and applicable limits.</li>
+            <li>(c) You are solely responsible for ensuring the accuracy of withdrawal addresses. We are not liable for withdrawals sent to incorrect addresses provided by You.</li>
+            <li>(d) We may impose withdrawal limits, cooling-off periods, or additional verification requirements for large withdrawals or suspicious activity.</li>
+        </ul>
+
+        <p><strong>5.6 Network Fees:</strong> All Blockchain transactions require payment of network fees (gas fees, miner fees, etc.). These fees are paid to network validators, not to Trex Wallet, and are subject to network conditions and congestion.</p>
+
+        <p><strong>5.7 Supported Assets:</strong> We reserve the right to add or remove support for particular Digital Assets at any time without prior notice. If support for a Digital Asset is discontinued, You will be given a reasonable period to withdraw such assets.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 6                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec6">6. Trex Coin to USDT Conversion Services</h2>
+
+        <p><strong>6.1 Conversion Mechanism:</strong> The Platform enables Users to convert Trex Coin to USDT and USDT to Trex Coin at prevailing market rates or rates determined by our liquidity providers.</p>
+
+        <p><strong>6.2 Conversion Rates:</strong></p>
+        <ul>
+            <li>(a) Conversion rates are determined by market conditions, liquidity availability, and our pricing algorithms.</li>
+            <li>(b) Rates displayed on the Platform are indicative and may change between the time a conversion is initiated and executed.</li>
+            <li>(c) A spread or conversion fee may be applied, as detailed in our Fee Schedule.</li>
+            <li>(d) We do not guarantee the availability of any specific conversion rate.</li>
+        </ul>
+
+        <p><strong>6.3 Conversion Execution:</strong></p>
+        <ul>
+            <li>(a) Conversions may be executed instantly or subject to processing times depending on network conditions and liquidity.</li>
+            <li>(b) Once a conversion is initiated, it may not be reversible.</li>
+            <li>(c) Minimum and maximum conversion limits may apply.</li>
+            <li>(d) We reserve the right to delay or reject conversions that appear suspicious or violate our policies.</li>
+        </ul>
+
+        <p><strong>6.4 Slippage:</strong> Due to market volatility and liquidity conditions, the actual execution price of a conversion may differ from the quoted price. You acknowledge and accept the risk of slippage.</p>
+
+        <p><strong>6.5 USDT Stability:</strong> While USDT is designed to maintain a 1:1 peg with the U.S. Dollar, we do not guarantee the stability of USDT or its issuer. You acknowledge the risks associated with stablecoins, including potential de-pegging events.</p>
+
+        <p><strong>6.6 Smart Contract Risk:</strong> Conversions may involve interaction with Smart Contracts. You acknowledge the inherent risks of Smart Contracts, including but not limited to coding errors, exploits, and unforeseen technical failures.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 7                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec7">7. Exchange Services</h2>
+
+        <p><strong>7.1 Trading Functionality:</strong> The Platform provides a digital asset exchange where Users may place orders to buy, sell, or trade supported Digital Asset pairs.</p>
+
+        <p><strong>7.2 Order Types:</strong> The following order types may be available:</p>
+        <ul>
+            <li>(a) <strong>Market Orders:</strong> Executed immediately at the best available price;</li>
+            <li>(b) <strong>Limit Orders:</strong> Executed only at the specified price or better;</li>
+            <li>(c) <strong>Stop-Limit Orders:</strong> Triggered when the market reaches a specified stop price, then executed as a limit order.</li>
+        </ul>
+
+        <p><strong>7.3 Order Execution:</strong></p>
+        <ul>
+            <li>(a) Orders are subject to availability of matching orders and liquidity.</li>
+            <li>(b) We do not guarantee order execution at any specific price or time.</li>
+            <li>(c) Orders may be partially filled depending on market conditions.</li>
+            <li>(d) We reserve the right to cancel orders in cases of system errors, market disruptions, or suspected market manipulation.</li>
+        </ul>
+
+        <p><strong>7.4 Trading Fees:</strong> All trades are subject to fees as set forth in our Fee Schedule. Fees may include maker fees, taker fees, and other applicable charges.</p>
+
+        <p><strong>7.5 Market Integrity:</strong> We prohibit and actively monitor for:</p>
+        <ul>
+            <li>(a) Market manipulation, including wash trading, spoofing, layering, and front-running;</li>
+            <li>(b) Insider trading or trading on material non-public information;</li>
+            <li>(c) Abusive trading practices that disrupt market integrity;</li>
+            <li>(d) Use of automated trading systems without authorization.</li>
+        </ul>
+
+        <p><strong>7.6 Price Data:</strong> Price information displayed on the Platform is sourced from various exchanges and liquidity providers. While we strive for accuracy, we do not guarantee the real-time accuracy of price data.</p>
+
+        <p><strong>7.7 No Guarantee of Liquidity:</strong> We do not guarantee that there will be sufficient liquidity for any particular Digital Asset pair at any given time.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 8                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec8">8. Fees and Payments</h2>
+
+        <p><strong>8.1 Fee Schedule:</strong> All fees applicable to the Services are set forth in our Fee Schedule, which is incorporated by reference into these Terms. The Fee Schedule may be updated from time to time.</p>
+
+        <p><strong>8.2 Types of Fees:</strong> Fees may include, but are not limited to:</p>
+        <ul>
+            <li>(a) Trading fees (maker/taker fees);</li>
+            <li>(b) Conversion fees (spread on Trex Coin to USDT conversions);</li>
+            <li>(c) Deposit fees (for certain deposit methods);</li>
+            <li>(d) Withdrawal fees (network fees and platform fees);</li>
+            <li>(e) Account maintenance fees (if applicable);</li>
+            <li>(f) Inactivity fees (if applicable after extended periods of inactivity);</li>
+            <li>(g) Fiat currency transaction fees (if applicable).</li>
+        </ul>
+
+        <p><strong>8.3 Fee Calculation:</strong> Fees are calculated based on the fee rates in effect at the time of the transaction. Fee rates may vary based on trading volume, account tier, or promotional programs.</p>
+
+        <p><strong>8.4 Payment of Fees:</strong> All fees are deducted from the relevant transaction amount or Account balance at the time of the transaction. You authorize us to deduct applicable fees from Your Account.</p>
+
+        <p><strong>8.5 Tax Obligations:</strong> You are solely responsible for determining and paying all taxes applicable to Your use of the Services, including but not limited to income tax, capital gains tax, value-added tax (VAT), goods and services tax (GST), and any other taxes or duties imposed by Your jurisdiction. We do not provide tax advice.</p>
+
+        <p><strong>8.6 No Refunds:</strong> Except as required by Applicable Law or as expressly stated in these Terms, all fees paid are non-refundable.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 9                                                      -->
+        <!-- ============================================================ -->
+        <h2 id="sec9">9. User Representations and Warranties</h2>
+
+        <p><strong>9.1</strong> By using the Services, You represent and warrant that:</p>
+        <ul>
+            <li>(a) You meet all eligibility requirements set forth in Section 3;</li>
+            <li>(b) All information You provide is true, accurate, complete, and current;</li>
+            <li>(c) You will maintain the accuracy of such information and promptly update it as necessary;</li>
+            <li>(d) You have the legal right and authority to use the Services and to enter into transactions involving Digital Assets;</li>
+            <li>(e) You understand the risks associated with Digital Assets, including price volatility, regulatory uncertainty, and technological risks;</li>
+            <li>(f) You are not using the Services for any illegal purpose;</li>
+            <li>(g) You will comply with all Applicable Laws in connection with Your use of the Services;</li>
+            <li>(h) You have sufficient knowledge and experience in financial and digital asset matters to evaluate the risks of the Services;</li>
+            <li>(i) You are not acting on behalf of any third party unless duly authorized.</li>
+        </ul>
+
+        <p><strong>9.2 Source of Funds:</strong> You represent that all Digital Assets and funds deposited into Your Account are derived from legitimate sources and are not the proceeds of illegal activity.</p>
+
+        <p><strong>9.3 No Reliance:</strong> You acknowledge that You have not relied on any representation, warranty, or statement made by us other than as set forth in these Terms.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 10                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec10">10. Prohibited Activities</h2>
+
+        <p><strong>10.1</strong> You agree not to engage in any of the following prohibited activities:</p>
+
+        <ul>
+            <li><strong>(a) Illegal Activities:</strong>
+                <ul>
+                    <li>Using the Services for money laundering, terrorist financing, or other illicit financial activities;</li>
+                    <li>Using the Services to facilitate illegal gambling, drug trafficking, or other criminal enterprises;</li>
+                    <li>Using the Services in violation of sanctions or export control laws.</li>
+                </ul>
+            </li>
+            <li><strong>(b) Fraud and Deception:</strong>
+                <ul>
+                    <li>Providing false, misleading, or inaccurate information;</li>
+                    <li>Impersonating any person or entity;</li>
+                    <li>Engaging in phishing, social engineering, or other deceptive practices;</li>
+                    <li>Using stolen credit cards, bank accounts, or identities.</li>
+                </ul>
+            </li>
+            <li><strong>(c) Market Manipulation:</strong>
+                <ul>
+                    <li>Wash trading, spoofing, layering, or other manipulative trading practices;</li>
+                    <li>Front-running or insider trading;</li>
+                    <li>Artificially inflating or deflating the price of any Digital Asset;</li>
+                    <li>Distributing false or misleading information to affect market prices.</li>
+                </ul>
+            </li>
+            <li><strong>(d) Technical Abuse:</strong>
+                <ul>
+                    <li>Attempting to gain unauthorized access to the Platform, other users' accounts, or our systems;</li>
+                    <li>Introducing viruses, malware, or other harmful code;</li>
+                    <li>Conducting denial-of-service (DoS) or distributed denial-of-service (DDoS) attacks;</li>
+                    <li>Reverse engineering, decompiling, or disassembling any part of the Platform;</li>
+                    <li>Using bots, scrapers, or automated systems without authorization;</li>
+                    <li>Circumventing security measures or access controls.</li>
+                </ul>
+            </li>
+            <li><strong>(e) Account Abuse:</strong>
+                <ul>
+                    <li>Creating multiple accounts without authorization;</li>
+                    <li>Selling, renting, or transferring Your Account to third parties;</li>
+                    <li>Using another person's Account without permission;</li>
+                    <li>Colluding with other users to manipulate markets or defraud the Platform.</li>
+                </ul>
+            </li>
+            <li><strong>(f) Regulatory Evasion:</strong>
+                <ul>
+                    <li>Using VPNs, proxies, or other means to conceal Your true location to access Services from prohibited jurisdictions;</li>
+                    <li>Structuring transactions to evade reporting requirements;</li>
+                    <li>Failing to disclose required information for KYC/AML purposes.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>10.2 Consequences of Violation:</strong> Violation of this Section may result in immediate suspension or termination of Your Account, forfeiture of funds (where permitted by law), reporting to law enforcement and regulatory authorities, and civil or criminal prosecution.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 11                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec11">11. Risk Disclosures and Acknowledgments</h2>
+
+        <div class="warning-box">
+            <strong>YOU ACKNOWLEDGE AND AGREE THAT THE USE OF DIGITAL ASSETS AND THE SERVICES INVOLVES SIGNIFICANT RISKS. BY USING THE SERVICES, YOU EXPRESSLY ACKNOWLEDGE AND ASSUME THE FOLLOWING RISKS:</strong>
+        </div>
+
+        <p><strong>11.2 Price Volatility Risk:</strong> Digital Assets are subject to extreme price volatility. The value of Trex Coin, USDT, and other Digital Assets can fluctuate dramatically within short periods. You may lose all or a substantial portion of Your investment.</p>
+
+        <p><strong>11.3 Regulatory Risk:</strong> The regulatory status of Digital Assets is uncertain and evolving. Future regulations may adversely affect the value, legality, or availability of Digital Assets and the Services. We may be required to suspend or terminate Services in certain jurisdictions with minimal notice.</p>
+
+        <p><strong>11.4 Technology Risk:</strong></p>
+        <ul>
+            <li>(a) Blockchain technology is experimental and subject to bugs, exploits, and unforeseen technical failures;</li>
+            <li>(b) Smart Contracts may contain vulnerabilities that could result in loss of funds;</li>
+            <li>(c) Network congestion may delay or prevent transaction execution;</li>
+            <li>(d) Forks, upgrades, or changes to Blockchain protocols may affect Digital Assets.</li>
+        </ul>
+
+        <p><strong>11.5 Security Risk:</strong></p>
+        <ul>
+            <li>(a) Digital Assets and wallets are targets for hackers and cybercriminals;</li>
+            <li>(b) Loss of Private Keys or seed phrases results in permanent, irreversible loss of access to Digital Assets;</li>
+            <li>(c) Phishing attacks, malware, and social engineering pose ongoing threats;</li>
+            <li>(d) No method of electronic storage or transmission is 100% secure.</li>
+        </ul>
+
+        <p><strong>11.6 Counterparty Risk:</strong> When using custodial services or interacting with third-party liquidity providers, You are exposed to counterparty risk, including the risk of insolvency or failure of such parties.</p>
+
+        <p><strong>11.7 Stablecoin Risk:</strong> USDT and other stablecoins may not maintain their pegged value. De-pegging events, issuer insolvency, or regulatory action could result in significant losses.</p>
+
+        <p><strong>11.8 Liquidity Risk:</strong> There may be insufficient liquidity to execute orders at desired prices, particularly for less liquid Digital Asset pairs.</p>
+
+        <p><strong>11.9 Operational Risk:</strong> The Platform may experience downtime, technical failures, or service disruptions that prevent access to Your Digital Assets or execution of transactions.</p>
+
+        <p><strong>11.10 No Insurance:</strong> Digital Assets held on the Platform are not insured by the Federal Deposit Insurance Corporation (FDIC), Securities Investor Protection Corporation (SIPC), or similar governmental insurance schemes, unless explicitly stated otherwise.</p>
+
+        <p><strong>11.11 Tax Risk:</strong> Tax treatment of Digital Assets is uncertain. You are solely responsible for understanding and complying with tax obligations in Your jurisdiction.</p>
+
+        <p><strong>11.12 Irreversibility:</strong> Blockchain transactions are generally irreversible. Incorrect transactions, sending assets to wrong addresses, or unauthorized transactions may not be recoverable.</p>
+
+        <p><strong>11.13 No Guarantee of Profit:</strong> Nothing on the Platform guarantees profit, returns, or preservation of capital. Past performance is not indicative of future results.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 12                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec12">12. Intellectual Property Rights</h2>
+
+        <p><strong>12.1 Ownership:</strong> All intellectual property rights in and to the Platform, Services, trademarks, logos, software, content, and materials (collectively, "IP Rights") are owned by Trex Wallet or our licensors. Nothing in these Terms grants You any right, title, or interest in any IP Rights.</p>
+
+        <p><strong>12.2 License:</strong> Subject to Your compliance with these Terms, we grant You a limited, non-exclusive, non-transferable, revocable license to access and use the Platform and Services for personal or internal business purposes.</p>
+
+        <p><strong>12.3 Restrictions:</strong> You may not:</p>
+        <ul>
+            <li>(a) Copy, modify, distribute, sell, or lease any part of the Platform;</li>
+            <li>(b) Reverse engineer or attempt to extract the source code of the Platform;</li>
+            <li>(c) Use our trademarks or branding without prior written consent;</li>
+            <li>(d) Remove or alter any copyright, trademark, or proprietary notices;</li>
+            <li>(e) Use the Platform to develop competing products or services.</li>
+        </ul>
+
+        <p><strong>12.4 Feedback:</strong> Any feedback, suggestions, or ideas You provide regarding the Services may be used by us without restriction or compensation.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 13                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec13">13. Third-Party Services and Integrations</h2>
+
+        <p><strong>13.1</strong> The Platform may integrate with or provide access to third-party services, including but not limited to:</p>
+        <ul>
+            <li>Blockchain networks and validators;</li>
+            <li>USDT issuance and redemption services;</li>
+            <li>Payment processors and banking partners;</li>
+            <li>Identity verification services;</li>
+            <li>Market data providers;</li>
+            <li>Decentralized applications (DApps).</li>
+        </ul>
+
+        <p><strong>13.2 Third-Party Terms:</strong> Your use of third-party services is governed by the respective terms and policies of those third parties. We are not responsible for the content, accuracy, or practices of third-party services.</p>
+
+        <p><strong>13.3 No Endorsement:</strong> Inclusion of any third-party service on the Platform does not constitute endorsement or recommendation by us.</p>
+
+        <p><strong>13.4 Third-Party Risk:</strong> You acknowledge that third-party services may have separate risks, including security risks, and we are not liable for any losses arising from third-party services.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 14                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec14">14. Security and Account Protection</h2>
+
+        <p><strong>14.1 Security Measures:</strong> We implement industry-standard security measures to protect the Platform and user data, including encryption, multi-factor authentication, and regular security audits.</p>
+
+        <p><strong>14.2 User Responsibilities:</strong> You are responsible for:</p>
+        <ul>
+            <li>(a) Maintaining the confidentiality of Your Account credentials;</li>
+            <li>(b) Enabling and maintaining two-factor authentication (2FA);</li>
+            <li>(c) Using strong, unique passwords;</li>
+            <li>(d) Securing Your devices and email accounts;</li>
+            <li>(e) Being vigilant against phishing and social engineering attacks;</li>
+            <li>(f) Regularly reviewing Your Account activity and transaction history.</li>
+        </ul>
+
+        <p><strong>14.3 Security Breaches:</strong> If You suspect unauthorized access to Your Account, You must immediately:</p>
+        <ul>
+            <li>(a) Change Your password;</li>
+            <li>(b) Disable and re-enable 2FA;</li>
+            <li>(c) Contact our support team at Trexwalletcomp00@gmail.com;</li>
+            <li>(d) Review all recent transactions for unauthorized activity.</li>
+        </ul>
+
+        <p><strong>14.4 Limitation of Security Liability:</strong> While we implement reasonable security measures, we are not liable for losses resulting from:</p>
+        <ul>
+            <li>(a) Your failure to secure Your Account credentials or devices;</li>
+            <li>(b) Phishing attacks or social engineering directed at You;</li>
+            <li>(c) Malware or viruses on Your devices;</li>
+            <li>(d) Unauthorized access resulting from Your negligence;</li>
+            <li>(e) Blockchain network vulnerabilities outside our control.</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 15                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec15">15. Suspension and Termination</h2>
+
+        <p><strong>15.1 Termination by User:</strong> You may close Your Account at any time by following the account closure process in Your Account settings or by contacting support. Account closure is subject to:</p>
+        <ul>
+            <li>(a) Completion of all pending transactions;</li>
+            <li>(b) Settlement of any outstanding fees or obligations;</li>
+            <li>(c) Compliance with regulatory retention requirements.</li>
+        </ul>
+
+        <p><strong>15.2 Suspension by Trex Wallet:</strong> We may suspend Your Account or access to the Services, with or without notice, if:</p>
+        <ul>
+            <li>(a) We suspect unauthorized or fraudulent activity;</li>
+            <li>(b) You violate these Terms or any Platform Policy;</li>
+            <li>(c) We are required to do so by Applicable Law or regulatory order;</li>
+            <li>(d) We suspect money laundering, terrorist financing, or other illegal activity;</li>
+            <li>(e) There is a security threat to the Platform or other users;</li>
+            <li>(f) You fail to complete KYC/AML verification;</li>
+            <li>(g) You access the Services from a prohibited jurisdiction.</li>
+        </ul>
+
+        <p><strong>15.3 Termination by Trex Wallet:</strong> We may terminate Your Account and these Terms, with or without cause, by providing notice to You. Termination does not affect:</p>
+        <ul>
+            <li>(a) Accrued rights and obligations;</li>
+            <li>(b) Survival provisions of these Terms;</li>
+            <li>(c) Our right to retain data as required by law.</li>
+        </ul>
+
+        <p><strong>15.4 Effect of Termination:</strong> Upon termination:</p>
+        <ul>
+            <li>(a) Your right to access the Services ceases immediately;</li>
+            <li>(b) You must withdraw all Digital Assets within the timeframe specified in our notice;</li>
+            <li>(c) Unsettled fees and obligations become immediately due;</li>
+            <li>(d) We may retain certain data as required by Applicable Law.</li>
+        </ul>
+
+        <p><strong>15.5 Forfeiture:</strong> In cases of fraud, illegal activity, or violation of sanctions, we may freeze or forfeit Digital Assets in Your Account, subject to Applicable Law and regulatory direction.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 16                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec16">16. Limitation of Liability</h2>
+
+        <div class="warning-box">
+            <p><strong>16.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL TREX WALLET, ITS AFFILIATES, DIRECTORS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR:</strong></p>
+            <ul>
+                <li>(a) ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES;</li>
+                <li>(b) ANY LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS OPPORTUNITIES;</li>
+                <li>(c) ANY DAMAGES ARISING FROM BLOCKCHAIN NETWORK FAILURES, SMART CONTRACT BUGS, OR THIRD-PARTY SERVICE FAILURES;</li>
+                <li>(d) ANY DAMAGES ARISING FROM YOUR FAILURE TO SECURE YOUR PRIVATE KEYS, SEED PHRASES, OR ACCOUNT CREDENTIALS;</li>
+                <li>(e) ANY DAMAGES ARISING FROM MARKET VOLATILITY OR PRICE FLUCTUATIONS;</li>
+                <li>(f) ANY DAMAGES ARISING FROM REGULATORY ACTIONS OR CHANGES IN LAW.</li>
+            </ul>
+        </div>
+
+        <p><strong>16.2</strong> OUR TOTAL CUMULATIVE LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES SHALL NOT EXCEED THE GREATER OF:</p>
+        <ul>
+            <li>(a) THE TOTAL AMOUNT OF FEES PAID BY YOU TO US IN THE 12 (TWELVE) MONTHS PRECEDING THE EVENT GIVING RISE TO LIABILITY; OR</li>
+            <li>(b) USD $500.00 (FIVE HUNDRED UNITED STATES DOLLARS).</li>
+        </ul>
+
+        <p><strong>16.3</strong> THE FOREGOING LIMITATIONS SHALL APPLY REGARDLESS OF WHETHER WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE).</p>
+
+        <p><strong>16.4</strong> NOTHING IN THESE TERMS EXCLUDES OR LIMITS OUR LIABILITY FOR:</p>
+        <ul>
+            <li>(a) DEATH OR PERSONAL INJURY CAUSED BY OUR NEGLIGENCE;</li>
+            <li>(b) FRAUD OR FRAUDULENT MISREPRESENTATION;</li>
+            <li>(c) ANY LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 17                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec17">17. Indemnification</h2>
+
+        <p><strong>17.1</strong> You agree to indemnify, defend, and hold harmless Trex Wallet, its affiliates, officers, directors, employees, agents, and licensors from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with:</p>
+        <ul>
+            <li>(a) Your use of the Services;</li>
+            <li>(b) Your violation of these Terms or any Applicable Law;</li>
+            <li>(c) Your violation of any third-party rights;</li>
+            <li>(d) Any unauthorized use of Your Account;</li>
+            <li>(e) Any transaction or activity conducted through Your Account;</li>
+            <li>(f) Your negligence or willful misconduct.</li>
+        </ul>
+
+        <p><strong>17.2</strong> We reserve the right to assume the exclusive defense and control of any matter subject to indemnification by You, in which event You agree to cooperate with our defense.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 18                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec18">18. Dispute Resolution and Arbitration</h2>
+
+        <p><strong>18.1 Informal Resolution:</strong> Before initiating any formal dispute resolution proceedings, You agree to first contact us at Trexwalletcomp00@gmail.com and attempt to resolve the dispute informally within 30 (thirty) days.</p>
+
+        <p><strong>18.2 Binding Arbitration:</strong> If the dispute cannot be resolved informally, You agree that any dispute, controversy, or claim arising out of or relating to these Terms or the Services shall be resolved exclusively through binding arbitration administered by ICC International Court of Arbitration in accordance with its rules and procedures.</p>
+
+        <p><strong>18.3 Arbitration Procedure:</strong></p>
+        <ul>
+            <li>(a) The arbitration shall be conducted in the English language;</li>
+            <li>(b) The seat of arbitration shall be Thunder Bay, Canada;</li>
+            <li>(c) The arbitration shall be conducted by a single arbitrator unless the amount in dispute exceeds USD $100,000, in which case a panel of three arbitrators shall be appointed;</li>
+            <li>(d) The arbitrator's decision shall be final and binding on both parties;</li>
+            <li>(e) Judgment on the arbitration award may be entered in any court of competent jurisdiction.</li>
+        </ul>
+
+        <div class="warning-box">
+            <p><strong>18.4 Class Action Waiver:</strong> TO THE FULLEST EXTENT PERMITTED BY LAW, YOU AGREE THAT ANY PROCEEDINGS, WHETHER IN ARBITRATION OR COURT, WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION. YOU WAIVE ANY RIGHT TO PARTICIPATE IN CLASS ACTIONS OR CLASS ARBITRATIONS.</p>
+        </div>
+
+        <p><strong>18.5 Exceptions to Arbitration:</strong> Notwithstanding the foregoing, either party may bring an action in court:</p>
+        <ul>
+            <li>(a) For injunctive or other equitable relief to prevent irreparable harm;</li>
+            <li>(b) For claims related to intellectual property rights;</li>
+            <li>(c) For claims that are not subject to arbitration under Applicable Law.</li>
+        </ul>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 19                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec19">19. Governing Law and Jurisdiction</h2>
+
+        <p><strong>19.1</strong> These Terms shall be governed by and construed in accordance with the laws of Ontario, Canada, without regard to its conflict of law principles.</p>
+
+        <p><strong>19.2</strong> Subject to the arbitration provisions in Section 18, any disputes not resolved through arbitration shall be subject to the exclusive jurisdiction of the courts of Thunder Bay, Canada.</p>
+
+        <p><strong>19.3</strong> You waive any objection to the venue or jurisdiction of such courts on the grounds of forum non conveniens or any similar grounds.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 20                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec20">20. Force Majeure</h2>
+
+        <p><strong>20.1</strong> We shall not be liable for any failure or delay in performing our obligations under these Terms where such failure or delay results from any cause beyond our reasonable control, including but not limited to:</p>
+        <ul>
+            <li>(a) Acts of God, natural disasters, pandemics, or epidemics;</li>
+            <li>(b) War, terrorism, riots, embargoes, or civil unrest;</li>
+            <li>(c) Government actions, laws, regulations, or orders;</li>
+            <li>(d) Blockchain network failures, forks, or consensus attacks;</li>
+            <li>(e) Cyberattacks, hacking, or security breaches affecting third-party infrastructure;</li>
+            <li>(f) Failure of internet service providers, telecommunications networks, or power supplies;</li>
+            <li>(g) Strikes, labor disputes, or shortages of labor or materials.</li>
+        </ul>
+
+        <p><strong>20.2</strong> During a Force Majeure event, our obligations under these Terms shall be suspended for the duration of the event. We will use reasonable efforts to resume performance as soon as practicable.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 21                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec21">21. Amendments to Terms</h2>
+
+        <p><strong>21.1</strong> We reserve the right to amend, modify, or update these Terms at any time in our sole discretion.</p>
+
+        <p><strong>21.2</strong> Material changes to these Terms will be communicated to You via:</p>
+        <ul>
+            <li>(a) Email notification to Your registered email address;</li>
+            <li>(b) In-app notification or pop-up alert;</li>
+            <li>(c) Publication on the Platform with a prominent notice.</li>
+        </ul>
+
+        <p><strong>21.3</strong> Changes will become effective 14 (fourteen) days after notification, or immediately for changes required by law or for security reasons.</p>
+
+        <p><strong>21.4</strong> Your continued use of the Services after the effective date of any changes constitutes acceptance of the revised Terms.</p>
+
+        <p><strong>21.5</strong> If You do not agree to the revised Terms, You must cease using the Services and close Your Account before the changes take effect.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 22                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec22">22. Severability</h2>
+
+        <p><strong>22.1</strong> If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, or if modification is not possible, severed from these Terms.</p>
+
+        <p><strong>22.2</strong> The invalidity, illegality, or unenforceability of any provision shall not affect the validity and enforceability of the remaining provisions, which shall continue in full force and effect.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 23                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec23">23. Entire Agreement</h2>
+
+        <p><strong>23.1</strong> These Terms, together with the Privacy Policy, Fee Schedule, Risk Disclosure Statement, and any other Platform Policies, constitute the entire agreement between You and Trex Wallet regarding the Services and supersede all prior agreements, understandings, and communications, whether written or oral.</p>
+
+        <p><strong>23.2</strong> No waiver of any provision of these Terms shall be effective unless in writing and signed by the party against whom the waiver is sought to be enforced.</p>
+
+        <p><strong>23.3</strong> No failure or delay by either party in exercising any right under these Terms shall operate as a waiver of such right.</p>
+
+        <p><strong>23.4</strong> You may not assign or transfer these Terms or any rights or obligations hereunder without our prior written consent. We may assign these Terms without restriction.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 24                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="sec24">24. Contact Information</h2>
+
+        <p><strong>24.1</strong> For general inquiries, support, and account-related questions:</p>
+        <ul>
+            <li><strong>Email:</strong> Trexwalletcomp00@gmail.com</li>
+        </ul>
+
+        <p><strong>24.2</strong> For legal and compliance matters:</p>
+        <ul>
+            <li><strong>Email:</strong> Trexwalletcomp00@gmail.com</li>
+        </ul>
+
+        <p><strong>24.3</strong> For security incidents and vulnerability reports:</p>
+        <ul>
+            <li><strong>Email:</strong> Trexwalletcomp00@gmail.com</li>
+        </ul>
+
+        <p><strong>24.4</strong> For dispute resolution:</p>
+        <ul>
+            <li><strong>Email:</strong> Trexwalletcomp00@gmail.com</li>
+        </ul>
+
+        <p><strong>24.5</strong> Mailing Address:</p>
+        <ul>
+            <li>Trex Wallet Global Ltd.</li>
+            <li>135 Algoma St</li>
+            <li>Thunder Bay, P7A 4T3</li>
+            <li>Canada</li>
+        </ul>
+
+        <p><strong>24.6</strong> We will endeavor to respond to all inquiries within 2 (two) Business Days.</p>
+
+        <!-- ============================================================ -->
+        <!-- ACKNOWLEDGMENT                                                 -->
+        <!-- ============================================================ -->
+        <h2 id="acknowledgment">Acknowledgment and Consent</h2>
+
+        <div class="warning-box">
+            <p><strong>BY CREATING AN ACCOUNT, ACCESSING THE PLATFORM, OR USING ANY PART OF THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE IN THEIR ENTIRETY. YOU FURTHER ACKNOWLEDGE THAT YOU UNDERSTAND THE RISKS ASSOCIATED WITH DIGITAL ASSETS AND VOLUNTARILY ASSUME ALL SUCH RISKS.</strong></p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- APPENDICES                                                     -->
+        <!-- ============================================================ -->
+        <h2 id="appendices">Appendices</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Appendix</th><th>Title</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>APPENDIX A</strong></td><td>Fee Schedule — [Reference to separate Fee Schedule document]</td></tr>
+                    <tr><td><strong>APPENDIX B</strong></td><td>Risk Disclosure Statement — [Reference to separate Risk Disclosure document]</td></tr>
+                    <tr><td><strong>APPENDIX C</strong></td><td>Prohibited Jurisdictions List — [Reference to updated list of restricted jurisdictions]</td></tr>
+                    <tr><td><strong>APPENDIX D</strong></td><td>Supported Digital Assets — [Reference to list of supported cryptocurrencies and tokens]</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER                                                         -->
+        <!-- ============================================================ -->
+        <div class="footer-end">
+            <hr class="divider" />
+            <div style="font-size:1.2rem; font-weight:700; letter-spacing:0.5px; color:#111827;">— END OF TERMS —</div>
+            <div style="margin-top:10px;">
+                <strong>Trex Wallet Global Ltd.</strong>
+            </div>
+            <div style="margin-top:6px; font-size:0.8rem; color:#6b7280;">
+                Copyright © 2026 Trex Wallet. All Rights Reserved.
+            </div>
+        </div>
+
+    </div>
+    <!-- end document-wrapper -->
+
+</body>
+  </html>
