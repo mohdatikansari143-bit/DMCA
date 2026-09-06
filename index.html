@@ -13,389 +13,187 @@
             padding: 0;
         }
 
-        /* ─── BODY & WRAPPER ─── */
         body {
-            background: #ffffff; /* White Background */
-            color: #1f2937; /* Standard Dark Gray/Black Text */
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-size: 16px;
+            background-color: #ffffff;
+            color: #111111;
+            /* Thin, elegant legal serif font stack with slight zoom (14px) */
+            font-family: "Times New Roman", Times, Georgia, serif;
+            font-size: 14px;
             line-height: 1.65;
-            padding: 40px 20px;
+            padding: 60px 40px;
             display: flex;
             justify-content: center;
         }
 
-        .document-wrapper {
-            max-width: 1100px;
+        .document-container {
+            max-width: 820px;
             width: 100%;
-            background: #ffffff;
-            border-radius: 28px;
-            padding: 50px 55px;
-            border: 1px solid #e5e7eb; /* Standard clean light border */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            transition: all 0.2s ease;
         }
 
-        /* ─── all text bold (As per original design) ─── */
-        body, .document-wrapper, p, li, td, th, div, span, h1, h2, h3, h4, h5, h6, pre, .note-box, .warning-box, .header-center, .footer-end {
-            font-weight: 600;
-        }
-
-        /* headings even bolder */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            color: #111827; /* Dark Gray / Black */
-            margin-top: 1.8em;
-            margin-bottom: 0.5em;
+        /* ---- Headings ---- */
+        h1, h2, h3, h4 {
+            font-weight: bold;
+            color: #000000;
+            margin-top: 0;
         }
 
         h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            text-align: center;
-            letter-spacing: -0.02em;
-            margin-top: 0;
-            margin-bottom: 0.2em;
+            font-size: 20px;
+            margin-bottom: 6px;
+            text-align: left;
+            letter-spacing: -0.2px;
+        }
+
+        .meta-subtitle {
+            font-size: 11.5px;
+            color: #555555;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #bbbbbb;
+            padding-bottom: 12px;
         }
 
         h2 {
-            font-size: 1.55rem;
-            font-weight: 700;
-            border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 0.35em;
-            margin-top: 2.2em;
+            font-size: 15px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px dotted #cccccc;
+            padding-bottom: 4px;
         }
 
         h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-top: 1.6em;
-            color: #1f2937;
+            font-size: 14px;
+            margin-top: 25px;
+            margin-bottom: 8px;
         }
 
         h4 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            margin-top: 1.4em;
-            color: #374151;
+            font-size: 13.5px;
+            margin-top: 15px;
+            margin-bottom: 6px;
         }
 
         p {
-            margin-bottom: 0.9em;
-            color: #374151;
-            font-weight: 600;
-        }
-
-        a {
-            color: #2563eb; /* Standard Blue Link */
-            text-decoration: none;
-            font-weight: 600;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #1d4ed8;
-        }
-
-        /* ─── header / logo area ─── */
-        .header-center {
-            text-align: center;
-            margin-bottom: 2.2em;
-            border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 1.8em;
-        }
-
-        .logo-placeholder {
-            display: inline-block;
-            background: #f3f4f6; 
-            color: #111827;      
-            font-weight: 700;
-            font-size: 1.6rem;
-            letter-spacing: 2px;
-            padding: 10px 28px;
-            border-radius: 60px;
             margin-bottom: 14px;
-            border: 1px solid #e5e7eb;
+            text-align: justify;
+            text-justify: inter-word;
         }
 
-        .header-center .subhead {
-            font-size: 0.95rem;
-            color: #4b5563;
-            letter-spacing: 0.02em;
-            margin-top: 4px;
-            font-weight: 600;
-        }
-
-        .header-center .version-meta {
-            font-size: 0.85rem;
-            color: #4b5563;
-            margin-top: 8px;
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            flex-wrap: wrap;
-            font-weight: 600;
-        }
-
-        /* ─── tables ─── */
-        .table-wrap {
-            overflow-x: auto;
-            margin: 1.4em 0 1.8em;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            background: #ffffff;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.92rem;
-            min-width: 540px;
-        }
-
-        th, td {
-            padding: 12px 16px;
-            text-align: left;
-            border-bottom: 1px solid #f3f4f6;
-            vertical-align: top;
-            font-weight: 600;
-        }
-
-        th {
-            background: #f9fafb;
-            font-weight: 700;
-            color: #111827;
-            letter-spacing: 0.02em;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-        }
-
-        td {
-            color: #374151;
-        }
-
-        .table-wrap tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* ─── code / pre blocks ─── */
-        pre {
-            background: #f9fafb;
-            border-radius: 14px;
-            padding: 18px 22px;
-            font-family: 'JetBrains Mono', 'Fira Code', monospace;
-            font-size: 0.82rem;
-            line-height: 1.5;
-            color: #1f2937;
-            border: 1px solid #e5e7eb;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            word-break: break-word;
-            margin: 1.2em 0;
-            font-weight: 600;
-        }
-
-        /* ─── lists ─── */
+        /* Clean list styling */
         ul, ol {
-            padding-left: 1.6em;
-            margin-bottom: 1em;
-            color: #374151;
-            font-weight: 600;
+            padding-left: 20px;
+            margin-bottom: 18px;
         }
+        
         li {
-            margin-bottom: 0.25em;
-            font-weight: 600;
+            margin-bottom: 8px;
+            text-align: justify;
         }
 
-        /* ─── blockquotes / notes ─── */
-        .note-box {
-            background: #f3f4f6;
-            border-left: 4px solid #2563eb;
-            padding: 16px 22px;
-            border-radius: 10px;
-            margin: 1.4em 0;
-            color: #374151;
-            font-weight: 600;
-        }
-
-        .note-box strong {
-            color: #111827;
-            font-weight: 700;
-        }
-
-        .warning-box {
-            background: #fef2f2;
-            border-left: 4px solid #ef4444;
-            padding: 16px 22px;
-            border-radius: 10px;
-            margin: 1.4em 0;
-            color: #991b1b;
-            font-weight: 600;
-        }
-
-        .warning-box strong {
-            color: #7f1d1d;
-            font-weight: 700;
-        }
-
-        /* ─── check list ─── */
-        .checklist {
-            list-style: none;
+        .toc-list {
+            list-style-type: none;
             padding-left: 0;
         }
-        .checklist li {
-            padding: 4px 0 4px 28px;
-            position: relative;
-            font-weight: 600;
-        }
-        .checklist li::before {
-            content: "☐";
-            position: absolute;
-            left: 0;
-            color: #6b7280;
-            font-size: 1.1rem;
+
+        .toc-list li {
+            margin-bottom: 6px;
         }
 
-        /* ─── horizontal rule ─── */
-        hr {
+        /* Yellow Highlighter Marker */
+        mark {
+            background-color: #ffff00;
+            color: #000000;
+            padding: 0 1px;
+        }
+
+        /* No blue color on links - standard dark underline */
+        a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #333333;
+        }
+
+        /* Indented clauses and plain code blocks */
+        .clause-text {
+            padding-left: 15px;
+            text-align: justify;
+        }
+
+        pre {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            background: none;
             border: none;
-            border-top: 1px solid #e5e7eb;
-            margin: 2.2em 0;
+            padding: 15px 0;
+            white-space: pre-wrap;
+            word-break: break-all;
+            color: #222222;
         }
 
-        /* ─── footer ─── */
-        .footer-end {
-            text-align: center;
-            margin-top: 3em;
-            padding-top: 2em;
-            border-top: 1px solid #e5e7eb;
-            font-size: 0.9rem;
-            color: #4b5563;
-            font-weight: 600;
+        /* Warning & Note layout - purely written, no heavy color cards */
+        .written-note {
+            border-left: 2px solid #000000;
+            padding-left: 15px;
+            margin: 20px 0;
+            font-style: italic;
         }
 
-        .footer-end strong {
-            color: #111827;
-            font-weight: 700;
+        .divider {
+            border: none;
+            border-top: 1px solid #cccccc;
+            margin: 50px 0 25px 0;
         }
 
-        /* ─── responsive ─── */
-        @media (max-width: 700px) {
-            body {
-                padding: 16px 10px;
-            }
-            .document-wrapper {
-                padding: 24px 18px;
-                border-radius: 18px;
-            }
-            h1 {
-                font-size: 1.6rem;
-            }
-            h2 {
-                font-size: 1.25rem;
-            }
-            .header-center .version-meta {
-                flex-direction: column;
-                gap: 4px;
-            }
-            pre {
-                font-size: 0.72rem;
-                padding: 14px 16px;
-            }
-            table {
-                font-size: 0.82rem;
-                min-width: 400px;
-            }
-            th, td {
-                padding: 8px 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .document-wrapper {
-                padding: 16px 12px;
-            }
-            table {
-                font-size: 0.75rem;
-                min-width: 300px;
-            }
-            th, td {
-                padding: 6px 8px;
-            }
-        }
-
-        /* ─── scrollbar ─── */
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #ffffff;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #d1d5db;
-            border-radius: 8px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #9ca3af;
+        .doc-footer {
+            font-size: 12px;
+            color: #555555;
+            margin-top: 20px;
+            text-align: left;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
-    <!-- ============================================================ -->
-    <!--  DOCUMENT WRAPPER                                             -->
-    <!-- ============================================================ -->
-    <div class="document-wrapper">
+    <div class="document-container">
 
-        <!-- ============================================================ -->
-        <!-- HEADER (Logo area)                                             -->
-        <!-- ============================================================ -->
-        <div class="header-center">
-            <div class="logo-placeholder">TREX WALLET</div>
-            <h1>Legal Framework &amp; Service Agreement</h1>
-            <div style="font-size:1.1rem; color:#4b5563; margin-top:2px; font-weight:600;">Professional Digital Asset Wallet, Conversion &amp; Exchange Platform</div>
-            <div class="version-meta">
-                <span><strong>Document Version:</strong> 2.0</span>
-                <span><strong>Effective Date:</strong> August 2026</span>
-                <span><strong>Classification:</strong> Public Legal Document</span>
-                <span><strong>Jurisdiction:</strong> Global Operations</span>
-            </div>
+        <!-- HEADER -->
+        <h1>TREX WALLET — COMPREHENSIVE LEGAL FRAMEWORK &amp; SERVICE AGREEMENT</h1>
+        <div class="meta-subtitle">
+            Document Version: 2.0 | Effective Date: August 2026 | Classification: Public Legal Document | Jurisdiction: Global Operations
         </div>
 
         <!-- ============================================================ -->
-        <!-- TABLE OF CONTENTS                                              -->
+        <!-- TABLE OF CONTENTS (EXPANDED TO CLEAN LIST)                   -->
         <!-- ============================================================ -->
         <h2>📋 Table of Contents</h2>
-        <div class="table-wrap">
-            <table>
-                <thead>
-                    <tr><th>Section</th><th>Title</th><th>Page</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td><a href="#sec1">Definitions &amp; Interpretations</a></td><td>—</td></tr>
-                    <tr><td>2</td><td><a href="#sec2">Platform Overview &amp; Scope</a></td><td>—</td></tr>
-                    <tr><td>3</td><td><a href="#sec3">Account Registration &amp; KYC Protocol</a></td><td>—</td></tr>
-                    <tr><td>4</td><td><a href="#sec4">Wallet Services &amp; Custody</a></td><td>—</td></tr>
-                    <tr><td>5</td><td><a href="#sec5">Trex Coin → USDT Conversion Engine</a></td><td>—</td></tr>
-                    <tr><td>6</td><td><a href="#sec6">Exchange &amp; Liquidity Services</a></td><td>—</td></tr>
-                    <tr><td>7</td><td><a href="#sec7">Fee Structure &amp; Pricing</a></td><td>—</td></tr>
-                    <tr><td>8</td><td><a href="#sec8">User Obligations &amp; Prohibited Conduct</a></td><td>—</td></tr>
-                    <tr><td>9</td><td><a href="#sec9">Risk Disclosure Statement</a></td><td>—</td></tr>
-                    <tr><td>10</td><td><a href="#sec10">AML, CFT &amp; Regulatory Compliance</a></td><td>—</td></tr>
-                    <tr><td>11</td><td><a href="#sec11">Data Protection &amp; Privacy</a></td><td>—</td></tr>
-                    <tr><td>12</td><td><a href="#sec12">Security Architecture</a></td><td>—</td></tr>
-                    <tr><td>13</td><td><a href="#sec13">Intellectual Property Rights</a></td><td>—</td></tr>
-                    <tr><td>14</td><td><a href="#sec14">Liability, Indemnity &amp; Disclaimers</a></td><td>—</td></tr>
-                    <tr><td>15</td><td><a href="#sec15">Suspension, Termination &amp; Account Closure</a></td><td>—</td></tr>
-                    <tr><td>16</td><td><a href="#sec16">Dispute Resolution &amp; Arbitration</a></td><td>—</td></tr>
-                    <tr><td>17</td><td><a href="#sec17">Governing Law &amp; Force Majeure</a></td><td>—</td></tr>
-                    <tr><td>18</td><td><a href="#sec18">Amendments &amp; Updates</a></td><td>—</td></tr>
-                    <tr><td>19</td><td><a href="#sec19">Contact &amp; Legal Notices</a></td><td>—</td></tr>
-                    <tr><td>20</td><td><a href="#sec20">User Acceptance &amp; Digital Signature</a></td><td>—</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <ul class="toc-list">
+            <li>1. <a href="#sec1">Definitions &amp; Interpretations</a></li>
+            <li>2. <a href="#sec2">Platform Overview &amp; Scope</a></li>
+            <li>3. <a href="#sec3">Account Registration &amp; KYC Protocol</a></li>
+            <li>4. <a href="#sec4">Wallet Services &amp; Custody</a></li>
+            <li>5. <a href="#sec5">Trex Coin ↔ USDT Conversion Engine</a></li>
+            <li>6. <a href="#sec6">Exchange &amp; Liquidity Services</a></li>
+            <li>7. <a href="#sec7">Fee Structure &amp; Pricing</a></li>
+            <li>8. <a href="#sec8">User Obligations &amp; Prohibited Conduct</a></li>
+            <li>9. <a href="#sec9">Risk Disclosure Statement</a></li>
+            <li>10. <a href="#sec10">AML, CFT &amp; Regulatory Compliance</a></li>
+            <li>11. <a href="#sec11">Data Protection &amp; Privacy</a></li>
+            <li>12. <a href="#sec12">Security Architecture</a></li>
+            <li>13. <a href="#sec13">Intellectual Property Rights</a></li>
+            <li>14. <a href="#sec14">Liability, Indemnity &amp; Disclaimers</a></li>
+            <li>15. <a href="#sec15">Suspension, Termination &amp; Account Closure</a></li>
+            <li>16. <a href="#sec16">Dispute Resolution &amp; Arbitration</a></li>
+            <li>17. <a href="#sec17">Governing Law &amp; Force Majeure</a></li>
+            <li>18. <a href="#sec18">Amendments &amp; Updates</a></li>
+            <li>19. <a href="#sec19">Contact &amp; Legal Notices</a></li>
+            <li>20. <a href="#sec20">User Acceptance &amp; Digital Signature</a></li>
+        </ul>
 
         <!-- ============================================================ -->
         <!-- SECTION 1                                                      -->
@@ -404,35 +202,29 @@
 
         <h3>1.1 Defined Terms</h3>
         <p>For the purposes of this Agreement, the following terms shall have the meanings set forth below:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Term</th><th>Definition</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>"Platform"</strong></td><td>The Trex Wallet digital ecosystem, including mobile applications, web interfaces, APIs, and all associated services.</td></tr>
-                    <tr><td><strong>"Trex Coin" / "TREX"</strong></td><td>The native utility token and digital asset native to the Trex Wallet ecosystem, operating on supported blockchain networks.</td></tr>
-                    <tr><td><strong>"USDT"</strong></td><td>Tether (USD Tether), a stablecoin digital asset pegged to the United States Dollar, supported for conversion and exchange within the Platform.</td></tr>
-                    <tr><td><strong>"User" / "You"</strong></td><td>Any natural person or legal entity that registers an account, accesses, or utilizes the Platform and its services.</td></tr>
-                    <tr><td><strong>"Wallet"</strong></td><td>The digital custodial storage facility provided by the Platform for holding, managing, and transacting supported digital assets.</td></tr>
-                    <tr><td><strong>"Conversion"</strong></td><td>The act of exchanging Trex Coin for USDT, or USDT for Trex Coin, at prevailing or platform-determined exchange rates.</td></tr>
-                    <tr><td><strong>"Exchange"</strong></td><td>The service enabling Users to trade, swap, transfer, or withdraw digital assets to external addresses, third-party platforms, or fiat on-ramp/off-ramp partners.</td></tr>
-                    <tr><td><strong>"KYC"</strong></td><td>Know Your Customer — the identity verification and due diligence process required for account activation and transaction authorization.</td></tr>
-                    <tr><td><strong>"AML"</strong></td><td>Anti-Money Laundering — policies, procedures, and controls designed to detect and prevent money laundering and illicit financial activities.</td></tr>
-                    <tr><td><strong>"CFT"</strong></td><td>Countering the Financing of Terrorism — measures to prevent the use of digital assets for terrorist financing.</td></tr>
-                    <tr><td><strong>"Blockchain"</strong></td><td>The distributed ledger technology underlying the digital assets supported on the Platform.</td></tr>
-                    <tr><td><strong>"Private Keys"</strong></td><td>Cryptographic codes that provide access to and control over digital assets; managed securely by the Platform under custodial arrangements.</td></tr>
-                    <tr><td><strong>"Transaction"</strong></td><td>Any operation involving deposit, withdrawal, conversion, exchange, or transfer of digital assets on the Platform.</td></tr>
-                    <tr><td><strong>"Service Fees"</strong></td><td>All charges, commissions, spreads, and network fees levied by the Platform for executing transactions and providing services.</td></tr>
-                    <tr><td><strong>"Force Majeure"</strong></td><td>Events beyond the reasonable control of either party, including but not limited to natural disasters, wars, acts of terrorism, government actions, regulatory changes, internet failures, and blockchain network disruptions.</td></tr>
-                    <tr><td><strong>"Business Day"</strong></td><td>Any day other than Saturday, Sunday, or a public holiday in the primary jurisdiction of Platform operations.</td></tr>
-                    <tr><td><strong>"Fiat"</strong></td><td>Government-issued currency, such as USD, EUR, GBP, or other sovereign currencies.</td></tr>
-                    <tr><td><strong>"Gas Fee"</strong></td><td>The transaction fee required to process operations on a blockchain network, paid to network validators or miners.</td></tr>
-                    <tr><td><strong>"Slippage"</strong></td><td>The difference between the expected price of a conversion/exchange and the actual executed price, typically occurring in volatile or low-liquidity markets.</td></tr>
-                    <tr><td><strong>"Cold Storage"</strong></td><td>Offline storage of digital assets using hardware security modules (HSMs) and air-gapped systems to prevent unauthorized access.</td></tr>
-                    <tr><td><strong>"MFA"</strong></td><td>Multi-Factor Authentication — a security mechanism requiring two or more verification factors to access an account.</td></tr>
-                    <tr><td><strong>"Sanctions List"</strong></td><td>Any list of prohibited persons, entities, or jurisdictions maintained by the United Nations, OFAC, EU, HMT, or other applicable regulatory authorities.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        
+        <p class="clause-text"><strong>Platform:</strong> The Trex Wallet digital ecosystem, including mobile applications, web interfaces, APIs, and all associated services.</p>
+        <p class="clause-text"><strong>Trex Coin / TREX:</strong> The native utility token and digital asset native to the Trex Wallet ecosystem, operating on supported blockchain networks.</p>
+        <p class="clause-text"><strong>USDT:</strong> Tether (USD Tether), a stablecoin digital asset pegged to the United States Dollar, supported for conversion and exchange within the Platform.</p>
+        <p class="clause-text"><strong>User / You:</strong> Any natural person or legal entity that registers an account, accesses, or utilizes the Platform and its services.</p>
+        <p class="clause-text"><strong>Wallet:</strong> The digital custodial storage facility provided by the Platform for holding, managing, and transacting supported digital assets.</p>
+        <p class="clause-text"><strong>Conversion:</strong> The act of exchanging Trex Coin for USDT, or USDT for Trex Coin, at prevailing or platform-determined exchange rates.</p>
+        <p class="clause-text"><strong>Exchange:</strong> The service enabling Users to trade, swap, transfer, or withdraw digital assets to external addresses, third-party platforms, or fiat on-ramp/off-ramp partners.</p>
+        <p class="clause-text"><strong>KYC:</strong> Know Your Customer — the identity verification and due diligence process required for account activation and transaction authorization.</p>
+        <p class="clause-text"><strong>AML:</strong> Anti-Money Laundering — policies, procedures, and controls designed to detect and prevent money laundering and illicit financial activities.</p>
+        <p class="clause-text"><strong>CFT:</strong> Countering the Financing of Terrorism — measures to prevent the use of digital assets for terrorist financing.</p>
+        <p class="clause-text"><strong>Blockchain:</strong> The distributed ledger technology underlying the digital assets supported on the Platform.</p>
+        <p class="clause-text"><strong>Private Keys:</strong> Cryptographic codes that provide access to and control over digital assets; managed securely by the Platform under custodial arrangements.</p>
+        <p class="clause-text"><strong>Transaction:</strong> Any operation involving deposit, withdrawal, conversion, exchange, or transfer of digital assets on the Platform.</p>
+        <p class="clause-text"><strong>Service Fees:</strong> All charges, commissions, spreads, and network fees levied by the Platform for executing transactions and providing services.</p>
+        <p class="clause-text"><strong>Force Majeure:</strong> Events beyond the reasonable control of either party, including but not limited to natural disasters, wars, acts of terrorism, government actions, regulatory changes, internet failures, and blockchain network disruptions.</p>
+        <p class="clause-text"><strong>Business Day:</strong> Any day other than Saturday, Sunday, or a public holiday in the primary jurisdiction of Platform operations.</p>
+        <p class="clause-text"><strong>Fiat:</strong> Government-issued currency, such as USD, EUR, GBP, or other sovereign currencies.</p>
+        <p class="clause-text"><strong>Gas Fee:</strong> The transaction fee required to process operations on a blockchain network, paid to network validators or miners.</p>
+        <p class="clause-text"><strong>Slippage:</strong> The difference between the expected price of a conversion/exchange and the actual executed price, typically occurring in volatile or low-liquidity markets.</p>
+        <p class="clause-text"><strong>Cold Storage:</strong> Offline storage of digital assets using hardware security modules (HSMs) and air-gapped systems to prevent unauthorized access.</p>
+        <p class="clause-text"><strong>MFA:</strong> Multi-Factor Authentication — a security mechanism requiring two or more verification factors to access an account.</p>
+        <p class="clause-text"><strong>Sanctions List:</strong> Any list of prohibited persons, entities, or jurisdictions maintained by the United Nations, OFAC, EU, HMT, or other applicable regulatory authorities.</p>
 
         <h3>1.2 Interpretation</h3>
         <ul>
@@ -448,41 +240,27 @@
         <h2 id="sec2">2. Platform Overview &amp; Scope</h2>
 
         <h3>2.1 Service Description</h3>
-        <p>Trex Wallet is a professional-grade digital asset platform providing the following core services:</p>
+        <p>Trex Wallet is a professional-grade digital asset platform providing structured services that span secure wallet custody, real-time conversions, and global exchange integrations.</p>
 
-        <pre>┌─────────────────────────────────────────────────────────────────────────────┐
-            │                         TREX WALLET SERVICE MAP                             │
-            ├─────────────────────────────────────────────────────────────────────────────┤
-            │                                                                             │
-            │   ┌──────────────┐      ┌──────────────┐      ┌──────────────┐            │
-            │   │   WALLET     │ ───▶ │  CONVERSION  │ ───▶ │   EXCHANGE   │            │
-            │   │   SERVICES   │      │   TREX↔USDT  │      │   SERVICES   │            │
-            │   └──────────────┘      └──────────────┘      └──────────────┘            │
-            │          │                     │                     │                     │
-            │          ▼                     ▼                     ▼                     │
-            │   ┌──────────────┐      ┌──────────────┐      ┌──────────────┐            │
-            │   │   Deposit    │      │   Rate Lock  │      │   External   │            │
-            │   │  Withdrawal  │      │   Execution  │      │  Withdrawal  │            │
-            │   │   Storage    │      │   Settlement │      │   Transfer   │            │
-            │   └──────────────┘      └──────────────┘      └──────────────┘            │
-            │                                                                             │
-            └─────────────────────────────────────────────────────────────────────────────┘</pre>
+        <pre>
+-----------------------------------------------------------------------------
+                        TREX WALLET SERVICE MAP
+-----------------------------------------------------------------------------
+   
+   WALLET SERVICES   =========>   CONVERSION TREX/USDT   =========>   EXCHANGE SERVICES
+   (Deposit/Storage)              (Rate Lock Execution)               (Withdrawals/Swaps)
+   
+-----------------------------------------------------------------------------
+        </pre>
 
-        <h3>2.2 Core Services</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Service Code</th><th>Service Name</th><th>Description</th><th>Status</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>SVC-001</strong></td><td>Digital Asset Wallet</td><td>Secure custodial storage and management of Trex Coin, USDT, and other supported digital assets.</td><td>✅ Active</td></tr>
-                    <tr><td><strong>SVC-002</strong></td><td>Trex Coin Conversion</td><td>Real-time conversion of Trex Coin (TREX) to Tether (USDT) and vice versa at platform-determined rates.</td><td>✅ Active</td></tr>
-                    <tr><td><strong>SVC-003</strong></td><td>Exchange Services</td><td>Facilitation of digital asset exchanges, including USDT withdrawals, cross-chain transfers, and third-party platform integrations.</td><td>✅ Active</td></tr>
-                    <tr><td><strong>SVC-004</strong></td><td>Transaction History</td><td>Comprehensive record-keeping of all conversions, exchanges, deposits, and withdrawals with export functionality.</td><td>✅ Active</td></tr>
-                    <tr><td><strong>SVC-005</strong></td><td>Security Services</td><td>Enterprise-grade encryption, multi-factor authentication (MFA), biometric verification, and cold storage protocols.</td><td>✅ Active</td></tr>
-                    <tr><td><strong>SVC-006</strong></td><td>Fiat On/Off-Ramp</td><td>Conversion between USDT and fiat currency via integrated banking partners (availability subject to jurisdiction).</td><td>🟡 Regional</td></tr>
-                    <tr><td><strong>SVC-007</strong></td><td>Staking &amp; Yield</td><td>Optional yield-generating services for supported assets (where available and legally permitted).</td><td>🟡 Coming Soon</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>2.2 Core Services List</h3>
+        <p class="clause-text"><strong>SVC-001 (Digital Asset Wallet):</strong> Secure custodial storage and management of Trex Coin, USDT, and other supported digital assets. (Status: Active)</p>
+        <p class="clause-text"><strong>SVC-002 (Trex Coin Conversion):</strong> Real-time conversion of Trex Coin (TREX) to Tether (USDT) and vice versa at platform-determined rates. (Status: Active)</p>
+        <p class="clause-text"><strong>SVC-003 (Exchange Services):</strong> Facilitation of digital asset exchanges, including USDT withdrawals, cross-chain transfers, and third-party platform integrations. (Status: Active)</p>
+        <p class="clause-text"><strong>SVC-004 (Transaction History):</strong> Comprehensive record-keeping of all conversions, exchanges, deposits, and withdrawals with export functionality. (Status: Active)</p>
+        <p class="clause-text"><strong>SVC-005 (Security Services):</strong> Enterprise-grade encryption, multi-factor authentication (MFA), biometric verification, and cold storage protocols. (Status: Active)</p>
+        <p class="clause-text"><strong>SVC-006 (Fiat On/Off-Ramp):</strong> Conversion between USDT and fiat currency via integrated banking partners (availability subject to jurisdiction). (Status: Regional)</p>
+        <p class="clause-text"><strong>SVC-007 (Staking &amp; Yield):</strong> Optional yield-generating services for supported assets (where available and legally permitted). (Status: Coming Soon)</p>
 
         <h3>2.3 Service Availability</h3>
         <ul>
@@ -499,7 +277,7 @@
             <li>The Platform aims to maintain <strong>99.9% uptime</strong> but does not guarantee uninterrupted access.</li>
         </ul>
 
-        <div class="note-box">
+        <div class="written-note">
             <strong>⚠️ IMPORTANT NOTICE:</strong> Trex Wallet does <strong>NOT</strong> provide investment, financial, tax, or legal advice. All conversion and exchange decisions are made <strong>solely by the User</strong>. The Platform does not recommend, endorse, or guarantee the value, performance, or suitability of any digital asset. Past performance of digital assets does not guarantee future results. Users should consult independent financial advisors before making investment decisions.
         </div>
 
@@ -510,73 +288,38 @@
 
         <h3>3.1 Eligibility Criteria</h3>
         <p>To register and use Trex Wallet, You must satisfy <strong>ALL</strong> of the following requirements:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>#</th><th>Eligibility Requirement</th><th>Status</th></tr></thead>
-                <tbody>
-                    <tr><td>3.1.1</td><td>Be at least <strong>18 years of age</strong> or the legal age of majority in Your jurisdiction.</td><td>Mandatory</td></tr>
-                    <tr><td>3.1.2</td><td>Not be a resident of a <strong>sanctioned, prohibited, or restricted jurisdiction</strong> as determined by applicable law.</td><td>Mandatory</td></tr>
-                    <tr><td>3.1.3</td><td>Not be listed on any <strong>sanctions list</strong> (UN, OFAC, EU, HMT, or other applicable authority).</td><td>Mandatory</td></tr>
-                    <tr><td>3.1.4</td><td>Provide <strong>accurate, complete, and truthful</strong> registration information.</td><td>Mandatory</td></tr>
-                    <tr><td>3.1.5</td><td>Possess the <strong>legal capacity</strong> to enter into binding agreements.</td><td>Mandatory</td></tr>
-                    <tr><td>3.1.6</td><td>Not have been previously <strong>banned, suspended, or terminated</strong> from the Platform.</td><td>Mandatory</td></tr>
-                    <tr><td>3.1.7</td><td>Use the Platform for <strong>lawful purposes only</strong> and not on behalf of a third party without authorization.</td><td>Mandatory</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>3.1.1:</strong> Be at least <strong>18 years of age</strong> or the legal age of majority in Your jurisdiction. (Status: Mandatory)</p>
+        <p class="clause-text"><strong>3.1.2:</strong> Not be a resident of a <strong>sanctioned, prohibited, or restricted jurisdiction</strong> as determined by applicable law. (Status: Mandatory)</p>
+        <p class="clause-text"><strong>3.1.3:</strong> Not be listed on any <strong>sanctions list</strong> (UN, OFAC, EU, HMT, or other applicable authority). (Status: Mandatory)</p>
+        <p class="clause-text"><strong>3.1.4:</strong> Provide <strong>accurate, complete, and truthful</strong> registration information. (Status: Mandatory)</p>
+        <p class="clause-text"><strong>3.1.5:</strong> Possess the <strong>legal capacity</strong> to enter into binding agreements. (Status: Mandatory)</p>
+        <p class="clause-text"><strong>3.1.6:</strong> Not have been previously <strong>banned, suspended, or terminated</strong> from the Platform. (Status: Mandatory)</p>
+        <p class="clause-text"><strong>3.1.7:</strong> Use the Platform for <strong>lawful purposes only</strong> and not on behalf of a third party without authorization. (Status: Mandatory)</p>
 
         <h3>3.2 Registration Process</h3>
-        <pre>┌─────────────────────────────────────────────────────────────────────────────┐
-            │                      ACCOUNT REGISTRATION FLOW                              │
-            ├─────────────────────────────────────────────────────────────────────────────┤
-            │                                                                             │
-            │  STEP 1              STEP 2              STEP 3              STEP 4        │
-            │  ┌─────┐            ┌─────┐            ┌─────┐            ┌─────┐         │
-            │  │Download│────────▶│Create │────────▶│ Verify│────────▶│Enable │         │
-            │  │  App   │          │Account│          │  KYC  │          │  MFA  │         │
-            │  └─────┘            └─────┘            └─────┘            └─────┘         │
-            │     │                  │                  │                  │              │
-            │     ▼                  ▼                  ▼                  ▼              │
-            │  • iOS/Android     • Email/Mobile      • Government ID    • Authenticator │
-            │  • Web Interface   • Strong Password   • Proof of Address • Biometric     │
-            │                    • Terms Acceptance   • Live Selfie      • Backup Codes  │
-            │                                                                             │
-            └─────────────────────────────────────────────────────────────────────────────┘</pre>
-
-        <p><strong>Detailed Steps:</strong></p>
-        <ol>
-            <li><strong>Download &amp; Access:</strong> Download the Trex Wallet mobile application (iOS/Android) or access the secure web interface.</li>
-            <li><strong>Account Creation:</strong> Create an account using a valid email address or mobile number. Set a strong, unique password meeting minimum complexity requirements.</li>
-            <li><strong>Enable MFA:</strong> Activate Multi-Factor Authentication using an authenticator app (Google Authenticator, Authy) or hardware security key.</li>
-            <li><strong>KYC Verification:</strong> Complete the Know Your Customer (KYC) verification process by submitting:
-                <ul>
-                    <li><strong>Government-issued photo identification</strong> (Passport, National ID Card, or Driver's License — must be valid and unexpired).</li>
-                    <li><strong>Proof of address</strong> (Utility bill, Bank statement, or Government correspondence — not older than 3 months).</li>
-                    <li><strong>Live selfie or liveness detection verification</strong> to prevent identity fraud.</li>
-                    <li><strong>Additional documentation</strong> as may be required by regulatory authorities or enhanced due diligence protocols.</li>
-                </ul>
-            </li>
-        </ol>
+        <pre>
+-----------------------------------------------------------------------------
+                        ACCOUNT REGISTRATION FLOW
+-----------------------------------------------------------------------------
+  STEP 1: Download App (iOS/Android) 
+  STEP 2: Create Account (Email/Mobile verification, set password)
+  STEP 3: Complete KYC (Upload valid Government Photo ID & proof of address)
+  STEP 4: Enable Security Protocols (MFA via Authenticator / Biometrics)
+-----------------------------------------------------------------------------
+        </pre>
 
         <h3>3.3 KYC Tiers &amp; Transaction Limits</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Tier</th><th>Verification Level</th><th>Daily Conversion Limit</th><th>Daily Exchange Limit</th><th>Monthly Limit</th><th>Features</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Tier 0</strong></td><td>Email/Mobile Registration Only</td><td><strong>0 USDT</strong></td><td><strong>0 USDT</strong></td><td><strong>0 USDT</strong></td><td>View-Only Mode — No Transactions Permitted</td></tr>
-                    <tr><td><strong>Tier 1</strong></td><td>Basic ID Verification</td><td><strong>1,000 USDT</strong></td><td><strong>500 USDT</strong></td><td><strong>15,000 USDT</strong></td><td>Basic Wallet, Conversion, Internal Transfers</td></tr>
-                    <tr><td><strong>Tier 2</strong></td><td>Full KYC + Address Verification</td><td><strong>10,000 USDT</strong></td><td><strong>5,000 USDT</strong></td><td><strong>150,000 USDT</strong></td><td>Full Conversion, Exchange, External Withdrawals</td></tr>
-                    <tr><td><strong>Tier 3</strong></td><td>Enhanced Due Diligence (EDD)</td><td><strong>100,000 USDT</strong></td><td><strong>50,000 USDT</strong></td><td><strong>1,500,000 USDT</strong></td><td>Institutional Features, OTC Desk, Priority Support</td></tr>
-                    <tr><td><strong>Tier 4</strong></td><td>Corporate/Institutional KYC</td><td><strong>Custom Limits</strong></td><td><strong>Custom Limits</strong></td><td><strong>Custom Limits</strong></td><td>API Access, White-Label Solutions, Dedicated Manager</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>Note:</strong> Limits are subject to change based on market conditions, regulatory requirements, and risk assessment. Tier upgrades require manual review and may take 1-5 Business Days.</p>
+        <p class="clause-text"><strong>Tier 0 (Email/Mobile Registration Only):</strong> Daily Conversion: 0 USDT | Daily Exchange: 0 USDT | Monthly Limit: 0 USDT. Features: View-Only Mode — No Transactions Permitted.</p>
+        <p class="clause-text"><strong>Tier 1 (Basic ID Verification):</strong> Daily Conversion: 1,000 USDT | Daily Exchange: 500 USDT | Monthly Limit: 15,000 USDT. Features: Basic Wallet, Conversion, Internal Transfers.</p>
+        <p class="clause-text"><strong>Tier 2 (Full KYC &amp; Address Verification):</strong> Daily Conversion: 10,000 USDT | Daily Exchange: 5,000 USDT | Monthly Limit: 150,000 USDT. Features: Full Conversion, Exchange, External Withdrawals.</p>
+        <p class="clause-text"><strong>Tier 3 (Enhanced Due Diligence - EDD):</strong> Daily Conversion: 100,000 USDT | Daily Exchange: 50,000 USDT | Monthly Limit: 1,500,000 USDT. Features: Institutional Features, OTC Desk, Priority Support.</p>
+        <p class="clause-text"><strong>Tier 4 (Corporate/Institutional KYC):</strong> Daily Conversion: Custom Limits | Daily Exchange: Custom Limits | Monthly Limit: Custom Limits. Features: API Access, White-Label Solutions, Dedicated Manager.</p>
+        <p class="clause-text"><em>Note: Limits are subject to change based on market conditions, regulatory requirements, and risk assessment. Tier upgrades require manual review and may take 1-5 Business Days.</em></p>
 
         <h3>3.4 Account Security Obligations</h3>
         <ul>
             <li>You are <strong>solely responsible</strong> for maintaining the confidentiality of Your login credentials, passwords, MFA codes, and recovery phrases.</li>
-            <li>You must <strong>immediately notify</strong> the Platform of any unauthorized access, security breach, or suspicious activity via Trexwalletcomp00@gmail.com.</li>
+            <li>You must <strong>immediately notify</strong> the Platform of any unauthorized access, security breach, or suspicious activity via <mark>Trexwalletcomp00@gmail.com</mark>.</li>
             <li>The Platform is <strong>not liable</strong> for losses arising from Your failure to secure Your account, including phishing, credential theft, or device compromise.</li>
             <li>You must log out from shared or public devices after each session.</li>
         </ul>
@@ -590,70 +333,33 @@
         <ul>
             <li>Upon successful registration and KYC verification, a digital Wallet will be provisioned for each supported asset.</li>
             <li>Each Wallet is associated with <strong>unique blockchain addresses</strong> generated using cryptographically secure random number generation.</li>
-            <li>The Platform employs a <strong>hybrid custody model</strong>:
-                <ul>
-                    <li><strong>Hot Wallets:</strong> Small percentage of assets for immediate liquidity and transaction processing.</li>
-                    <li><strong>Warm Wallets:</strong> Medium-security storage for operational reserves.</li>
-                    <li><strong>Cold Storage:</strong> Majority of assets stored in offline, air-gapped hardware security modules (HSMs) with multi-signature requirements.</li>
-                </ul>
-            </li>
+            <li>The Platform employs a <strong>hybrid custody model</strong> consisting of hot wallets for immediate transactions, warm reserves, and secure offline cold storage.</li>
         </ul>
 
         <h3>4.2 Supported Digital Assets</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Asset</th><th>Symbol</th><th>Supported Networks</th><th>Deposit</th><th>Withdrawal</th><th>Conversion</th><th>Exchange</th></tr></thead>
-                <tbody>
-                    <tr><td>Trex Coin</td><td><strong>TREX</strong></td><td>Native Chain, BEP-20, ERC-20</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>Tether</td><td><strong>USDT</strong></td><td>ERC-20, TRC-20, BEP-20, Polygon</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>Legend:</strong> ✅ Fully Supported &nbsp;|&nbsp; 🟡 Subject to Availability &nbsp;|&nbsp; ❌ Not Supported</p>
+        <p class="clause-text"><strong>Trex Coin (TREX):</strong> Supported on Native Chain, BEP-20, ERC-20. Operations: Deposit (Enabled), Withdrawal (Enabled), Conversion (Enabled), Exchange (Enabled).</p>
+        <p class="clause-text"><strong>Tether (USDT):</strong> Supported on ERC-20, TRC-20, BEP-20, Polygon. Operations: Deposit (Enabled), Withdrawal (Enabled), Conversion (Enabled), Exchange (Enabled).</p>
 
         <h3>4.3 Custodial Arrangement &amp; Key Management</h3>
         <ul>
             <li>Trex Wallet operates as a <strong>custodial wallet service</strong>.</li>
-            <li>Private keys are managed by the Platform using:
-                <ul>
-                    <li><strong>Multi-Party Computation (MPC)</strong> technology.</li>
-                    <li><strong>Hardware Security Modules (HSMs)</strong> certified to FIPS 140-2 Level 3 or higher.</li>
-                    <li><strong>Shamir's Secret Sharing</strong> for distributed key management.</li>
-                    <li><strong>Geographic distribution</strong> of key shards across secure data centers.</li>
-                </ul>
-            </li>
+            <li>Private keys are managed securely by the Platform using Multi-Party Computation (MPC) technology and Hardware Security Modules (HSMs) certified to FIPS 140-2 Level 3 standards.</li>
             <li>Users retain <strong>beneficial ownership</strong> of their digital assets subject to the terms of this Agreement.</li>
-            <li>The Platform does <strong>NOT</strong> provide Users with direct access to private keys or seed phrases.</li>
+            <li>The Platform does <strong>not</strong> provide Users with direct access to private keys or recovery seed phrases.</li>
         </ul>
 
         <h3>4.4 Deposit Protocol</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Parameter</th><th>Details</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Minimum Deposit</strong></td><td>No minimum for most assets; network-dependent for some.</td></tr>
-                    <tr><td><strong>Confirmations Required</strong></td><td>Varies by asset: TREX (12), USDT-ERC20 (12), USDT-TRC20 (19).</td></tr>
-                    <tr><td><strong>Deposit Address</strong></td><td>Unique per asset per user. Addresses do not expire but should be verified before each deposit.</td></tr>
-                    <tr><td><strong>Incorrect Deposits</strong></td><td>Deposits to incorrect addresses or unsupported networks may result in <strong>irreversible loss</strong>. The Platform will make reasonable efforts to recover such deposits but charges a recovery fee of <strong>100 USDT</strong> or <strong>5% of deposit value</strong>, whichever is higher.</td></tr>
-                    <tr><td><strong>Memo/Tag Requirements</strong></td><td>Certain networks require destination tags. Failure to include tags may result in lost funds.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>Minimum Deposit:</strong> No minimum limits for most assets; network-dependent on selected chains.</p>
+        <p class="clause-text"><strong>Confirmations Required:</strong> Varies by asset structure: TREX (12 confirmations), USDT-ERC20 (12 confirmations), USDT-TRC20 (19 confirmations).</p>
+        <p class="clause-text"><strong>Deposit Address:</strong> Unique per asset per user profile. Addresses do not expire but must be checked prior to each transaction.</p>
+        <p class="clause-text"><strong>Incorrect Deposits:</strong> Deposits to wrong addresses or unsupported networks will result in <mark>irreversible asset loss</mark>. The Platform charges an administrative recovery fee of <mark>100 USDT or 5% of deposit value</mark> (whichever is higher) for manual recovery attempts, though recovery remains unguaranteed.</p>
+        <p class="clause-text"><strong>Memo/Tag Requirements:</strong> Certain blockchain networks require destination tags. Failure to include tags may result in a permanent loss of funds.</p>
 
         <h3>4.5 Withdrawal Protocol</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Parameter</th><th>Details</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Withdrawal Request</strong></td><td>Submitted via the Platform interface, subject to security review.</td></tr>
-                    <tr><td><strong>Security Review</strong></td><td>All withdrawals undergo automated AML screening and may trigger manual review for large amounts or suspicious patterns.</td></tr>
-                    <tr><td><strong>Withdrawal Limits</strong></td><td>Determined by KYC tier, account age, and risk profile.</td></tr>
-                    <tr><td><strong>Processing Time</strong></td><td>Typically within minutes; may extend to 24-48 hours for large withdrawals or security holds.</td></tr>
-                    <tr><td><strong>Network Fees</strong></td><td>Deducted from withdrawal amount; displayed before confirmation.</td></tr>
-                    <tr><td><strong>Address Whitelisting</strong></td><td>Recommended for security. Whitelisted addresses bypass certain hold periods.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>Withdrawal Request:</strong> Submitted via the Platform interface, subject to automated compliance checks and security review.</p>
+        <p class="clause-text"><strong>Security Review:</strong> Withdrawals undergo automated AML screening and may trigger manual review for large amounts or suspicious patterns.</p>
+        <p class="clause-text"><strong>Limits and Processing:</strong> Limits are determined by active KYC tier. Transactions are typically processed within minutes but may extend to 24-48 hours for manual reviews.</p>
+        <p class="clause-text"><strong>Fees and Whitelisting:</strong> Network fees are deducted directly from the withdrawal amount and displayed prior to final confirmation. We highly recommend utilizing address whitelisting to bypass certain cooling holds.</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 5                                                      -->
@@ -662,7 +368,6 @@
 
         <h3>5.1 Conversion Mechanism</h3>
         <p>The Platform provides a seamless, real-time conversion service enabling Users to exchange Trex Coin (TREX) for Tether (USDT) and vice versa.</p>
-        <p><strong>Key Features:</strong></p>
         <ul>
             <li><strong>Real-Time Rates:</strong> Conversion rates are updated continuously based on market liquidity and platform algorithms.</li>
             <li><strong>Rate Lock:</strong> Upon User confirmation, the conversion rate is locked for <strong>30 seconds</strong> to prevent slippage during volatile market conditions.</li>
@@ -671,94 +376,44 @@
         </ul>
 
         <h3>5.2 Conversion Process Flow</h3>
-        <pre>┌─────────────────────────────────────────────────────────────────────────────┐
-            │                    TREX ↔ USDT CONVERSION FLOW                              │
-            ├─────────────────────────────────────────────────────────────────────────────┤
-            │                                                                             │
-            │   USER WALLET                    PLATFORM ENGINE                   USER WALLET│
-            │   (TREX Balance)                                                  (USDT Bal) │
-            │        │                              │                              │       │
-            │        │  1. Initiate Conversion      │                              │       │
-            │        │─────────────────────────────▶│                              │       │
-            │        │                              │                              │       │
-            │        │  2. Display Rate &amp; Fees      │                              │       │
-            │        │◀─────────────────────────────│                              │       │
-            │        │     Rate: 1 TREX = $0.025    │                              │       │
-            │        │     Fee: 1.0%                │                              │       │
-            │        │     Net: 24.75 USDT          │                              │       │
-            │        │                              │                              │       │
-            │        │  3. User Confirms + MFA      │                              │       │
-            │        │─────────────────────────────▶│                              │       │
-            │        │                              │                              │       │
-            │        │  4. Lock Rate (30s)          │                              │       │
-            │        │                              │ 5. Execute on Blockchain     │       │
-            │        │                              │─────────────────────────────▶│       │
-            │        │                              │                              │       │
-            │        │  6. Deduct TREX + Fees       │                              │       │
-            │        │◀─────────────────────────────│                              │       │
-            │        │                              │                              │       │
-            │        │                              │  7. Credit USDT              │       │
-            │        │                              │─────────────────────────────▶│       │
-            │        │                              │                              │       │
-            │        │  8. Confirmation + Tx Hash   │                              │       │
-            │        │◀─────────────────────────────│                              │       │
-            │                                                                             │
-            └─────────────────────────────────────────────────────────────────────────────┘</pre>
+        <pre>
+-----------------------------------------------------------------------------
+                    TREX -> USDT CONVERSION STEPS
+-----------------------------------------------------------------------------
+  1. User initiates conversion in dashboard.
+  2. Platform displays the current exchange rate, fee deduction, and net yield.
+  3. User confirms transaction and inputs MFA parameters.
+  4. Platform locks rate for 30 seconds and processes internal ledger states.
+  5. Balance is updated: TREX balance is deducted and USDT is credited instantly.
+-----------------------------------------------------------------------------
+        </pre>
 
-        <h3>5.3 Conversion Rate Determination</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Factor</th><th>Description</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Market Liquidity</strong></td><td>Rates are influenced by available liquidity in the Platform's internal pools and external market makers.</td></tr>
-                    <tr><td><strong>Platform Spread</strong></td><td>A spread of <strong>0.5% to 2.0%</strong> may be applied to the mid-market rate to cover operational costs and market risk.</td></tr>
-                    <tr><td><strong>Volatility Adjustment</strong></td><td>During periods of high volatility, additional spread or temporary suspension may be applied to protect Users and the Platform.</td></tr>
-                    <tr><td><strong>Rate Lock</strong></td><td>Once confirmed by the User, the rate is locked for 30 seconds. If execution fails within this window, the User must reconfirm at the updated rate.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>5.3 Conversion Rate Determination Factors</h3>
+        <p class="clause-text"><strong>Market Liquidity:</strong> Rates are influenced by available liquidity in the Platform's internal pools and external market makers.</p>
+        <p class="clause-text"><strong>Platform Spread:</strong> A spread of <strong>0.5% to 2.0%</strong> may be applied to the mid-market rate to cover operational costs and market risk.</p>
+        <p class="clause-text"><strong>Volatility Adjustment:</strong> During periods of high volatility, additional spread or temporary suspension may be applied to protect Users and the Platform.</p>
+        <p class="clause-text"><strong>Rate Lock:</strong> Once confirmed by the User, the rate is locked for 30 seconds. If execution fails within this window, the User must reconfirm at the updated rate.</p>
 
         <h3>5.4 Conversion Fee Schedule</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Fee Component</th><th>Rate / Amount</th><th>Description</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Platform Conversion Fee</strong></td><td><strong>0.5% – 2.0%</strong> per transaction</td><td>Deducted from the output amount. Rate varies by KYC tier, volume, and market conditions.</td></tr>
-                    <tr><td><strong>Network / Gas Fee</strong></td><td>Variable (market-dependent)</td><td>Blockchain network fee paid to validators/miners for transaction processing.</td></tr>
-                    <tr><td><strong>Minimum Fee</strong></td><td>Equivalent to <strong>1.00 USDT</strong></td><td>Applied if the calculated fee falls below this threshold.</td></tr>
-                    <tr><td><strong>Maximum Fee</strong></td><td>No maximum cap</td><td>For extremely large transactions, fees are calculated on a percentage basis without upper limit.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>Platform Conversion Fee:</strong> <strong>0.5% – 2.0%</strong> per transaction (Deducted from the output amount. Rate varies by KYC tier, volume, and market conditions).</p>
+        <p class="clause-text"><strong>Network / Gas Fee:</strong> Variable (market-dependent fee paid to validators/miners for transaction processing).</p>
+        <p class="clause-text"><strong>Minimum Fee:</strong> Equivalent to <strong>1.00 USDT</strong> (Applied if the calculated fee falls below this threshold).</p>
+        <p class="clause-text"><strong>Maximum Fee:</strong> No maximum cap (For extremely large transactions, fees are calculated on a percentage basis without upper limit).</p>
 
         <h3>5.5 Conversion Limits</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Limit Type</th><th>Value</th><th>Notes</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Minimum Conversion</strong></td><td><strong>10 USDT equivalent</strong> per transaction</td><td>Applies to both TREX→USDT and USDT→TREX.</td></tr>
-                    <tr><td><strong>Maximum Conversion (Tier 1)</strong></td><td>1,000 USDT per day</td><td>Subject to KYC tier.</td></tr>
-                    <tr><td><strong>Maximum Conversion (Tier 2)</strong></td><td>10,000 USDT per day</td><td>Subject to KYC tier.</td></tr>
-                    <tr><td><strong>Maximum Conversion (Tier 3)</strong></td><td>100,000 USDT per day</td><td>Subject to KYC tier and enhanced review.</td></tr>
-                    <tr><td><strong>Daily Reset</strong></td><td>00:00 UTC</td><td>All daily limits reset at midnight UTC.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>Minimum Conversion:</strong> <strong>10 USDT equivalent</strong> per transaction. (Applies to both TREX→USDT and USDT→TREX).</p>
+        <p class="clause-text"><strong>Maximum Conversion (Tier 1):</strong> 1,000 USDT per day.</p>
+        <p class="clause-text"><strong>Maximum Conversion (Tier 2):</strong> 10,000 USDT per day.</p>
+        <p class="clause-text"><strong>Maximum Conversion (Tier 3):</strong> 100,000 USDT per day.</p>
+        <p class="clause-text"><strong>Daily Reset:</strong> All daily limits reset at midnight 00:00 UTC.</p>
 
         <h3>5.6 Conversion Restrictions &amp; Holds</h3>
-        <p>The Platform reserves the right to <strong>reject, delay, or cancel</strong> any conversion for the following reasons:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Reason</th><th>Action</th><th>User Notification</th></tr></thead>
-                <tbody>
-                    <tr><td>Suspicious activity detected</td><td>Conversion blocked, account flagged</td><td>Immediate email + in-app alert</td></tr>
-                    <tr><td>Regulatory compliance requirement</td><td>Conversion held pending review</td><td>Within 24 hours</td></tr>
-                    <tr><td>Technical issues or market disruption</td><td>Temporary suspension of conversion service</td><td>In-app announcement</td></tr>
-                    <tr><td>Violation of this Agreement</td><td>Conversion cancelled, account restricted</td><td>Immediate notification</td></tr>
-                    <tr><td>Insufficient liquidity</td><td>Conversion rejected, User advised to retry</td><td>Immediate in-app message</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p>The Platform reserves the right to reject, delay, or cancel any conversion for the following reasons:</p>
+        <p class="clause-text"><strong>Suspicious Activity Flag:</strong> Conversion is blocked and the account flagged. (User Notification: Immediate email and in-app alert)</p>
+        <p class="clause-text"><strong>Compliance Hold:</strong> Conversion held pending verification reviews. (User Notification: Within 24 hours)</p>
+        <p class="clause-text"><strong>Technical Disruption:</strong> Temporary suspension due to feed or liquidity errors. (User Notification: In-app announcement)</p>
+        <p class="clause-text"><strong>Agreement Violation:</strong> Conversion cancelled and account features restricted. (User Notification: Immediate notification)</p>
+        <p class="clause-text"><strong>Insufficient Liquidity:</strong> Conversion rejected and user advised to retry. (User Notification: Immediate in-app message)</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 6                                                      -->
@@ -766,143 +421,87 @@
         <h2 id="sec6">6. Exchange &amp; Liquidity Services</h2>
 
         <h3>6.1 Exchange Overview</h3>
-        <p>Following the conversion of Trex Coin to USDT, Users may utilize the Exchange Services to:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Exchange Type</th><th>Description</th><th>Availability</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Internal Transfer</strong></td><td>Instant, fee-free transfer of USDT to other Trex Wallet users using username, email, or QR code.</td><td>✅ Global</td></tr>
-                    <tr><td><strong>External Withdrawal</strong></td><td>Withdraw USDT to external blockchain addresses (personal wallets, other exchanges).</td><td>✅ Global</td></tr>
-                    <tr><td><strong>Cross-Chain Swap</strong></td><td>Exchange USDT between different blockchain networks (e.g., ERC-20 ↔ TRC-20 ↔ BEP-20).</td><td>✅ Global</td></tr>
-                    <tr><td><strong>Fiat Off-Ramp</strong></td><td>Convert USDT to fiat currency and withdraw to a linked bank account.</td><td>🟡 Regional</td></tr>
-                    <tr><td><strong>Fiat On-Ramp</strong></td><td>Purchase USDT using fiat currency via integrated payment providers.</td><td>🟡 Regional</td></tr>
-                    <tr><td><strong>OTC Desk</strong></td><td>Large-volume over-the-counter trades for Tier 3+ users with personalized rates.</td><td>🟡 By Request</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p>Following the conversion of Trex Coin to USDT, Users may utilize the Exchange Services to perform the following operations:</p>
+        <p class="clause-text"><strong>Internal Transfer:</strong> Instant, fee-free transfer of USDT to other Trex Wallet users using username, email, or QR code. (Availability: Global)</p>
+        <p class="clause-text"><strong>External Withdrawal:</strong> Withdraw USDT to external blockchain addresses (personal wallets, other exchanges). (Availability: Global)</p>
+        <p class="clause-text"><strong>Cross-Chain Swap:</strong> Exchange USDT between different blockchain networks (e.g., ERC-20 ↔ TRC-20 ↔ BEP-20). (Availability: Global)</p>
+        <p class="clause-text"><strong>Fiat Off-Ramp:</strong> Convert USDT to fiat currency and withdraw to a linked bank account. (Availability: Regional)</p>
+        <p class="clause-text"><strong>Fiat On-Ramp:</strong> Purchase USDT using fiat currency via integrated payment providers. (Availability: Regional)</p>
+        <p class="clause-text"><strong>OTC Desk:</strong> Large-volume over-the-counter trades for Tier 3+ users with personalized rates. (Availability: By Request)</p>
 
-        <h3>6.2 External Exchange / Withdrawal Process</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Step</th><th>Action</th><th>Details</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Step 1</strong></td><td>Select "Exchange" or "Withdraw"</td><td>Navigate to the Exchange section in the Wallet interface.</td></tr>
-                    <tr><td><strong>Step 2</strong></td><td>Choose Asset &amp; Destination</td><td>Select USDT and enter the destination blockchain address or choose an integrated exchange partner.</td></tr>
-                    <tr><td><strong>Step 3</strong></td><td>Select Network</td><td>Choose the appropriate blockchain network (ERC-20, TRC-20, BEP-20, etc.). <strong>WARNING:</strong> Selecting the wrong network will result in permanent loss of funds.</td></tr>
-                    <tr><td><strong>Step 4</strong></td><td>Enter Amount</td><td>Input the amount to exchange/withdraw. The Platform displays the net amount after fees.</td></tr>
-                    <tr><td><strong>Step 5</strong></td><td>Security Verification</td><td>Confirm using MFA (authenticator code or biometric). Additional email confirmation may be required for large withdrawals.</td></tr>
-                    <tr><td><strong>Step 6</strong></td><td>Platform Processing</td><td>The Platform executes AML screening and processes the transaction.</td></tr>
-                    <tr><td><strong>Step 7</strong></td><td>Blockchain Confirmation</td><td>The transaction is broadcast to the blockchain network.</td></tr>
-                    <tr><td><strong>Step 8</strong></td><td>Confirmation</td><td>Transaction hash (TxID) and confirmation details are provided. Updated balances are reflected in the Wallet.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>6.2 External Exchange / Withdrawal Process Steps</h3>
+        <p class="clause-text"><strong>Step 1 (Select Action):</strong> Navigate to the Exchange section and select "Exchange" or "Withdraw".</p>
+        <p class="clause-text"><strong>Step 2 (Choose Destination):</strong> Select USDT and enter the destination address or select an integrated exchange partner.</p>
+        <p class="clause-text"><strong>Step 3 (Select Network):</strong> Choose the appropriate blockchain network standard (ERC-20, TRC-20, BEP-20). <mark>WARNING: Selecting the wrong network will result in permanent loss of funds</mark>.</p>
+        <p class="clause-text"><strong>Step 4 (Verification &amp; Finalize):</strong> Input amount, confirm net fees, verify using MFA, and complete the transaction. Platform broadcasts the transaction to the blockchain, and provides a TxID.</p>
 
         <h3>6.3 Exchange Fee Schedule</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Fee Type</th><th>Rate / Amount</th><th>Description</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Platform Exchange Fee</strong></td><td><strong>0.1% – 1.0%</strong> per transaction</td><td>Fee for executing the exchange/withdrawal. Rate varies by network, volume, and user tier.</td></tr>
-                    <tr><td><strong>Network / Gas Fee</strong></td><td>Variable</td><td>Blockchain network fee paid to miners/validators. Estimated before confirmation.</td></tr>
-                    <tr><td><strong>Third-Party Partner Fee</strong></td><td>As determined by partner</td><td>Fees charged by integrated fiat on-ramp/off-ramp providers or external exchange partners.</td></tr>
-                    <tr><td><strong>Cross-Chain Bridge Fee</strong></td><td><strong>0.2% – 0.5%</strong></td><td>Additional fee for cross-chain swaps, covering bridge protocol costs.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>Platform Exchange Fee:</strong> <strong>0.1% – 1.0%</strong> per transaction. (Fee for executing the exchange/withdrawal. Rate varies by network, volume, and user tier).</p>
+        <p class="clause-text"><strong>Network / Gas Fee:</strong> Variable based on blockchain congestion. (Estimated and displayed prior to confirmation).</p>
+        <p class="clause-text"><strong>Third-Party Partner Fee:</strong> As determined by the third-party partner. (Fees charged by integrated bank and fiat providers).</p>
+        <p class="clause-text"><strong>Cross-Chain Bridge Fee:</strong> <strong>0.2% – 0.5%</strong> (Additional fee for cross-chain swaps, covering bridge protocol costs).</p>
 
-        <h3>6.4 Processing Times</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Transaction Type</th><th>Estimated Time</th><th>Network Dependent</th><th>Notes</th></tr></thead>
-                <tbody>
-                    <tr><td>Internal Transfer (Trex Wallet → Trex Wallet)</td><td><strong>Instant</strong></td><td>No</td><td>Fee-free. Requires only username, email, or phone number.</td></tr>
-                    <tr><td>External Withdrawal (USDT-TRC20)</td><td><strong>2 – 10 minutes</strong></td><td>Yes</td><td>Fast and low-cost. Subject to network congestion.</td></tr>
-                    <tr><td>External Withdrawal (USDT-ERC20)</td><td><strong>5 – 30 minutes</strong></td><td>Yes</td><td>Subject to network gas prices and congestion.</td></tr>
-                    <tr><td>External Withdrawal (USDT-BEP20)</td><td><strong>3 – 15 minutes</strong></td><td>Yes</td><td>Subject to network conditions.</td></tr>
-                    <tr><td>Cross-Chain Swap</td><td><strong>5 – 20 minutes</strong></td><td>Yes</td><td>Depends on bridge protocol and destination network.</td></tr>
-                    <tr><td>Fiat Off-Ramp</td><td><strong>1 – 5 Business Days</strong></td><td>No</td><td>Subject to banking partner processing and compliance review.</td></tr>
-                    <tr><td>Fiat On-Ramp</td><td><strong>Instant – 2 hours</strong></td><td>No</td><td>Depends on payment method (card = instant, bank = slower).</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>6.4 Processing Times Overview</h3>
+        <p class="clause-text"><strong>Internal Transfer (Trex Wallet → Trex Wallet):</strong> Instant | Network Dependent: No | Notes: Fee-free. Requires username or email.</p>
+        <p class="clause-text"><strong>External Withdrawal (USDT-TRC20):</strong> 2 – 10 minutes | Network Dependent: Yes | Notes: Fast and low-cost. Subject to network speed.</p>
+        <p class="clause-text"><strong>External Withdrawal (USDT-ERC20):</strong> 5 – 30 minutes | Network Dependent: Yes | Notes: Subject to network gas prices and congestion.</p>
+        <p class="clause-text"><strong>External Withdrawal (USDT-BEP20):</strong> 3 – 15 minutes | Network Dependent: Yes | Notes: Subject to network conditions.</p>
+        <p class="clause-text"><strong>Cross-Chain Swap:</strong> 5 – 20 minutes | Network Dependent: Yes | Notes: Depends on bridge protocol and network conditions.</p>
+        <p class="clause-text"><strong>Fiat Off-Ramp:</strong> 1 – 5 Business Days | Network Dependent: No | Notes: Subject to banking partner processing and compliance reviews.</p>
+        <p class="clause-text"><strong>Fiat On-Ramp:</strong> Instant – 2 hours | Network Dependent: No | Notes: Depends on payment method (card = instant, bank = slower).</p>
 
         <h3>6.5 Exchange Restrictions</h3>
-        <p>The Platform may impose <strong>holds, limits, or restrictions</strong> on exchange transactions for:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Scenario</th><th>Hold Period</th><th>Action Required</th></tr></thead>
-                <tbody>
-                    <tr><td>New account (first 24-72 hours)</td><td>Up to 72 hours</td><td>Standard security cooling-off period.</td></tr>
-                    <tr><td>Large transaction (&gt; Tier daily limit)</td><td>24-48 hours</td><td>Enhanced due diligence and source of funds verification.</td></tr>
-                    <tr><td>AML flag triggered</td><td>Until cleared</td><td>Provide additional documentation; cooperate with compliance review.</td></tr>
-                    <tr><td>Address not whitelisted</td><td>24 hours</td><td>Add address to whitelist and wait for cooling period.</td></tr>
-                    <tr><td>Regulatory requirement</td><td>As required</td><td>Comply with specific regulatory directive or court order.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p>The Platform may impose holds, limits, or restrictions on exchange transactions for:</p>
+        <p class="clause-text"><strong>New Account Hold:</strong> Hold Period: Up to 72 hours. Action Required: Standard security cooling-off period.</p>
+        <p class="clause-text"><strong>Large Transaction Limit:</strong> Hold Period: 24-48 hours. Action Required: Enhanced due diligence and source of funds verification.</p>
+        <p class="clause-text"><strong>AML compliance trigger:</strong> Hold Period: Until cleared. Action Required: Provide additional source of funds documentation.</p>
+        <p class="clause-text"><strong>Address cooling:</strong> Hold Period: 24 hours. Action Required: Wait for the standard cooling-off period of newly added addresses.</p>
+        <p class="clause-text"><strong>Regulatory requirement:</strong> Hold Period: As required. Action Required: Comply with specific regulatory directive or court order.</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 7                                                      -->
         <!-- ============================================================ -->
         <h2 id="sec7">7. Fee Structure &amp; Pricing</h2>
 
-        <h3>7.1 Complete Fee Schedule</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Service</th><th>Fee</th><th>Minimum</th><th>Maximum</th><th>Notes</th></tr></thead>
-                <tbody>
-                    <tr><td>Account Registration</td><td><strong>Free</strong></td><td>—</td><td>—</td><td>One-time.</td></tr>
-                    <tr><td>Wallet Creation</td><td><strong>Free</strong></td><td>—</td><td>—</td><td>Per supported asset.</td></tr>
-                    <tr><td>Wallet Maintenance</td><td><strong>Free</strong></td><td>—</td><td>—</td><td>No monthly or annual fees.</td></tr>
-                    <tr><td>Deposit (Crypto)</td><td><strong>Free</strong></td><td>—</td><td>—</td><td>Network fees paid by sender.</td></tr>
-                    <tr><td>Deposit (Fiat)</td><td><strong>Free – 3.5%</strong></td><td>—</td><td>—</td><td>Depends on payment method and region.</td></tr>
-                    <tr><td><strong>Trex Coin → USDT Conversion</strong></td><td><strong>0.5% – 2.0%</strong></td><td>1.00 USDT</td><td>No cap</td><td>Deducted from output.</td></tr>
-                    <tr><td><strong>USDT → Trex Coin Conversion</strong></td><td><strong>0.5% – 2.0%</strong></td><td>1.00 USDT</td><td>No cap</td><td>Deducted from output.</td></tr>
-                    <tr><td>Internal Transfer</td><td><strong>Free</strong></td><td>—</td><td>—</td><td>Trex Wallet to Trex Wallet.</td></tr>
-                    <tr><td>External Withdrawal (Crypto)</td><td><strong>0.1% – 1.0%</strong> + Network Fee</td><td>Network fee minimum</td><td>Tier limit</td><td>Platform fee + blockchain gas.</td></tr>
-                    <tr><td>Cross-Chain Swap</td><td><strong>0.2% – 0.5%</strong> + Network Fees</td><td>2.00 USDT equiv.</td><td>Tier limit</td><td>Bridge protocol costs included.</td></tr>
-                    <tr><td>Fiat Off-Ramp</td><td><strong>1.0% – 3.0%</strong> + Partner fees</td><td>10 USD equivalent</td><td>Tier limit</td><td>Bank transfer fees may apply.</td></tr>
-                    <tr><td>Fiat On-Ramp</td><td><strong>1.0% – 4.5%</strong> + Partner fees</td><td>10 USD equivalent</td><td>Tier limit</td><td>Card processing fees may apply.</td></tr>
-                    <tr><td>Account Inactivity (&gt; 12 months)</td><td><strong>5 USDT/month</strong></td><td>5 USDT</td><td>50 USDT/month</td><td>Deducted from USDT balance. Waived if balance is zero.</td></tr>
-                    <tr><td>Recovery of Incorrect Deposit</td><td><strong>100 USDT or 5%</strong></td><td>100 USDT</td><td>—</td><td>Per recovery attempt. Not guaranteed.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>7.1 Complete Fee Schedule List</h3>
+        <p class="clause-text"><strong>Account Registration:</strong> Free (One-time setup fee).</p>
+        <p class="clause-text"><strong>Wallet Creation &amp; Maintenance:</strong> Free (No monthly or annual custodial fees).</p>
+        <p class="clause-text"><strong>Deposit (Crypto):</strong> Free (Network fees are paid solely by the sender).</p>
+        <p class="clause-text"><strong>Deposit (Fiat):</strong> Free – 3.5% (Depends on payment method and regional partner).</p>
+        <p class="clause-text"><strong>Trex Coin → USDT Conversion:</strong> <strong>0.5% – 2.0%</strong> (Deducted from output; minimum fee of 1.00 USDT applies).</p>
+        <p class="clause-text"><strong>USDT → Trex Coin Conversion:</strong> <strong>0.5% – 2.0%</strong> (Deducted from output; minimum fee of 1.00 USDT applies).</p>
+        <p class="clause-text"><strong>Internal Transfer:</strong> Free (Trex Wallet to Trex Wallet transactions).</p>
+        <p class="clause-text"><strong>External Withdrawal (Crypto):</strong> <strong>0.1% – 1.0%</strong> + Network Gas Fee.</p>
+        <p class="clause-text"><strong>Cross-Chain Swap:</strong> <strong>0.2% – 0.5%</strong> + Network Fees (Bridge protocols are factored dynamically).</p>
+        <p class="clause-text"><strong>Fiat Off-Ramp:</strong> <strong>1.0% – 3.0%</strong> + Partner fees (Bank transfer fees may apply).</p>
+        <p class="clause-text"><strong>Fiat On-Ramp:</strong> <strong>1.0% – 4.5%</strong> + Partner fees (Card processing fees may apply).</p>
+        <p class="clause-text"><strong>Account Inactivity (&gt; 12 months):</strong> <strong>5 USDT/month</strong> (Deducted from USDT balance; waived if balance is zero).</p>
+        <p class="clause-text"><strong>Recovery of Incorrect Deposit:</strong> <strong>100 USDT or 5%</strong> of recovery value (whichever is higher; recovery is not guaranteed).</p>
 
         <h3>7.2 Fee Calculation Example</h3>
-        <pre>CONVERSION EXAMPLE: 1,000 TREX → USDT
-            ─────────────────────────────────────────
-            Input Amount:           1,000 TREX
-            Market Rate:            1 TREX = $0.025 USDT
-            Gross USDT Value:       25.00 USDT
-            Platform Fee (1.0%):    - 0.25 USDT
-            Network Fee:            - 0.50 USDT
-            ─────────────────────────────────────────
-            NET CREDIT TO WALLET:   24.25 USDT
-        ─────────────────────────────────────────</pre>
+        <pre>
+-----------------------------------------------------------------------------
+        CONVERSION EXAMPLE: 1,000 TREX -> USDT
+-----------------------------------------------------------------------------
+  - Input Amount:         1,000 TREX
+  - Market Rate:          1 TREX = $0.025 USDT
+  - Gross USDT Value:     25.00 USDT
+  - Platform Fee (1.0%):  - 0.25 USDT
+  - Network Fee:          - 0.50 USDT
+  -------------------------------------------------------------
+  * NET CREDIT TO WALLET: 24.25 USDT
+-----------------------------------------------------------------------------
+        </pre>
 
         <h3>7.3 Fee Changes</h3>
         <ul>
             <li>The Platform reserves the right to modify fees with <strong>14 days' prior notice</strong>.</li>
-            <li>Fee changes will be communicated via:
-                <ul>
-                    <li>Email to registered email address.</li>
-                    <li>In-app notification and push notification.</li>
-                    <li>Platform announcement banner.</li>
-                </ul>
-            </li>
+            <li>Fee changes will be communicated via email, in-app notifications, and platform announcement boards.</li>
             <li><strong>Continued use</strong> of services after the effective date of fee changes constitutes acceptance.</li>
-            <li>Promotional fee reductions or waivers may be offered at the Platform's discretion and are subject to specific terms.</li>
         </ul>
 
         <h3>7.4 Tax Obligations</h3>
-        <ul>
-            <li>Users are <strong>solely responsible</strong> for reporting and paying all applicable taxes arising from transactions on the Platform.</li>
-            <li>The Platform may provide transaction history exports (CSV, PDF) to assist with tax reporting.</li>
-            <li>The Platform may report transaction data to tax authorities as required by applicable law (e.g., FATCA, CRS, DAC8).</li>
-            <li>Users should consult qualified tax professionals regarding digital asset taxation in their jurisdiction.</li>
-        </ul>
+        <p>Users are <strong>solely responsible</strong> for reporting and paying all applicable taxes arising from transactions on the Platform. The Platform may provide transaction history exports (CSV, PDF) to assist with tax reporting, and may report transaction data to tax authorities as required by applicable law.</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 8                                                      -->
@@ -911,82 +510,46 @@
 
         <h3>8.1 User Representations &amp; Warranties</h3>
         <p>By using Trex Wallet, You represent and warrant that:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>#</th><th>Representation</th></tr></thead>
-                <tbody>
-                    <tr><td>8.1.1</td><td>You are of legal age and have the legal capacity to enter into and perform this Agreement.</td></tr>
-                    <tr><td>8.1.2</td><td>All information provided during registration, KYC, and ongoing use is <strong>true, accurate, complete, and current</strong>.</td></tr>
-                    <tr><td>8.1.3</td><td>You are the <strong>beneficial owner</strong> of all funds and digital assets in Your Wallet and have full authority to transact with them.</td></tr>
-                    <tr><td>8.1.4</td><td>You are <strong>not</strong> using the Platform for any illegal, fraudulent, or prohibited activities.</td></tr>
-                    <tr><td>8.1.5</td><td>You understand and accept the risks associated with digital assets, blockchain technology, and cryptocurrency markets.</td></tr>
-                    <tr><td>8.1.6</td><td>You will comply with all applicable laws, regulations, sanctions, and the terms of this Agreement.</td></tr>
-                    <tr><td>8.1.7</td><td>You are not acting on behalf of any third party unless duly authorized and disclosed to the Platform.</td></tr>
-                    <tr><td>8.1.8</td><td>You understand that blockchain transactions are generally <strong>irreversible</strong> and that errors in destination addresses may result in permanent loss.</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>8.2 Prohibited Activities — STRICTLY FORBIDDEN</h3>
-        <p>Users are <strong>STRICTLY PROHIBITED</strong> from engaging in the following activities:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Prohibition</th><th>Description</th><th>Consequence</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Money Laundering &amp; Terrorist Financing</strong></td><td>Using the Platform to launder proceeds of crime, evade sanctions, or finance terrorism.</td><td><strong>Immediate termination + mandatory reporting to authorities + fund seizure.</strong></td></tr>
-                    <tr><td><strong>Fraud &amp; Misrepresentation</strong></td><td>Providing false, misleading, or fraudulent information; identity theft; document forgery.</td><td><strong>Account suspension + KYC re-verification + potential legal action.</strong></td></tr>
-                    <tr><td><strong>Cyberattacks &amp; Hacking</strong></td><td>Attempting to hack, disrupt, interfere with, or gain unauthorized access to Platform systems, other users' accounts, or blockchain networks.</td><td><strong>Permanent ban + criminal prosecution + civil liability.</strong></td></tr>
-                    <tr><td><strong>Unlicensed Financial Services</strong></td><td>Using the Platform to conduct unlicensed money transmission, brokerage, or other regulated financial services.</td><td><strong>Account termination + regulatory reporting.</strong></td></tr>
-                    <tr><td><strong>Market Manipulation</strong></td><td>Engaging in wash trading, spoofing, layering, pump-and-dump schemes, or other fraudulent trading practices.</td><td><strong>Account termination + trade reversal + fund seizure.</strong></td></tr>
-                    <tr><td><strong>Sanctions Evasion</strong></td><td>Accessing the Platform from prohibited jurisdictions using VPNs, proxies, or other means; transacting with sanctioned entities.</td><td><strong>Immediate termination + OFAC/sanctions authority reporting.</strong></td></tr>
-                    <tr><td><strong>Abuse of Platform</strong></td><td>Using bots, scrapers, or automated tools to exploit Platform services; creating multiple accounts to circumvent limits.</td><td><strong>Account termination + forfeiture of rewards.</strong></td></tr>
-                    <tr><td><strong>Phishing &amp; Social Engineering</strong></td><td>Attempting to steal credentials, private keys, or funds from other users through deceptive practices.</td><td><strong>Permanent ban + law enforcement referral.</strong></td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>8.3 Account Usage Rules</h3>
         <ul>
-            <li>Each natural person may maintain <strong>only one primary account</strong>.</li>
-            <li>Accounts are <strong>non-transferable</strong> and may not be sold, leased, lent, or assigned to any third party.</li>
-            <li>Users must maintain <strong>active and accurate contact information</strong> and respond to Platform communications within a reasonable timeframe.</li>
-            <li>Users must report changes in residential address, nationality, or legal status within <strong>30 days</strong>.</li>
+            <li>You are of legal age and have the legal capacity to enter into and perform this Agreement.</li>
+            <li>All information provided during registration, KYC, and ongoing use is <strong>true, accurate, complete, and current</strong>.</li>
+            <li>You are the <strong>beneficial owner</strong> of all funds and digital assets in Your Wallet and have full authority to transact with them.</li>
+            <li>You are <strong>not</strong> using the Platform for any illegal, fraudulent, or prohibited activities.</li>
+            <li>You understand and accept the risks associated with digital assets, blockchain technology, and cryptocurrency markets.</li>
+            <li>You will comply with all applicable laws, regulations, sanctions, and the terms of this Agreement.</li>
+            <li>You are not acting on behalf of any third party unless duly authorized and disclosed to the Platform.</li>
+            <li>You understand that blockchain transactions are generally <strong>irreversible</strong> and that errors in destination addresses may result in permanent loss.</li>
         </ul>
+
+        <h3>8.2 Prohibited Activities</h3>
+        <p class="clause-text"><strong>Money Laundering &amp; Terrorist Financing:</strong> Using the Platform to launder proceeds of crime, evade sanctions, or finance terrorism. (Consequence: <mark>Immediate termination + mandatory reporting to authorities + fund seizure</mark>)</p>
+        <p class="clause-text"><strong>Fraud &amp; Misrepresentation:</strong> Providing false, misleading, or fraudulent information; identity theft; document forgery. (Consequence: Account suspension + KYC re-verification + potential legal action)</p>
+        <p class="clause-text"><strong>Cyberattacks &amp; Hacking:</strong> Attempting to hack, disrupt, interfere with, or gain unauthorized access to Platform systems or accounts. (Consequence: Permanent ban + criminal prosecution + civil liability)</p>
+        <p class="clause-text"><strong>Unlicensed Financial Services:</strong> Using the Platform to conduct unlicensed money transmission, brokerage, or other regulated financial services. (Consequence: Account termination + regulatory reporting)</p>
+        <p class="clause-text"><strong>Market Manipulation:</strong> Engaging in wash trading, spoofing, layering, pump-and-dump schemes, or other fraudulent trading practices. (Consequence: Account termination + trade reversal + fund seizure)</p>
+        <p class="clause-text"><strong>Sanctions Evasion:</strong> Accessing the Platform from prohibited jurisdictions using VPNs, proxies, or other means; transacting with sanctioned entities. (Consequence: Immediate termination + OFAC/sanctions authority reporting)</p>
+        <p class="clause-text"><strong>Abuse of Platform:</strong> Using bots, scrapers, or automated tools to exploit Platform services; creating multiple accounts to circumvent limits. (Consequence: Account termination + forfeiture of rewards)</p>
+        <p class="clause-text"><strong>Phishing &amp; Social Engineering:</strong> Attempting to steal credentials, private keys, or funds from other users through deceptive practices. (Consequence: Permanent ban + law enforcement referral)</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 9                                                      -->
         <!-- ============================================================ -->
         <h2 id="sec9">9. Risk Disclosure Statement</h2>
 
-        <div class="warning-box">
+        <div class="written-note">
             <strong>⚠️ CRITICAL WARNING:</strong> DIGITAL ASSETS ARE HIGH-RISK INVESTMENTS. THE VALUE OF DIGITAL ASSETS CAN BE EXTREMELY VOLATILE AND YOU MAY LOSE ALL OR PART OF YOUR FUNDS. TREX WALLET DOES NOT GUARANTEE THE VALUE, STABILITY, OR PERFORMANCE OF ANY DIGITAL ASSET, INCLUDING TREX COIN AND USDT. PAST PERFORMANCE IS NOT INDICATIVE OF FUTURE RESULTS.
         </div>
 
         <h3>9.2 Specific Risk Categories</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Risk Category</th><th>Description</th><th>Risk Level</th><th>Mitigation</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Market Risk</strong></td><td>Digital asset prices, including Trex Coin and USDT, are highly volatile. USDT maintains a peg to USD but may deviate during market stress.</td><td>🔴 <strong>HIGH</strong></td><td>Only convert/exchange amounts You can afford to lose. Diversify holdings.</td></tr>
-                    <tr><td><strong>Liquidity Risk</strong></td><td>Conversion rates depend on available market liquidity. Large conversions may experience <strong>slippage</strong>, resulting in less favorable rates.</td><td>🟡 <strong>MEDIUM</strong></td><td>Break large conversions into smaller transactions. Monitor depth charts.</td></tr>
-                    <tr><td><strong>Technology Risk</strong></td><td>Blockchain networks may experience congestion, bugs, hard forks, or failures affecting transaction processing, confirmation times, or asset accessibility.</td><td>🟡 <strong>MEDIUM</strong></td><td>Monitor network status before transacting. Maintain awareness of network upgrades.</td></tr>
-                    <tr><td><strong>Security Risk</strong></td><td>Despite enterprise-grade security, cyberattacks, phishing, malware, and social engineering remain persistent threats in the digital asset industry.</td><td>🔴 <strong>HIGH</strong></td><td>Enable MFA, use strong unique passwords, verify all addresses, beware of phishing.</td></tr>
-                    <tr><td><strong>Regulatory Risk</strong></td><td>Laws governing digital assets are evolving rapidly and may change unfavorably. New regulations could restrict services, impose taxes, or ban certain activities.</td><td>🟡 <strong>MEDIUM</strong></td><td>Stay informed about regulations in Your jurisdiction. Consult legal advisors.</td></tr>
-                    <tr><td><strong>Counterparty Risk</strong></td><td>Third-party exchanges, fiat partners, or bridge protocols integrated with the Platform may fail, become insolvent, or suffer security breaches.</td><td>🟡 <strong>MEDIUM</strong></td><td>Use reputable partners. Withdraw to self-custody when not actively trading.</td></tr>
-                    <tr><td><strong>Operational Risk</strong></td><td>Platform maintenance, upgrades, or Force Majeure events may disrupt services temporarily.</td><td>🟢 <strong>LOW</strong></td><td>Plan transactions accordingly. Maintain records offline.</td></tr>
-                    <tr><td><strong>Irreversibility Risk</strong></td><td>Blockchain transactions are generally <strong>irreversible</strong>. Incorrect destination addresses, wrong networks, or erroneous amounts result in <strong>permanent, non-recoverable loss</strong>.</td><td>🔴 <strong>HIGH</strong></td><td>Triple-check all addresses and networks before confirming. Use address books.</td></tr>
-                    <tr><td><strong>Stablecoin Risk</strong></td><td>USDT is issued by Tether Limited. While pegged to USD, it carries issuer risk, regulatory risk, and de-pegging risk. Trex Wallet does not guarantee USDT's peg.</td><td>🟡 <strong>MEDIUM</strong></td><td>Understand USDT's backing and issuer disclosures. Monitor market conditions.</td></tr>
-                    <tr><td><strong>Custodial Risk</strong></td><td>As a custodial wallet, the Platform manages private keys. While secured with best practices, catastrophic security failures could theoretically impact asset availability.</td><td>🟡 <strong>MEDIUM</strong></td><td>The Platform maintains insurance and cold storage reserves. Review security audits.</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>9.3 No Guarantees &amp; Disclaimers</h3>
-        <ul>
-            <li>The Platform <strong>does not guarantee</strong> profits, price stability, investment returns, or preservation of capital.</li>
-            <li>Conversion and exchange rates are subject to market forces <strong>beyond the Platform's control</strong>.</li>
-            <li>The Platform is <strong>not a bank</strong>, deposit-taking institution, or securities broker. Funds held in the Wallet are <strong>not insured</strong> by government deposit insurance schemes (e.g., FDIC, FSCS).</li>
-        </ul>
+        <p class="clause-text"><strong>Market Risk:</strong> Digital asset prices are highly volatile. USDT maintains a peg to USD but may deviate during market stress. (Risk Level: <mark>HIGH</mark>)</p>
+        <p class="clause-text"><strong>Liquidity Risk:</strong> Conversion rates depend on available market liquidity. Large conversions may experience slippage. (Risk Level: MEDIUM)</p>
+        <p class="clause-text"><strong>Technology Risk:</strong> Blockchain networks may experience congestion, bugs, hard forks, or failures affecting transaction processing. (Risk Level: MEDIUM)</p>
+        <p class="clause-text"><strong>Security Risk:</strong> Cyberattacks, phishing, malware, and social engineering remain persistent threats. (Risk Level: <mark>HIGH</mark>)</p>
+        <p class="clause-text"><strong>Regulatory Risk:</strong> Laws governing digital assets are evolving rapidly. New regulations could restrict services or impose taxes. (Risk Level: MEDIUM)</p>
+        <p class="clause-text"><strong>Counterparty Risk:</strong> Third-party exchanges, fiat partners, or bridge protocols integrated with the Platform may fail. (Risk Level: MEDIUM)</p>
+        <p class="clause-text"><strong>Irreversibility Risk:</strong> Blockchain transactions are irreversible. Incorrect destination addresses result in non-recoverable loss. (Risk Level: <mark>HIGH</mark>)</p>
+        <p class="clause-text"><strong>Stablecoin Risk:</strong> USDT is issued by Tether Limited. While pegged to USD, it carries issuer risk and de-pegging risk. (Risk Level: MEDIUM)</p>
+        <p class="clause-text"><strong>Custodial Risk:</strong> As a custodial wallet, the Platform manages private keys. Failures could theoretically impact asset availability. (Risk Level: MEDIUM)</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 10                                                     -->
@@ -994,67 +557,22 @@
         <h2 id="sec10">10. AML, CFT &amp; Regulatory Compliance</h2>
 
         <h3>10.1 Compliance Commitment</h3>
-        <p>Trex Wallet is committed to <strong>full compliance</strong> with international Anti-Money Laundering (AML) and Countering the Financing of Terrorism (CFT) standards, including:</p>
-        <ul>
-            <li>Financial Action Task Force (FATF) Recommendations for Virtual Asset Service Providers (VASPs).</li>
-            <li>FATF Travel Rule for virtual asset transfers.</li>
-            <li>Applicable national AML/CFT laws and regulations in jurisdictions of operation.</li>
-            <li>UN Security Council sanctions resolutions.</li>
-            <li>OFAC, EU, HMT, and other applicable sanctions regimes.</li>
-        </ul>
+        <p>Trex Wallet is committed to <strong>full compliance</strong> with international Anti-Money Laundering (AML) and Countering the Financing of Terrorism (CFT) standards, including FATF travel rules, UN Security Council sanctions, and regional financial regulations.</p>
 
-        <h3>10.2 Customer Due Diligence (CDD) &amp; Enhanced Due Diligence (EDD)</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Level</th><th>Trigger</th><th>Measures</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Standard CDD</strong></td><td>All new accounts</td><td>Identity verification, address verification, sanctions screening.</td></tr>
-                    <tr><td><strong>Enhanced EDD</strong></td><td>High-risk jurisdictions, PEPs, high-volume users, suspicious patterns</td><td>Source of funds verification, ongoing monitoring, senior management approval.</td></tr>
-                    <tr><td><strong>Simplified CDD</strong></td><td>Low-risk scenarios (where permitted by law)</td><td>Reduced verification for low-value, low-risk transactions.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>10.2 Customer Due Diligence (CDD)</h3>
+        <p class="clause-text"><strong>Standard CDD:</strong> Applied to all new accounts. (Measures: Identity verification, address verification, sanctions screening.)</p>
+        <p class="clause-text"><strong>Enhanced EDD:</strong> Applied to high-risk jurisdictions, PEPs, high-volume users, suspicious patterns. (Measures: Source of funds verification, ongoing monitoring, senior management approval.)</p>
+        <p class="clause-text"><strong>Simplified CDD:</strong> Applied to low-risk scenarios (where permitted by law). (Measures: Reduced verification for low-value, low-risk transactions.)</p>
 
         <h3>10.3 Transaction Monitoring &amp; Screening</h3>
-        <ul>
-            <li>All transactions are monitored using <strong>automated AML screening tools</strong> and blockchain analytics.</li>
-            <li>User accounts and counterparties are screened against:
-                <ul>
-                    <li>Global sanctions lists (UN, OFAC, EU, HMT, OFSI).</li>
-                    <li>Politically Exposed Persons (PEP) databases.</li>
-                    <li>Adverse media and criminal watchlists.</li>
-                </ul>
-            </li>
-            <li><strong>Suspicious Activity Reports (SARs)</strong> are filed with relevant Financial Intelligence Units (FIUs) as required by law.</li>
-        </ul>
+        <p>All transactions are monitored using <strong>automated AML screening tools</strong> and blockchain analytics. User accounts and counterparties are screened against global sanctions lists, PEP databases, and criminal watchlists. <strong>Suspicious Activity Reports (SARs)</strong> are filed with relevant Financial Intelligence Units (FIUs) as required by law.</p>
 
         <h3>10.4 Transaction Holds &amp; Freezes</h3>
-        <p>The Platform may <strong>hold, freeze, or restrict</strong> transactions and accounts if:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Scenario</th><th>Action</th><th>Timeline</th></tr></thead>
-                <tbody>
-                    <tr><td>Suspicious activity detected</td><td>Transaction held, account flagged for review</td><td>Immediate</td></tr>
-                    <tr><td>Court order or regulatory directive</td><td>Account frozen per legal requirement</td><td>Immediate compliance</td></tr>
-                    <tr><td>User fails to provide requested documentation</td><td>Account restricted pending verification</td><td>Until resolved</td></tr>
-                    <tr><td>Transaction involves sanctioned entity or jurisdiction</td><td>Transaction blocked, authorities notified</td><td>Immediate</td></tr>
-                    <tr><td>Source of funds unclear</td><td>Enhanced due diligence initiated</td><td>5-10 Business Days</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>10.5 Source of Funds (SoF) Requirements</h3>
-        <ul>
-            <li>Users may be required to provide <strong>proof of source of funds</strong> for:
-                <ul>
-                    <li>Large deposits or conversions exceeding tier limits.</li>
-                    <li>Rapid account activity inconsistent with stated profile.</li>
-                    <li>Transactions flagged by automated monitoring systems.</li>
-                </ul>
-            </li>
-            <li>Acceptable SoF documentation includes: bank statements, salary slips, tax returns, sale of asset documentation, or mining/staking reward records.</li>
-            <li>Failure to provide satisfactory SoF documentation may result in <strong>permanent account restriction</strong>.</li>
-        </ul>
+        <p class="clause-text"><strong>Suspicious Activity:</strong> Action: Transaction held, account flagged for review. (Timeline: Immediate)</p>
+        <p class="clause-text"><strong>Court/Regulatory Order:</strong> Action: Account frozen per legal requirement. (Timeline: Immediate compliance)</p>
+        <p class="clause-text"><strong>Incomplete Documentation:</strong> Action: Account restricted pending verification. (Timeline: Until resolved)</p>
+        <p class="clause-text"><strong>Sanction Match:</strong> Action: Transaction blocked, assets frozen, authorities notified. (Timeline: Immediate)</p>
+        <p class="clause-text"><strong>Source of Funds review:</strong> Action: Enhanced due diligence initiated. (Timeline: 5-10 Business Days)</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 11                                                     -->
@@ -1062,79 +580,41 @@
         <h2 id="sec11">11. Data Protection &amp; Privacy</h2>
 
         <h3>11.1 Data Controller Information</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Jurisdiction</th><th>Data Controller</th><th>Address</th><th>Contact</th></tr></thead>
-                <tbody>
-                    <tr><td>EEA / UK / Switzerland</td><td>Trex Wallet Europe Ltd.</td><td>135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</td><td>Trexwalletcomp00@gmail.com</td></tr>
-                    <tr><td>All Other Regions</td><td>Trex Wallet Global Ltd.</td><td>135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</td><td>Trexwalletcomp00@gmail.com</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="clause-text"><strong>EEA / UK / Switzerland:</strong> Data Controller: Trex Wallet Europe Ltd. Address: <mark>135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</mark>. Contact: <mark>Trexwalletcomp00@gmail.com</mark>.</p>
+        <p class="clause-text"><strong>All Other Regions:</strong> Data Controller: Trex Wallet Global Ltd. Address: <mark>135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</mark>. Contact: <mark>Trexwalletcomp00@gmail.com</mark>.</p>
 
         <h3>11.2 Categories of Personal Data Collected</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Category</th><th>Examples</th><th>Purpose</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Identity Data</strong></td><td>Name, DOB, nationality, gender, ID numbers</td><td>KYC, AML, regulatory compliance</td></tr>
-                    <tr><td><strong>Contact Data</strong></td><td>Email, phone, residential address</td><td>Account management, notifications</td></tr>
-                    <tr><td><strong>Financial Data</strong></td><td>Bank details, card info, transaction history</td><td>Transaction processing, tax reporting</td></tr>
-                    <tr><td><strong>Wallet Data</strong></td><td>Wallet addresses, balances, transaction hashes</td><td>Service provision, blockchain interaction</td></tr>
-                    <tr><td><strong>Technical Data</strong></td><td>IP address, device info, browser, geolocation</td><td>Security, fraud prevention, analytics</td></tr>
-                    <tr><td><strong>Biometric Data</strong></td><td>Facial recognition, fingerprint (local)</td><td>Identity verification, device security</td></tr>
-                    <tr><td><strong>Communication Data</strong></td><td>Support tickets, emails, chat logs</td><td>Customer support, dispute resolution</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <ul>
+            <li><strong>Identity Data:</strong> Name, DOB, nationality, gender, government-issued photo ID numbers.</li>
+            <li><strong>Contact Data:</strong> Email address, mobile phone number, physical residential address.</li>
+            <li><strong>Financial Data:</strong> Bank account details, transaction history, blockchain transaction hashes, source of funds.</li>
+            <li><strong>Technical Data:</strong> IP address, device type, operating system, geolocation, browser specifications.</li>
+            <li><strong>Biometric Data:</strong> Face scan records for biometric facial matching (processed locally on device or securely via KYC API).</li>
+        </ul>
 
         <h3>11.3 Legal Basis for Processing</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Basis</th><th>Application</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Performance of Contract</strong></td><td>Necessary to provide Wallet, Conversion, and Exchange services.</td></tr>
-                    <tr><td><strong>Legal Obligation</strong></td><td>Compliance with AML, KYC, tax, and financial services regulations.</td></tr>
-                    <tr><td><strong>Legitimate Interests</strong></td><td>Fraud prevention, security, network integrity, service improvement.</td></tr>
-                    <tr><td><strong>Consent</strong></td><td>Marketing communications, optional features (withdrawable at any time).</td></tr>
-                    <tr><td><strong>Vital Interests</strong></td><td>Protection of life or safety in emergency situations.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <ul>
+            <li><strong>Performance of Contract:</strong> Necessary to provide Wallet, Conversion, and Exchange services.</li>
+            <li><strong>Legal Obligation:</strong> Compliance with AML, KYC, tax, and financial services regulations.</li>
+            <li><strong>Legitimate Interests:</strong> Fraud prevention, security, network integrity, service improvement.</li>
+            <li><strong>Consent:</strong> Marketing communications, optional features (withdrawable at any time).</li>
+        </ul>
 
         <h3>11.4 Data Subject Rights</h3>
-        <p>Depending on Your jurisdiction, You may have the following rights:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Right</th><th>Description</th><th>How to Exercise</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Access</strong></td><td>Request copies of personal data held.</td><td>Email Trexwalletcomp00@gmail.com</td></tr>
-                    <tr><td><strong>Rectification</strong></td><td>Correct inaccurate or incomplete data.</td><td>Via account settings or email</td></tr>
-                    <tr><td><strong>Erasure</strong></td><td>Request deletion (subject to legal retention).</td><td>Via Data Rights Portal</td></tr>
-                    <tr><td><strong>Restriction</strong></td><td>Limit processing in certain circumstances.</td><td>Email DPO</td></tr>
-                    <tr><td><strong>Portability</strong></td><td>Receive data in machine-readable format.</td><td>Export function in app</td></tr>
-                    <tr><td><strong>Objection</strong></td><td>Object to processing based on legitimate interests.</td><td>Email DPO</td></tr>
-                    <tr><td><strong>Withdraw Consent</strong></td><td>Withdraw consent for optional processing.</td><td>Account settings</td></tr>
-                    <tr><td><strong>Complaint</strong></td><td>Lodge complaint with data protection authority.</td><td>Contact local DPA</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>Important:</strong> We <strong>cannot erase</strong> transaction data recorded on public blockchains, as this is outside our control due to blockchain immutability.</p>
+        <p class="clause-text"><strong>Access Right:</strong> Request copies of personal data held. (How to Exercise: Email <mark>Trexwalletcomp00@gmail.com</mark>)</p>
+        <p class="clause-text"><strong>Rectification Right:</strong> Correct inaccurate or incomplete data. (How to Exercise: Via account settings or email)</p>
+        <p class="clause-text"><strong>Erasure Right:</strong> Request deletion (subject to legal data retention rules). (How to Exercise: Via Data Rights Portal)</p>
+        <p class="clause-text"><strong>Restriction Right:</strong> Limit processing in certain compliance scenarios. (How to Exercise: Contact the DPO via email)</p>
+        <p class="clause-text"><strong>Portability Right:</strong> Receive data in structured machine-readable format. (How to Exercise: Export function inside application)</p>
+        <p class="clause-text"><em>Note: We cannot erase transaction data recorded on public blockchains, as this is outside our control due to blockchain immutability.</em></p>
 
         <h3>11.5 Data Retention Periods</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Data Type</th><th>Retention Period</th></tr></thead>
-                <tbody>
-                    <tr><td>Active account data</td><td>Duration of account activity + statutory period</td></tr>
-                    <tr><td>Transaction records</td><td>Minimum <strong>5 years</strong> post-completion (or longer per regulation)</td></tr>
-                    <tr><td>KYC/AML documentation</td><td><strong>5 years</strong> post-account closure (or per AML law)</td></tr>
-                    <tr><td>Communication records</td><td><strong>3 years</strong> from date of communication</td></tr>
-                    <tr><td>Marketing data</td><td>Until consent withdrawn or account closed</td></tr>
-                    <tr><td>Blockchain data</td><td><strong>Permanently</strong> on public blockchains (outside our control)</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <ul>
+            <li><strong>Active Account Data:</strong> Processed and stored for the full duration of account activity.</li>
+            <li><strong>Transaction Records:</strong> Minimum of <strong>5 years</strong> post-completion to comply with international regulations.</li>
+            <li><strong>KYC/AML Records:</strong> Minimum of <strong>5 years</strong> post-account closure.</li>
+            <li><strong>Communication Data:</strong> Retained for <strong>3 years</strong> from the date of ticket submission.</li>
+        </ul>
 
         <!-- ============================================================ -->
         <!-- SECTION 12                                                     -->
@@ -1142,51 +622,21 @@
         <h2 id="sec12">12. Security Architecture</h2>
 
         <h3>12.1 Security Measures</h3>
-        <p>Trex Wallet implements <strong>defense-in-depth</strong> security architecture:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Layer</th><th>Technology</th><th>Standard</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Encryption at Rest</strong></td><td>AES-256</td><td>Industry Standard</td></tr>
-                    <tr><td><strong>Encryption in Transit</strong></td><td>TLS 1.3</td><td>Latest Protocol</td></tr>
-                    <tr><td><strong>Key Management</strong></td><td>MPC + HSM (FIPS 140-2 L3)</td><td>Enterprise Grade</td></tr>
-                    <tr><td><strong>Authentication</strong></td><td>MFA (TOTP, SMS, Biometric)</td><td>NIST Guidelines</td></tr>
-                    <tr><td><strong>Cold Storage</strong></td><td>Air-gapped, multi-sig, geographically distributed</td><td>Best Practice</td></tr>
-                    <tr><td><strong>Monitoring</strong></td><td>24/7 SOC, real-time threat detection</td><td>Enterprise SOC</td></tr>
-                    <tr><td><strong>Audits</strong></td><td>Quarterly penetration testing, annual security audits</td><td>ISO 27001, SOC 2</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>12.2 User Security Responsibilities</h3>
         <ul>
-            <li>Enable <strong>MFA</strong> immediately upon account creation.</li>
-            <li>Use a <strong>strong, unique password</strong> (minimum 12 characters, mixed case, numbers, symbols).</li>
-            <li>Never share Your password, MFA codes, or recovery information.</li>
-            <li>Beware of <strong>phishing</strong> — the Platform will never ask for Your password or private keys via email or phone.</li>
-            <li>Verify website URLs and app authenticity before entering credentials.</li>
-            <li>Keep Your device's operating system and security software updated.</li>
+            <li><strong>Encryption at Rest:</strong> AES-256 standard database level encryption.</li>
+            <li><strong>Encryption in Transit:</strong> TLS 1.3 channel protection.</li>
+            <li><strong>Key Management:</strong> Multi-Party Computation (MPC) coupled with Hardware Security Modules (HSMs) certified to FIPS 140-2 Level 3.</li>
+            <li><strong>Authentication:</strong> MFA via TOTP authenticator codes, device biometric keys, and SMS backup.</li>
+            <li><strong>Asset Custody:</strong> Geographically distributed air-gapped cold storage.</li>
+            <li><strong>Monitoring:</strong> Continuous 24/7 security operations center (SOC) event monitoring.</li>
         </ul>
 
         <!-- ============================================================ -->
         <!-- SECTION 13                                                     -->
         <!-- ============================================================ -->
         <h2 id="sec13">13. Intellectual Property Rights</h2>
-
-        <h3>13.1 Platform IP</h3>
         <p>All intellectual property rights in the Trex Wallet platform, including but not limited to software, source code, algorithms, databases, logos, trademarks, service marks, trade names, designs, and content, are owned by or licensed to the Platform and are protected by applicable intellectual property laws.</p>
-
-        <h3>13.2 User License</h3>
         <p>The Platform grants Users a <strong>limited, non-exclusive, non-transferable, revocable license</strong> to use the Platform for personal, non-commercial purposes in strict accordance with this Agreement.</p>
-
-        <h3>13.3 Restrictions</h3>
-        <p>Users may <strong>NOT</strong>:</p>
-        <ul>
-            <li>Copy, modify, reverse-engineer, decompile, or create derivative works of the Platform.</li>
-            <li>Use Platform trademarks without prior written consent.</li>
-            <li>Scrape, data-mine, or use automated tools (bots, crawlers) to access the Platform.</li>
-            <li>Circumvent any security measures or access controls.</li>
-        </ul>
 
         <!-- ============================================================ -->
         <!-- SECTION 14                                                     -->
@@ -1197,37 +647,10 @@
         <p>THE PLATFORM AND ALL SERVICES ARE PROVIDED <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
 
         <h3>14.2 Limitation of Liability</h3>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Scenario</th><th>Liability Cap</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>General Claims</strong></td><td>The greater of: (a) total fees paid by You in the <strong>12 months</strong> preceding the claim, or (b) <strong>USD $100.00</strong>.</td></tr>
-                    <tr><td><strong>Force Majeure</strong></td><td><strong>Zero liability</strong> for failures caused by events beyond reasonable control.</td></tr>
-                    <tr><td><strong>Market Losses</strong></td><td><strong>Zero liability</strong> for losses due to price volatility, slippage, or market conditions.</td></tr>
-                    <tr><td><strong>User Error</strong></td><td><strong>Zero liability</strong> for losses due to incorrect addresses, lost passwords, or User negligence.</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>14.3 Excluded Damages</h3>
-        <p>IN NO EVENT SHALL THE PLATFORM BE LIABLE FOR:</p>
-        <ul>
-            <li>Indirect, incidental, special, consequential, or punitive damages.</li>
-            <li>Loss of profits, revenue, data, goodwill, or business opportunities.</li>
-            <li>Losses arising from blockchain network failures, congestion, or attacks.</li>
-            <li>Losses arising from third-party services or integrated partners.</li>
-        </ul>
-
-        <h3>14.4 Indemnification</h3>
-        <p>You agree to indemnify, defend, and hold harmless the Platform, its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising from:</p>
-        <ol>
-            <li>Your violation of this Agreement or any applicable law.</li>
-            <li>Your misuse of the Platform or services.</li>
-            <li>Your infringement of any third-party rights.</li>
-            <li>Your negligent or willful misconduct.</li>
-            <li>Any transaction initiated from Your account, whether authorized or unauthorized.</li>
-        </ol>
+        <p class="clause-text"><strong>General Claims:</strong> The greater of: (a) total fees paid by You in the <mark>12 months</mark> preceding the claim, or (b) <mark>USD $100.00</mark>.</p>
+        <p class="clause-text"><strong>Force Majeure:</strong> Zero liability for transaction failures caused by events beyond reasonable control.</p>
+        <p class="clause-text"><strong>Market Losses:</strong> Zero liability for losses due to cryptocurrency price volatility or slippage.</p>
+        <p class="clause-text"><strong>User Error:</strong> Zero liability for losses due to incorrect destination addresses or lost passwords.</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 15                                                     -->
@@ -1235,210 +658,75 @@
         <h2 id="sec15">15. Suspension, Termination &amp; Account Closure</h2>
 
         <h3>15.1 Termination by User</h3>
-        <ul>
-            <li>You may terminate Your account at any time by submitting a closure request through the app or via support.</li>
-            <li>Account closure requires:
-                <ul>
-                    <li>Completion of all pending transactions.</li>
-                    <li>Zero or positive balances (or explicit forfeiture of dust balances).</li>
-                    <li>Resolution of any disputes or compliance holds.</li>
-                </ul>
-            </li>
-            <li>Closure will be processed within <strong>30 days</strong>, subject to regulatory retention requirements.</li>
-        </ul>
+        <p>You may terminate Your account at any time by submitting a closure request through the app. Closure requires completion of all pending transactions, zero or positive balances, and the resolution of any disputes or compliance holds.</p>
 
         <h3>15.2 Termination by Platform</h3>
-        <p>The Platform may <strong>suspend or terminate</strong> Your account <strong>immediately</strong> if:</p>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Reason</th><th>Notice</th><th>Appeal</th></tr></thead>
-                <tbody>
-                    <tr><td>Violation of this Agreement</td><td>Immediate</td><td>Within 14 days via support</td></tr>
-                    <tr><td>Fraudulent or illegal activity</td><td>Immediate</td><td>Subject to legal review</td></tr>
-                    <tr><td>Failure to complete KYC</td><td>7-day warning</td><td>Submit KYC to restore</td></tr>
-                    <tr><td>Regulatory or court order</td><td>Immediate</td><td>N/A — legal compliance</td></tr>
-                    <tr><td>Account dormancy (24+ months)</td><td>30-day email notice</td><td>Log in to prevent closure</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>15.3 Effect of Termination</h3>
-        <ul>
-            <li>Upon termination, Your right to use the Platform ceases immediately.</li>
-            <li>Eligible digital assets will be returned to a <strong>verified external address</strong> provided by You, subject to:
-                <ul>
-                    <li>Applicable withdrawal fees.</li>
-                    <li>Regulatory holds or legal freezes.</li>
-                    <li>Completion of any pending compliance reviews.</li>
-                </ul>
-            </li>
-            <li>Certain provisions survive termination, including liability limitations, indemnification, and dispute resolution.</li>
-        </ul>
+        <p class="clause-text"><strong>Violation of Agreement:</strong> Notice: Immediate. (Appeal: Within 14 days via support)</p>
+        <p class="clause-text"><strong>Fraudulent/Illegal Activity:</strong> Notice: Immediate. (Appeal: Subject to legal review)</p>
+        <p class="clause-text"><strong>Failure to complete KYC:</strong> Notice: 7-day warning. (Appeal: Submit KYC documents to restore access)</p>
+        <p class="clause-text"><strong>Court/Regulatory Order:</strong> Notice: Immediate. (Appeal: N/A — strictly legal compliance)</p>
+        <p class="clause-text"><strong>Account Dormancy (24+ months):</strong> Notice: 30-day email notice. (Appeal: Log in to prevent account closure)</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 16                                                     -->
         <!-- ============================================================ -->
         <h2 id="sec16">16. Dispute Resolution &amp; Arbitration</h2>
-
-        <h3>16.1 Good-Faith Negotiation</h3>
-        <ul>
-            <li>Parties agree to first attempt to resolve any dispute through <strong>good-faith negotiation</strong>.</li>
-            <li>Written notice of the dispute must be provided, followed by a <strong>30-day negotiation period</strong>.</li>
-        </ul>
-
-        <h3>16.2 Mediation</h3>
-        <ul>
-            <li>If negotiation fails, parties agree to <strong>non-binding mediation</strong> administered by a mutually agreed mediator.</li>
-            <li>Mediation costs shall be shared equally unless otherwise agreed.</li>
-        </ul>
-
-        <h3>16.3 Binding Arbitration</h3>
-        <ul>
-            <li>If mediation fails, disputes shall be resolved by <strong>binding arbitration</strong>.</li>
-            <li>Arbitration shall be conducted in <strong>English</strong> under the rules of the <strong>International Chamber of Commerce (ICC)</strong>.</li>
-            <li>The seat of arbitration shall be <strong>Ontario, Canada</strong>.</li>
-            <li>The award shall be <strong>final and binding</strong> on both parties.</li>
-            <li>Each party bears its own costs unless the arbitrator decides otherwise.</li>
-        </ul>
-
-        <h3>16.4 Class Action Waiver</h3>
-        <ul>
-            <li>You agree to resolve disputes on an <strong>individual basis only</strong>.</li>
-            <li><strong>Class actions, collective proceedings, representative actions, and private attorney general actions are EXPRESSLY WAIVED.</strong></li>
-        </ul>
+        <p>Parties agree to first attempt to resolve any dispute through <strong>good-faith negotiation</strong>. If negotiation fails, parties agree to <strong>non-binding mediation</strong>. If mediation fails, disputes shall be resolved by <strong>binding arbitration</strong> conducted in English under the rules of the International Chamber of Commerce (ICC). The seat of arbitration shall be <mark>Ontario, Canada</mark>.</p>
+        <p><strong>Class Action Waiver: You agree to resolve disputes on an individual basis only. Class actions, collective proceedings, representative actions, and private attorney general actions are EXPRESSLY WAIVED.</strong></p>
 
         <!-- ============================================================ -->
         <!-- SECTION 17                                                     -->
         <!-- ============================================================ -->
         <h2 id="sec17">17. Governing Law &amp; Force Majeure</h2>
-
-        <h3>17.1 Governing Law</h3>
-        <p>This Agreement shall be governed by and construed in accordance with the laws of <strong>Ontario, Canada</strong>, without regard to conflict of law principles.</p>
-
-        <h3>17.2 Jurisdiction</h3>
-        <p>Subject to the arbitration clause above, any legal proceedings shall be brought exclusively in the courts of <strong>Ontario, Canada</strong>.</p>
-
-        <h3>17.3 Force Majeure</h3>
-        <p>Neither party shall be liable for delays or failures in performance caused by <strong>Force Majeure</strong> events, including but not limited to:</p>
-        <ul>
-            <li>Natural disasters (earthquakes, floods, pandemics).</li>
-            <li>Wars, acts of terrorism, civil unrest.</li>
-            <li>Government actions, regulatory changes, embargoes.</li>
-            <li>Internet failures, power outages, telecommunications disruptions.</li>
-            <li>Blockchain network failures, 51% attacks, or consensus failures.</li>
-            <li>Failure of third-party services or infrastructure providers.</li>
-        </ul>
-        <p>The affected party must <strong>promptly notify</strong> the other and use <strong>reasonable efforts</strong> to mitigate the impact.</p>
+        <p>This Agreement shall be governed by and construed in accordance with the laws of <strong>Ontario, Canada</strong>, without regard to conflict of law principles. Subject to the arbitration clause above, any legal proceedings shall be brought exclusively in the courts of <strong>Ontario, Canada</strong>.</p>
+        <p>Neither party shall be liable for delays or failures in performance caused by Force Majeure events, including natural disasters, internet failures, power outages, and blockchain network consensus failures.</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 18                                                     -->
         <!-- ============================================================ -->
         <h2 id="sec18">18. Amendments &amp; Updates</h2>
-
-        <h3>18.1 Right to Amend</h3>
-        <p>The Platform reserves the right to amend this Agreement at any time to reflect:</p>
-        <ul>
-            <li>Changes in applicable law or regulation.</li>
-            <li>Changes in Platform services, features, or business operations.</li>
-            <li>Security, risk management, or fraud prevention requirements.</li>
-        </ul>
-
-        <h3>18.2 Notice of Amendments</h3>
-        <ul>
-            <li><strong>Material amendments</strong> will be notified at least <strong>14 days</strong> before effectiveness.</li>
-            <li>Notice methods:
-                <ul>
-                    <li>Email to registered email address.</li>
-                    <li>In-app notification and push notification.</li>
-                    <li>Platform announcement banner and blog post.</li>
-                </ul>
-            </li>
-            <li><strong>Continued use</strong> of the Platform after the effective date constitutes acceptance.</li>
-        </ul>
-
-        <h3>18.3 User Responsibility</h3>
-        <p>It is Your responsibility to review this Agreement periodically. <strong>Ignorance of amendments does not excuse non-compliance.</strong></p>
+        <p>The Platform reserves the right to amend this Agreement at any time. Notice of material amendments will be provided at least 14 days prior to effectiveness. Continued use of the Platform after the effective date constitutes acceptance.</p>
 
         <!-- ============================================================ -->
         <!-- SECTION 19                                                     -->
         <!-- ============================================================ -->
         <h2 id="sec19">19. Contact &amp; Legal Notices</h2>
 
-        <h3>19.1 Customer Support</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Channel</th><th>Details</th><th>Availability</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Email</strong></td><td>Trexwalletcomp00@gmail.com</td><td>24/7 — Response within 24-48 hours</td></tr>
-                    <tr><td><strong>In-App Support</strong></td><td>Help Center → Live Chat</td><td>24/7 automated + human agents</td></tr>
-                    <tr><td><strong>Community</strong></td><td>Trexwalletcomp00@gmail.com</td><td>Forums, FAQs, guides</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>Mailing Address:</strong><br />135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</p>
+        <h3>19.1 Customer Support Channels</h3>
+        <p class="clause-text"><strong>Email Support:</strong> <mark>Trexwalletcomp00@gmail.com</mark> (Availability: 24/7 — Response within 24-48 hours)</p>
+        <p class="clause-text"><strong>In-App Support:</strong> Live chat via Help Center. (Availability: 24/7 automated + human agents)</p>
+        <p class="clause-text"><strong>Community &amp; FAQ:</strong> Forums and support resources. (Availability: <mark>Trexwalletcomp00@gmail.com</mark>)</p>
+        <p class="clause-text"><strong>Mailing Address:</strong> <mark>135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</mark></p>
 
         <h3>19.2 Legal &amp; Compliance Contacts</h3>
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Department</th><th>Email</th><th>Purpose</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Legal Department</strong></td><td>Trexwalletcomp00@gmail.com</td><td>Contracts, IP, general legal</td></tr>
-                    <tr><td><strong>Compliance</strong></td><td>Trexwalletcomp00@gmail.com</td><td>AML, KYC, regulatory inquiries</td></tr>
-                    <tr><td><strong>Data Protection Officer</strong></td><td>Trexwalletcomp00@gmail.com</td><td>Privacy, data rights, GDPR</td></tr>
-                    <tr><td><strong>Security</strong></td><td>Trexwalletcomp00@gmail.com</td><td>Security incidents, breaches</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>Registered Office:</strong><br />135 Algoma St, Thunder Bay, Ontario, P7A 4T3, Canada</p>
-
-        <h3>19.3 Emergency Security Contact</h3>
-        <p>For <strong>urgent security matters</strong> (hacked account, unauthorized access, suspected breach):</p>
-        <ul>
-            <li><strong>Email:</strong> Trexwalletcomp00@gmail.com</li>
-            <li><strong>Subject:</strong> <code>URGENT SECURITY BREACH — [Your User ID]</code></li>
-            <li><strong>Response:</strong> Priority handling within 2 hours.</li>
-        </ul>
+        <p class="clause-text"><strong>Legal Department:</strong> <mark>Trexwalletcomp00@gmail.com</mark></p>
+        <p class="clause-text"><strong>Compliance (AML/KYC):</strong> <mark>Trexwalletcomp00@gmail.com</mark></p>
+        <p class="clause-text"><strong>Data Protection Officer (DPO):</strong> <mark>Trexwalletcomp00@gmail.com</mark></p>
+        <p class="clause-text"><strong>Security Department:</strong> <mark>Trexwalletcomp00@gmail.com</mark></p>
 
         <!-- ============================================================ -->
         <!-- SECTION 20                                                     -->
         <!-- ============================================================ -->
         <h2 id="sec20">20. User Acceptance &amp; Digital Signature</h2>
-
-        <h3>20.1 Acceptance Mechanism</h3>
-        <p>By clicking <strong>"I Agree"</strong>, <strong>"Accept"</strong>, or <strong>"Continue"</strong>, or by otherwise registering an account, accessing, or using the Trex Wallet platform, You acknowledge that:</p>
-        <ul class="checklist">
-            <li>You have <strong>read, understood, and agree</strong> to be bound by this Agreement in its entirety.</li>
-            <li>You understand the <strong>risks</strong> associated with digital assets, blockchain technology, and cryptocurrency markets.</li>
-            <li>You consent to the <strong>collection, processing, and storage</strong> of Your personal data as described in this Agreement and the Privacy Policy.</li>
-            <li>You agree to comply with all <strong>AML, KYC, and regulatory requirements</strong>.</li>
-            <li>You understand that <strong>blockchain transactions are irreversible</strong> and that errors may result in permanent loss.</li>
-            <li>You agree to the <strong>dispute resolution, arbitration, and governing law</strong> provisions contained herein.</li>
+        <p>By registering an account or using the Trex Wallet platform, You acknowledge that:</p>
+        <ul>
+            <li>You have read, understood, and agree to be bound by this Agreement.</li>
+            <li>You understand the risks associated with digital assets and blockchain technology.</li>
+            <li>You consent to the collection, processing, and storage of Your personal data as described.</li>
             <li>You confirm that You are <strong>not a resident of a prohibited jurisdiction</strong> and are not on any sanctions list.</li>
             <li>You confirm that You are <strong>at least 18 years old</strong> and have the legal capacity to enter this Agreement.</li>
         </ul>
 
-        <h3>20.2 Electronic Signature</h3>
-        <p>Your electronic acceptance constitutes a <strong>legally binding signature</strong> under applicable electronic signature laws (e.g., E-SIGN Act, eIDAS Regulation). This Agreement is enforceable to the same extent as a handwritten signature.</p>
-
-        <h3>20.3 Record Retention</h3>
-        <p>The Platform will retain a record of Your acceptance, including timestamp, IP address, and device information, for legal and compliance purposes.</p>
-
-        <!-- ============================================================ -->
-        <!-- FOOTER                                                         -->
-        <!-- ============================================================ -->
-        <div class="footer-end">
-            <hr />
-            <div style="font-size:1.2rem; font-weight:700; letter-spacing:0.5px; color:#111827;">— END OF AGREEMENT —</div>
-            <div style="margin-top:10px;">
-                <strong>Trex Wallet</strong> — Empowering Your Digital Asset Journey
-            </div>
-            <div style="margin-top:6px; font-size:0.8rem; color:#6b7280;">
-                © 2026 Trex Wallet. All Rights Reserved. &nbsp;|&nbsp; Document Version: 2.0 &nbsp;|&nbsp; Last Updated: August 2026
-            </div>
+        <!-- FOOTER -->
+        <hr class="divider" />
+        <div class="doc-footer">
+            <strong>TREX WALLET SYSTEMS LTD.</strong><br />
+            Incorporation Number: CA-948192-ONT<br />
+            Registered Business Type: Private Digital Asset Management Platform (Ontario, Canada)<br />
+            © 2026 Trex Wallet. All legal rights are reserved globally. All trademarks are the property of their respective owners.
         </div>
 
     </div>
-    <!-- end document-wrapper -->
 
 </body>
-  </html>
+    </html>
