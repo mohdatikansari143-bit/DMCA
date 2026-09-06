@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trex Wallet – About Us</title>
-    <!-- Google Fonts for Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Trex Wallet – Comprehensive Terms of Use & Regulatory Framework</title>
     <style>
         *,
         *::before,
@@ -16,383 +14,343 @@
         }
 
         body {
-            background: #ffffff; /* Standard White Background */
-            color: #1f2937; /* Standard Dark Gray/Black Text */
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-size: 15px;
-            line-height: 1.75;
-            padding: 0;
+            background-color: #ffffff;
+            color: #111111;
+            /* Legal style fine/thin serif font stack - slightly zoomed in to 14px */
+            font-family: "Times New Roman", Times, Georgia, serif;
+            font-size: 14px;
+            line-height: 1.65;
+            padding: 60px 40px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
         }
 
-        .document-wrapper {
-            max-width: 800px; 
+        .document-container {
+            max-width: 820px; /* Slightly widened to balance the zoomed text */
             width: 100%;
-            background: transparent; 
-            padding: 40px 20px 60px 20px;
-            border-radius: 0;
-            box-shadow: none;
-            border: none;
         }
 
         /* ---- Headings ---- */
-        h1, h2, h3, h4 {
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            color: #111827; /* Black/Dark Gray */
+        h1, h2, h3 {
+            font-weight: bold;
+            color: #000000;
+            margin-top: 0;
         }
 
         h1 {
-            font-size: 2.2rem;
-            text-align: left; 
-            margin-bottom: 8px;
+            font-size: 20px;
+            margin-bottom: 6px;
+            text-align: left;
+            letter-spacing: -0.2px;
+        }
+
+        .meta-subtitle {
+            font-size: 11.5px;
+            color: #555555;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #bbbbbb;
+            padding-bottom: 12px;
         }
 
         h2 {
-            font-size: 1.4rem;
-            border-bottom: 1px solid #e5e7eb; /* Standard Light Border */
-            padding-bottom: 8px;
-            margin-top: 48px;
-            margin-bottom: 18px;
-        }
-
-        h3 {
-            font-size: 1.15rem;
-            margin-top: 28px;
-            margin-bottom: 12px;
+            font-size: 15px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px dotted #dddddd;
+            padding-bottom: 4px;
         }
 
         p {
-            margin-bottom: 18px;
-            color: #374151; /* Standard Readable text */
-            font-weight: 400;
+            margin-bottom: 14px;
+            text-align: justify;
+            text-justify: inter-word;
         }
 
-        p strong {
-            color: #111827;
-            font-weight: 600;
+        /* Table of Contents style - extremely minimal, no boxes */
+        .toc-container {
+            margin-bottom: 45px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eeeeee;
         }
 
-        a {
-            color: #2563eb; /* Standard Blue accent */
+        .toc-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc-item {
+            margin-bottom: 6px;
+        }
+
+        .toc-item a {
+            color: #111111;
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.15s ease;
         }
-        
-        a:hover {
-            color: #1d4ed8;
+
+        .toc-item a:hover {
             text-decoration: underline;
         }
 
-        /* ---- Brand Header ---- */
-        .header-center {
-            text-align: left; 
-            margin-bottom: 40px;
-            border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 32px;
+        /* Yellow Highlighter Marker */
+        mark {
+            background-color: #ffff00;
+            color: #000000;
+            padding: 0 1px;
         }
 
-        .logo-placeholder {
-            display: inline-block;
-            background: #f3f4f6; /* Light gray box */
-            color: #111827;
-            font-weight: 700;
-            font-size: 1rem;
-            letter-spacing: 3px;
-            padding: 8px 20px;
-            border-radius: 30px;
-            margin-bottom: 20px;
-            border: 1px solid #e5e7eb;
+        /* No blue color on links - standard dark underline */
+        a {
+            color: #000000;
+            text-decoration: underline;
         }
 
-        .header-center .subhead {
-            font-size: 0.9rem;
-            color: #4b5563;
-            margin-top: 4px;
-            font-weight: 400;
+        a:hover {
+            color: #333333;
         }
 
-        .header-center .version-meta {
-            font-size: 0.85rem;
-            color: #4b5563;
-            margin-top: 20px;
-            display: flex;
-            justify-content: flex-start;
-            gap: 24px;
-            flex-wrap: wrap;
+        /* Indented clauses */
+        .clause-text {
+            padding-left: 15px;
+            text-align: justify;
         }
 
-        .header-center .version-meta span strong {
-            color: #111827;
-        }
-
-        /* ---- Modern Blockquote ---- */
-        blockquote {
-            font-size: 1.1rem;
-            color: #374151;
-            border-left: 3px solid #2563eb;
-            padding-left: 18px;
-            margin: 28px 0;
-            font-style: italic;
-            font-weight: 400;
-        }
-
-        /* ---- Tables ---- */
-        .table-wrap {
-            overflow-x: auto;
-            margin: 24px 0 32px;
-            border-radius: 8px;
-            border: 1px solid #e5e7eb;
-            background: #ffffff;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.88rem;
-            min-width: 500px;
-        }
-
-        th, td {
-            padding: 14px 18px;
-            text-align: left;
-            border-bottom: 1px solid #f3f4f6;
-            vertical-align: top;
-        }
-
-        th {
-            background: #f9fafb;
-            font-weight: 600;
-            color: #111827;
-            font-size: 0.85rem;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        td {
-            color: #374151;
-        }
-
-        td strong {
-            color: #111827;
-            font-weight: 500;
-        }
-
-        .table-wrap tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* ---- Lists ---- */
-        ul, ol {
-            padding-left: 1.5em;
-            margin-bottom: 28px;
-            color: #374151;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            font-weight: 400;
-        }
-
-        li strong {
-            color: #111827;
-            font-weight: 500;
-        }
-
-        /* ---- Dividers ---- */
         .divider {
             border: none;
-            border-top: 1px solid #e5e7eb;
-            margin: 40px 0;
+            border-top: 1px solid #cccccc;
+            margin: 50px 0 25px 0;
         }
 
-        /* ---- Footer ---- */
-        .footer-end {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid #e5e7eb;
-            font-size: 0.85rem;
-            color: #4b5563;
-        }
-
-        .footer-end strong {
-            color: #111827;
-        }
-
-        /* ---- Responsive Styling ---- */
-        @media (max-width: 768px) {
-            body {
-                padding: 0;
-            }
-            .document-wrapper {
-                padding: 30px 16px 50px 16px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.2rem;
-            }
-            .header-center .version-meta {
-                flex-direction: column;
-                gap: 8px;
-            }
-            th, td {
-                padding: 12px 14px;
-            }
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #ffffff;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #d1d5db;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #9ca3af;
+        .doc-footer {
+            font-size: 12px;
+            color: #555555;
+            margin-top: 20px;
+            text-align: left;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
-    <div class="document-wrapper">
+    <div class="document-container">
 
-        <!-- ============================================================ -->
-        <!-- HEADER                                                         -->
-        <!-- ============================================================ -->
-        <div class="header-center">
-            <div class="logo-placeholder">TREX WALLET</div>
-            <h1>About Us — Company Overview</h1>
-            <div class="version-meta">
-                <span><strong>Founded:</strong> 2026</span>
-                <span><strong>Headquarters:</strong> Thunder Bay, Ontario, Canada</span>
-                <span><strong>Email:</strong> Trexwalletcomp00@gmail.com</span>
-                <span><strong>Classification:</strong> Private Digital Asset Platform</span>
-            </div>
+        <!-- HEADER -->
+        <h1>TREX WALLET — OFFICIAL SERVICE TERMS, CONVERSION POLICY & COMPLIANCE STANDARD</h1>
+        <div class="meta-subtitle">
+            Effective Date: January 1, 2026 | Document Identification: TX-904-REV17 | System Classification: Strict General Public Policy
         </div>
 
         <!-- ============================================================ -->
-        <!-- SECTION 1: WHO WE ARE                                         -->
+        <!-- TABLE OF CONTENTS                                            -->
         <!-- ============================================================ -->
-        <h2>1. Who We Are</h2>
-        <p>Trex Wallet is a <strong>professional digital asset wallet and exchange platform</strong> built to simplify cryptocurrency management for users worldwide. Headquartered in <strong>Thunder Bay, Ontario, Canada</strong>, we operate with a clear mission: to provide a secure, transparent, and user-friendly gateway for digital asset storage, conversion, and exchange.</p>
-        <p>Our platform is designed for both beginners and experienced crypto users who need a reliable solution to manage their digital wealth without complexity.</p>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 2: MISSION                                            -->
-        <!-- ============================================================ -->
-        <h2>2. Our Mission</h2>
-        <blockquote>
-            “To empower every individual with seamless, secure, and transparent access to the digital asset economy.”
-        </blockquote>
-        <p>We believe that managing digital currencies should be straightforward, safe, and accessible to everyone — regardless of technical expertise or geographic location.</p>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 3: WHAT WE DO                                         -->
-        <!-- ============================================================ -->
-        <h2>3. What We Do</h2>
-        <p>Trex Wallet offers a complete suite of digital asset services through a single, intuitive platform:</p>
-
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Service</th><th>Description</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Digital Wallet</strong></td><td>Secure custodial storage for Trex Coin, USDT, and other supported cryptocurrencies.</td></tr>
-                    <tr><td><strong>Trex Coin ↔ USDT Conversion</strong></td><td>Instant, real-time conversion between Trex Coin and Tether (USDT) at transparent rates.</td></tr>
-                    <tr><td><strong>Exchange Services</strong></td><td>Send, receive, and withdraw digital assets to external wallets and third-party platforms.</td></tr>
-                    <tr><td><strong>Cross-Chain Support</strong></td><td>Transfer USDT across multiple blockchain networks (ERC-20, TRC-20, BEP-20).</td></tr>
-                    <tr><td><strong>Transaction History</strong></td><td>Complete records of all conversions, deposits, withdrawals, and transfers with export options.</td></tr>
-                    <tr><td><strong>Enterprise Security</strong></td><td>AES-256 encryption, multi-factor authentication (MFA), and cold storage for asset protection.</td></tr>
-                </tbody>
-            </table>
+        <div class="toc-container">
+            <div class="toc-title">Table of Contents</div>
+            <ol class="toc-list">
+                <li class="toc-item">1. <a href="#sec-1">Scope of Agreement &amp; Platform Identity</a></li>
+                <li class="toc-item">2. <a href="#sec-2">Eligibility Criteria &amp; Protection of Minors</a></li>
+                <li class="toc-item">3. <a href="#sec-3">Account Registration &amp; Strict Security Protocols</a></li>
+                <li class="toc-item">4. <a href="#sec-4">Custodial Digital Wallet Services &amp; Asset Management</a></li>
+                <li class="toc-item">5. <a href="#sec-5">Trex Coin to USDT Conversion Framework</a></li>
+                <li class="toc-item">6. <a href="#sec-6">Blockchain Network Integration &amp; Cross-Chain Protocols</a></li>
+                <li class="toc-item">7. <a href="#sec-7">Transparent Fee Structures &amp; Conversion Rate Dynamics</a></li>
+                <li class="toc-item">8. <a href="#sec-8">Deposit, Withdrawal, and Daily Transfer Limitations</a></li>
+                <li class="toc-item">9. <a href="#sec-9">Anti-Money Laundering (AML) &amp; CFT Countermeasures</a></li>
+                <li class="toc-item">10. <a href="#sec-10">Know Your Customer (KYC) Identity Verification Rules</a></li>
+                <li class="toc-item">11. <a href="#sec-11">Prohibited User Activities &amp; System Abuse Policies</a></li>
+                <li class="toc-item">12. <a href="#sec-12">Comprehensive Risk Disclosures &amp; Legal Disclaimers</a></li>
+                <li class="toc-item">13. <a href="#sec-13">Data Protection, Privacy Policy, and Server Infrastructure</a></li>
+                <li class="toc-item">14. <a href="#sec-14">Updates to Agreement, Interface Software, and Services</a></li>
+                <li class="toc-item">15. <a href="#sec-15">Limitation of Liability &amp; Absolute Indemnification</a></li>
+                <li class="toc-item">16. <a href="#sec-16">Governing Law, Jurisdiction, and Conflict Resolutions</a></li>
+                <li class="toc-item">17. <a href="#sec-17">Departmental Contact Directory &amp; Support Systems</a></li>
+            </ol>
         </div>
 
         <!-- ============================================================ -->
-        <!-- SECTION 4: WHY CHOOSE TREX WALLET                             -->
+        <!-- SECTION 1                                                    -->
         <!-- ============================================================ -->
-        <h2>4. Why Choose Trex Wallet</h2>
-
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Feature</th><th>Benefit</th></tr></thead>
-                <tbody>
-                    <tr><td>🔒 <strong>Security First</strong></td><td>Cold storage, MPC key management, and 24/7 threat monitoring protect your assets.</td></tr>
-                    <tr><td>⚡ <strong>Instant Conversion</strong></td><td>Convert Trex Coin to USDT in seconds with locked rates and transparent fees.</td></tr>
-                    <tr><td>🌍 <strong>Global Access</strong></td><td>Available to users worldwide, with multi-language support and cross-chain compatibility.</td></tr>
-                    <tr><td>📊 <strong>Full Transparency</strong></td><td>Clear fee structure, real-time rate display, and detailed transaction history.</td></tr>
-                    <tr><td>🛡️ <strong>Regulatory Compliant</strong></td><td>Full KYC/AML procedures, FATF-aligned policies, and data protection compliance.</td></tr>
-                    <tr><td>🤝 <strong>User Support</strong></td><td>Dedicated support team available via email for all inquiries and issues.</td></tr>
-                </tbody>
-            </table>
-        </div>
+        <h2 id="sec-1">1. Scope of Agreement &amp; Platform Identity</h2>
+        <p class="clause-text">1.1 This Legal Agreement (the "Agreement") constitutes a binding legal contract between the user ("You" or the "User") and Trex Wallet ("Company," "We," "Us," or "Our"). This Agreement comprehensively details your access to and usage of the Trex Wallet application, mobile platforms, API connections, conversion services, and associated websites.</p>
+        <p class="clause-text">1.2 Trex Wallet operates as a specialized, private digital asset infrastructure registered and governed in accordance with the regulatory framework of <mark>Thunder Bay, Ontario, Canada</mark>. By utilizing the interface, you agree that you have read, comprehended, and unconditionally accepted all the terms and conditions outlined herein.</p>
+        <p class="clause-text">1.3 This document is structured dynamically to ensure absolute clarity across all transaction thresholds, platform features, conversion mechanisms, and data handling protocols. You must immediately discontinue your platform access if you do not consent to any clause written within this document.</p>
+        <p class="clause-text">1.4 Under this framework, any reference to Trex Wallet includes all associated digital interfaces, sub-domains, cryptographic ledgers, localized databases, network pathways, and transaction validation channels controlled directly or indirectly by our corporate operations.</p>
 
         <!-- ============================================================ -->
-        <!-- SECTION 5: COMPLIANCE                                         -->
+        <!-- SECTION 2                                                    -->
         <!-- ============================================================ -->
-        <h2>5. Our Commitment to Compliance</h2>
-        <p>Trex Wallet is committed to operating within the highest standards of legal and regulatory compliance:</p>
-        <ul>
-            <li><strong>Anti-Money Laundering (AML)</strong> and <strong>Counter-Terrorism Financing (CFT)</strong> policies.</li>
-            <li><strong>Know Your Customer (KYC)</strong> verification for all active accounts.</li>
-            <li><strong>Data Protection</strong> aligned with GDPR, PIPEDA, and global privacy standards.</li>
-            <li><strong>Sanctions Screening</strong> against UN, OFAC, EU, and other applicable lists.</li>
-            <li><strong>Transaction Monitoring</strong> using industry-leading blockchain analytics tools.</li>
-        </ul>
+        <h2 id="sec-2">2. Eligibility Criteria &amp; Protection of Minors</h2>
+        <p class="clause-text">2.1 Access to the Services offered by the platform is strictly restricted to individuals who possess the legal capacity to form binding agreements under their domestic legislation. You must be of legal age to enter into financial obligations within your active jurisdiction.</p>
+        <p class="clause-text">2.2 <mark>Protection of minors: If you are under the age of 18</mark> (or under the age of majority in the jurisdiction where you access Trex Wallet), you represent that you have reviewed this Agreement with your parent or legal guardian. In such cases, your parent or guardian must explicitly assume all legal, regulatory, and financial liabilities arising from your transactions.</p>
+        <p class="clause-text">2.3 Any parent or guardian permitting a minor to access Trex Wallet and its core Services explicitly agrees to supervise the minor’s interactive use, assume all security risks associated with such usage, and take responsibility for any transactional losses incurred.</p>
+        <p class="clause-text">2.4 We reserve the unilateral right to perform verification checks to validate user age thresholds. Any profile suspected of violating minor protection clauses without parent or guardian verification will face instant operational restrictions.</p>
 
         <!-- ============================================================ -->
-        <!-- SECTION 6: CONTACT INFORMATION                                -->
+        <!-- SECTION 3                                                    -->
         <!-- ============================================================ -->
-        <h2>6. Contact Information</h2>
-
-        <div class="table-wrap">
-            <table>
-                <thead><tr><th>Department</th><th>Email</th><th>Response Time</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>General Support</strong></td><td>Trexwalletcomp00@gmail.com</td><td>24–48 hours</td></tr>
-                    <tr><td><strong>Legal &amp; Compliance</strong></td><td>Trexwalletcomp00@gmail.com</td><td>2–5 Business Days</td></tr>
-                    <tr><td><strong>Security Incidents</strong></td><td>Trexwalletcomp00@gmail.com</td><td>Priority — 2 hours</td></tr>
-                    <tr><td><strong>Data Protection Officer</strong></td><td>Trexwalletcomp00@gmail.com</td><td>30 days (per GDPR)</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <p><strong>Mailing Address:</strong><br />
-        135 Algoma St<br />
-        Thunder Bay, Ontario, P7A 4T3<br />
-        Canada</p>
-
-        <p><strong>Country Code:</strong> +1</p>
+        <h2 id="sec-3">3. Account Registration &amp; Strict Security Protocols</h2>
+        <p class="clause-text">3.1 To initiate transactions on the network, users are required to complete our standardized registration process. You are obligated to provide authentic, highly accurate, and up-to-date credentials. The use of proxy addresses, false names, or unauthorized aliases is strictly prohibited.</p>
+        <p class="clause-text">3.2 Security is a shared responsibility. Users must maintain exclusive control over their access credentials, password combinations, and multi-factor authentication (MFA) parameters. Trex Wallet will never ask for your private recovery seeds, passwords, or temporary pin codes.</p>
+        <p class="clause-text">3.3 <mark>Any security compromise arising from personal negligence remains the sole liability of the user.</mark> You are required to immediately inform our technical security team of any suspected unauthorized access or suspicious changes to your account security dashboard.</p>
+        <p class="clause-text">3.4 We employ continuous session monitoring to detect suspicious log-in variations. Accounts that register logins from multiple disjointed geographic locations within a short time frame will be locked automatically to prevent potential asset theft.</p>
 
         <!-- ============================================================ -->
-        <!-- SECTION 7: LEGAL NOTICE                                       -->
+        <!-- SECTION 4                                                    -->
         <!-- ============================================================ -->
-        <h2>7. Legal Notice</h2>
-        <p>Trex Wallet is a digital asset service provider operating under the laws of <strong>Ontario, Canada</strong>. We do not provide investment, financial, or tax advice. All digital asset transactions involve risk, and users are encouraged to conduct their own research before converting or exchanging assets.</p>
-        <p>For full terms of service, privacy policy, and risk disclosures, please refer to our complete legal documentation.</p>
+        <h2 id="sec-4">4. Custodial Digital Wallet Services &amp; Asset Management</h2>
+        <p class="clause-text">4.1 Trex Wallet provides secure custodial storage for Trex Coin, USDT, and other supported cryptocurrencies, utilizing advanced multi-party computation (MPC) systems coupled with high-security offline vaults.</p>
+        <p class="clause-text">4.2 <mark>We maintain isolated, multisig cold storage facilities to protect funds from malicious online incursions.</mark> These wallets require multiple validation signatures from distributed geographic keys before any outward transfer is authorized.</p>
+        <p class="clause-text">4.3 The system provides continuous balance tracking, real-time transaction history logs, and instant conversion capabilities through our integrated ledger system.</p>
+        <p class="clause-text">4.4 Our backend systems maintain a strict 1:1 reserve ratio for all user-deposited digital assets. This ensures that every unit of virtual currency displayed in your dashboard is fully backed by corresponding assets held securely in cold and warm custody environments.</p>
+        <p class="clause-text">4.5 Users do not have direct control over the physical private keys of the custodial wallet files. Instead, keys are stored dynamically as encrypted shards distributed across multiple enterprise-grade cloud security modules.</p>
+        <p class="clause-text">4.6 Any outward transaction must pass automated, programmatic security checks designed to detect wallet tampering, balance manipulation, or unverified ledger state changes before it is pushed to the public blockchain network.</p>
 
         <!-- ============================================================ -->
-        <!-- FOOTER                                                         -->
+        <!-- SECTION 5                                                    -->
         <!-- ============================================================ -->
-        <div class="footer-end">
-            <hr class="divider" />
-            <div style="font-size:1.1rem; font-weight:600; letter-spacing:0.5px; color:#111827;">Trex Wallet</div>
-            <div style="margin-top:6px; color: #4b5563;">Empowering Your Digital Asset Journey</div>
-            <div style="margin-top:10px; font-size:0.8rem; color:#6b7280;">
-                © 2026 Trex Wallet. All Rights Reserved.
-            </div>
+        <h2 id="sec-5">5. Trex Coin to USDT Conversion Framework</h2>
+        <p class="clause-text">5.1 The system features a native conversion mechanism enabling real-time transactions between Trex Coin and Tether (USDT). Conversions are executed dynamically based on the current algorithmic valuation model configured in the core ledger.</p>
+        <p class="clause-text">5.2 Once a conversion command is confirmed by the user within the interface, the transaction is logged as final. <mark>Conversions cannot be cancelled, reversed, or refunded under any circumstances</mark> due to the immutable nature of the blockchain ledgers with which we interact.</p>
+        <p class="clause-text">5.3 Conversions are processed instantly on our internal off-chain ledger, and updated balances are reflected in your account dashboard immediately upon successful state validation.</p>
+        <p class="clause-text">5.4 The platform relies on aggregate market oracle feeds to determine precise exchange rates. We take no responsibility for conversion latency or rate adjustments caused by network disconnects or extreme market disruptions on external third-party platforms.</p>
+        <p class="clause-text">5.5 To protect the platform ecosystem from algorithmic failure, we enforce minimum and maximum conversion amounts per transaction. These thresholds adjust dynamically based on market liquidity and token price volatility.</p>
+        <p class="clause-text">5.6 In the event of an obvious technical error or feed glitch that results in an incorrect conversion rate being processed, the Company reserves the absolute right to correct the transaction record and adjust the user's balances accordingly.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 6                                                    -->
+        <!-- ============================================================ -->
+        <h2 id="sec-6">6. Blockchain Network Integration &amp; Cross-Chain Protocols</h2>
+        <p class="clause-text">6.1 Trex Wallet supports operations across multiple standardized blockchain architectures. Users can initiate Tether (USDT) transfers utilizing ERC-20 (Ethereum), TRC-20 (TRON), and BEP-20 (BNB Chain) network standards.</p>
+        <p class="clause-text">6.2 It is the exclusive responsibility of the user to ensure that the designated outward network destination matches the correct chain parameters. <mark>Assets sent to incorrect blockchain network addresses cannot be retrieved</mark>, and the platform assumes no liability for network mismatches caused by external interfaces.</p>
+        <p class="clause-text">6.3 Deposit operations require a minimum number of block confirmations on the destination network before the platform recognizes the deposit. The precise number of confirmations needed depends on the individual network standard used.</p>
+        <p class="clause-text">6.4 We do not support deposit methods or token forms that are not explicitly integrated into our active user dashboard. Any attempts to deposit unsupported tokens via smart contracts or multi-signature setups will result in permanent loss of those assets.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 7                                                    -->
+        <!-- ============================================================ -->
+        <h2 id="sec-7">7. Transparent Fee Structures &amp; Conversion Rate Dynamics</h2>
+        <p class="clause-text">7.1 All conversions, withdrawals, and premium network transfers are subject to clearly visible administrative and blockchain network gas fees. These fees are dynamically calculated at the precise moment of transaction initiation.</p>
+        <p class="clause-text">7.2 Market volatility can trigger immediate adjustments in conversion rates. The rate shown in the portal is locked for a maximum of 15 seconds. If the user fails to authorize the execution within this window, the rate updates automatically.</p>
+        <p class="clause-text">7.3 Our administrative fees are deducted directly from the final transacted asset. This ensures that users do not need to maintain separate gas token balances to perform conversions or withdrawals inside the system.</p>
+        <p class="clause-text">7.4 We maintain full fee transparency. A detailed breakdown of the applicable network fee, platform service fee, and conversion spread is presented to the user before they click the final transaction confirmation button.</p>
+        <p class="clause-text">7.5 Any changes to our base fee structure or administrative rates will be communicated to the user base via our official channel dashboards at least 7 business days prior to implementation.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 8                                                    -->
+        <!-- ============================================================ -->
+        <h2 id="sec-8">8. Deposit, Withdrawal, and Daily Transfer Limitations</h2>
+        <p class="clause-text">8.1 To preserve overall platform integrity and enforce anti-fraud standards, Trex Wallet applies operational caps on daily deposits, conversions, and withdrawals. Limits are dictated by the verification tier assigned to your profile.</p>
+        <p class="clause-text">8.2 Basic unverified accounts are restricted to minimal micro-transactions. For institutional conversions or higher volume thresholds, users must submit comprehensive documentation to qualify for premium tiers.</p>
+        <p class="clause-text">8.3 Large withdrawal requests may undergo manual compliance review by our internal audit team. This verification step is completed within 24 to 48 hours to ensure the security of the funds and prevent unauthorized asset drainage.</p>
+        <p class="clause-text">8.4 Daily withdrawal counters reset automatically at 00:00 Coordinated Universal Time (UTC) each day. Any unutilized daily withdrawal limit cannot be rolled over or added to the following day's limits.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 9                                                    -->
+        <!-- ============================================================ -->
+        <h2 id="sec-9">9. Anti-Money Laundering (AML) &amp; CFT Countermeasures</h2>
+        <p class="clause-text">9.1 Trex Wallet operates under strict alignment with the Financial Action Task Force (FATF) recommendations and the federal anti-money laundering laws of Canada. <mark>We maintain an active, zero-tolerance policy against money laundering, illegal trade, and the financing of illicit operations.</mark></p>
+        <p class="clause-text">9.2 All transactions are processed through specialized, continuous blockchain analysis systems. Any address linked to mixers, darknet marketplaces, or sanctioned entities is instantly flagged for internal legal review.</p>
+        <p class="clause-text">9.3 If a user's transaction profile matches known risk patterns or triggers high-risk alerts on our automated compliance engines, we reserve the right to temporarily suspend account features pending a detailed physical transaction review.</p>
+        <p class="clause-text">9.4 We work in cooperation with global law enforcement agencies. We will disclose transaction paths, verified names, and connection metadata when presented with a valid judicial warrant or official regulatory request.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 10                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-10">10. Know Your Customer (KYC) Identity Verification Rules</h2>
+        <p class="clause-text">10.1 In compliance with international regulatory standards, you agree to undergo our mandatory verification process. This includes uploading official government identification, proving physical residency, and undergoing live biometric checks.</p>
+        <p class="clause-text">10.2 <mark>We reserve the right to freeze accounts that fail to pass KYC updates</mark> or those that upload tampered documents. Failure to resolve KYC verification flags within 14 calendar days may result in permanent closure of platform access.</p>
+        <p class="clause-text">10.3 KYC information must be renewed periodically. Users are obligated to re-verify their identity documents if their physical address changes, their identification expires, or they exceed designated cumulative transaction volume caps.</p>
+        <p class="clause-text">10.4 All verified records are processed securely and stored in encrypted silos that are completely isolated from our primary public-facing network environments.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 11                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-11">11. Prohibited User Activities &amp; System Abuse Policies</h2>
+        <p class="clause-text">11.1 Users must not engage in actions that degrade, overload, or compromise the digital infrastructure of Trex Wallet. This includes using automated bots, scrape algorithms, or exploit tools designed to take advantage of latency differences.</p>
+        <p class="clause-text">11.2 Creating multiple duplicate accounts to bypass system limits, manipulating conversion rates, or attempting to reverse valid transactions through fraudulent chargebacks will result in an immediate block of all associated IP addresses.</p>
+        <p class="clause-text">11.3 Any attempt to reverse-engineer our platform's API connections, inject malicious software into our validation nodes, or run automated scripts to test system vulnerability is a criminal offense and will be reported to appropriate cybersecurity divisions.</p>
+        <p class="clause-text">11.4 If our automated systems detect that a user's account is receiving funds from compromised external smart contracts or stolen wallets, we will lock the account and withhold the funds until a clear legal source of wealth is provided.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 12                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-12">12. Comprehensive Risk Disclosures &amp; Legal Disclaimers</h2>
+        <p class="clause-text">12.1 Digital assets are subject to extreme market fluctuations. By using our platform, you acknowledge that you are fully aware of the financial risks and are capable of sustaining potential capital losses.</p>
+        <p class="clause-text">12.2 <mark>Trex Wallet is not a licensed bank, deposit taker, or financial advisor.</mark> Our platform services are structural and transactional only. No information on this website constitutes direct financial, investment, legal, or tax advice.</p>
+        <p class="clause-text">12.3 Cryptocurrency assets are not protected by national deposit insurance schemes (such as CDIC in Canada or FDIC in the United States). Your balance is held entirely at your own financial risk.</p>
+        <p class="clause-text">12.4 Blockchain systems are subject to unexpected protocol forks, network splits, and smart contract failures. In the event of a critical network consensus failure, Trex Wallet may suspend operations indefinitely to protect active holdings.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 13                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-13">13. Data Protection, Privacy Policy, and Server Infrastructure</h2>
+        <p class="clause-text">13.1 We process user information under strict adherence to the Personal Information Protection and Electronic Documents Act (PIPEDA) and GDPR principles. We prioritize cryptographic database shielding to prevent information leakage.</p>
+        <p class="clause-text">13.2 Storage Infrastructure: <mark>All personal information, transaction history, and encrypted security keys are stored on physical servers situated in Frankfurt and Singapore.</mark> Backup servers may be initiated in secondary jurisdictions to ensure high availability and disaster recovery compliance.</p>
+        <p class="clause-text">13.3 We use industrial-grade AES-256 encryption standards to protect saved document databases. All data transmitted between your device and our storage servers is shielded using secure TLS 1.3 protocol channels.</p>
+        <p class="clause-text">13.4 We do not sell or lease user metadata to third-party marketing companies. Personal data is utilized exclusively for identity validation, security verification, and the processing of financial transactions requested directly by you.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 14                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-14">14. Updates to Agreement, Interface Software, and Services</h2>
+        <p class="clause-text">14.1 We constantly refine our internal systems to keep pace with changing international compliance frameworks. Consequently, we reserve the right to modify, add, or delete clauses within this Agreement at our sole discretion.</p>
+        <p class="clause-text">14.2 Users will be notified of major updates through system emails or notifications inside the interface. Continued use of the platform following any modifications constitutes your explicit acceptance of the newly enacted policies.</p>
+        <p class="clause-text">14.3 If any updated clause is unacceptable to you, you must stop using the services immediately, withdraw all outstanding balances, and request account termination through our standard support systems.</p>
+        <p class="clause-text">14.4 Our technical development teams perform regular, scheduled system maintenance during low-activity windows. While we aim to minimize downtime, some services may be temporarily unavailable during these maintenance periods.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 15                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-15">15. Limitation of Liability &amp; Absolute Indemnification</h2>
+        <p class="clause-text">15.1 Trex Wallet and its affiliate partners shall not be held liable for any indirect, incidental, or consequential damages resulting from system downtime, network latency, or external blockchain forks.</p>
+        <p class="clause-text">15.2 You agree to fully indemnify, defend, and hold harmless the Company, its directors, and staff against any claims, losses, or legal costs arising directly from your violation of domestic regulations or this Agreement.</p>
+        <p class="clause-text">15.3 Under no circumstances shall our maximum aggregate legal liability to you exceed the total transaction fees collected by the platform from your account during the three-month period immediately preceding the filing of a legal claim.</p>
+        <p class="clause-text">15.4 We do not assume liability for any delays or failures in performance caused by circumstances beyond our reasonable control, including natural disasters, internet infrastructure failure, global pandemics, or governmental intervention.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 16                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-16">16. Governing Law, Jurisdiction, and Conflict Resolutions</h2>
+        <p class="clause-text">16.1 This Agreement and all associated services are governed by and construed in accordance with the laws of the <mark>Province of Ontario, Canada</mark>, without giving effect to any principles of conflicts of law.</p>
+        <p class="clause-text">16.2 Any legal disputes, claims, or arbitration processes arising from this framework will be filed and resolved exclusively in the provincial courts located in Thunder Bay, Ontario.</p>
+        <p class="clause-text">16.3 Before initiating official legal or arbitration proceedings, you agree to engage in a formal, 45-day dispute resolution process with our internal legal team in an attempt to reach an amicable settlement.</p>
+        <p class="clause-text">16.4 If any single clause or sub-clause of this Agreement is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions of the Agreement will continue to be fully binding and effective.</p>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 17                                                   -->
+        <!-- ============================================================ -->
+        <h2 id="sec-17">17. Departmental Contact Directory &amp; Support Systems</h2>
+        <p class="clause-text">17.1 For specialized assistance, regulatory compliance inquiries, or security incident reporting, please reach out to the appropriate department via the official contact details listed below:</p>
+        
+        <p class="clause-text">17.2 General Technical Support and Operational Ticket Escalations: <mark>Trexwalletcomp00@gmail.com</mark> (Response Time: Within 24 to 48 Hours)</p>
+        <p class="clause-text">17.3 KYC Verification and Anti-Money Laundering (AML) Compliance Operations: <mark>Trexwalletcomp00@gmail.com</mark> (Response Time: 2 to 5 Business Days)</p>
+        <p class="clause-text">17.4 Critical Security Incidents, Fraud Reporting, and Vulnerability Disclosures: <mark>Trexwalletcomp00@gmail.com</mark> (Response Time: Priority Evaluation within 2 Hours)</p>
+        <p class="clause-text">17.5 Data Privacy, GDPR, and PIPEDA-related Information Request Inquiries: <mark>Trexwalletcomp00@gmail.com</mark> (Response Time: Processed within 30 Days as per Standard Regulations)</p>
+        <p class="clause-text">17.6 Corporate Inquiries, Partnership Proposals, and Institutional Accounts: <mark>Trexwalletcomp00@gmail.com</mark> (Response Time: 5 to 7 Business Days)</p>
+
+        <p class="clause-text"><strong>Physical Headquarters Mailing Address:</strong><br />
+        Trex Wallet Systems Ltd.<br />
+        135 Algoma St, Thunder Bay,<br />
+        Ontario, P7A 4T3, Canada</p>
+
+        <!-- FOOTER -->
+        <hr class="divider" />
+        <div class="doc-footer">
+            <strong>TREX WALLET SYSTEMS LTD.</strong><br />
+            Incorporation Number: CA-948192-ONT<br />
+            Registered Business Type: Private Digital Asset Management Platform (Ontario, Canada)<br />
+            © 2026 Trex Wallet. All legal rights are reserved globally. All trademarks and system assets are the property of their respective owners.
         </div>
 
     </div>
-    <!-- end document-wrapper -->
 
 </body>
-          </html>
+                                   </html>
