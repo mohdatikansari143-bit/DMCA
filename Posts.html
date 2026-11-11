@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090d"><title>Trex Wallet — Posts</title>
+<style>
+:root{--bg:#08090d;--panel:#11131b;--panel2:#171a24;--line:#252938;--text:#f5f6fa;--muted:#9298aa;--purple:#7657ff;--purple2:#9a86ff;--green:#49d7a0;--danger:#ff687d}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#211942 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.shell{width:min(100% - 28px,680px);margin:0 auto;padding:22px 0 48px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}.brand{display:flex;align-items:center;gap:11px}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#9a78ff,#4b2bc5);display:grid;place-items:center;font-weight:900;font-size:21px;box-shadow:0 8px 28px #6545d455}.brand-name{font-weight:850;letter-spacing:.2px}.brand-sub{font-size:11px;color:var(--muted);margin-top:2px}.nav{display:flex;gap:8px}.nav a{font-size:12px;font-weight:700;padding:10px 13px;border-radius:11px;color:var(--muted);background:#11131a;border:1px solid var(--line)}.nav a.active{background:#241c45;color:#cfc4ff;border-color:#51418c}.heading{margin:24px 0 6px;font-size:27px;letter-spacing:-.7px}.subheading{color:var(--muted);font-size:13px;line-height:1.55;margin:0 0 20px}.card{background:linear-gradient(180deg,#141722,#10121a);border:1px solid var(--line);border-radius:19px;padding:16px;box-shadow:0 14px 40px #0003}.userline{display:flex;align-items:center;gap:10px;min-width:0}.avatar{width:39px;height:39px;border-radius:50%;background:#29243f;object-fit:cover;display:grid;place-items:center;color:#c8bcff;font-weight:800;flex:none;border:1px solid #4a4169}.user-meta{min-width:0}.username{font-size:13px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.userid{font-size:11px;color:var(--muted);margin-top:3px}.tag{margin-left:auto;font-size:10px;color:#b8aaff;background:#292047;border:1px solid #483a78;padding:6px 8px;border-radius:20px;white-space:nowrap}.post{margin-bottom:14px}.post-text{font-size:13px;line-height:1.65;color:#e4e5ec;white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0}.post-title{font-size:16px;font-weight:800;margin:14px 0 0}.post-media{width:100%;max-height:430px;object-fit:cover;border-radius:13px;background:#08090d;margin-top:8px}.post-link{display:inline-flex;color:#b9a8ff;font-size:12px;margin-top:7px;overflow-wrap:anywhere}.post-time{font-size:10px;color:#777f92;margin-left:auto}.feed-head{display:flex;align-items:center;justify-content:space-between;margin:22px 2px 12px}.feed-head strong{font-size:13px}.status{font-size:11px;color:var(--green);display:flex;align-items:center;gap:6px}.dot{width:6px;height:6px;background:var(--green);border-radius:50%;box-shadow:0 0 10px #49d7a0}.empty,.loading{padding:34px 18px;text-align:center;color:var(--muted);font-size:13px;border:1px dashed #303447;border-radius:16px}.empty-icon{font-size:26px;margin-bottom:9px}.field{margin:15px 0}.field label{display:block;font-size:12px;font-weight:750;color:#d8d9e2;margin-bottom:8px}.field input,.field textarea{width:100%;border:1px solid #2b3040;background:#0b0d14;color:var(--text);border-radius:12px;padding:13px 14px;outline:none;font-size:13px}.field input:focus,.field textarea:focus{border-color:#8067ed;box-shadow:0 0 0 3px #7657ff20}.field textarea{min-height:130px;resize:vertical;line-height:1.6}.hint{font-size:10px;color:var(--muted);margin-top:7px}.upload{border:1px dashed #45405f;background:#171526;border-radius:14px;padding:17px;text-align:center;cursor:pointer}.upload input{display:none}.upload strong{font-size:12px;display:block}.upload span{font-size:10px;color:var(--muted);display:block;margin-top:5px}.preview{width:100%;max-height:320px;object-fit:contain;border-radius:12px;margin-top:12px;background:#08090d}.actions{display:flex;gap:10px;margin-top:19px}.btn{border:0;border-radius:12px;padding:13px 17px;font-size:12px;font-weight:800;cursor:pointer}.btn-primary{background:linear-gradient(110deg,#7657ff,#5937d6);color:white;flex:1;box-shadow:0 8px 22px #6545d433}.btn-secondary{background:#202331;color:#c9cbd5;border:1px solid #33384a}.btn:disabled{opacity:.55;cursor:not-allowed}.notice{display:none;margin-top:14px;padding:11px 13px;border-radius:11px;font-size:12px;line-height:1.5}.notice.error{display:block;background:#351923;color:#ffabb7;border:1px solid #69303e}.notice.success{display:block;background:#102b24;color:#9ce8c9;border:1px solid #245d4a}.identity{display:flex;align-items:center;gap:11px;padding:13px;background:#0d1018;border:1px solid var(--line);border-radius:13px}.identity .avatar{width:42px;height:42px}.identity-note{font-size:10px;color:var(--muted);line-height:1.5;margin-top:4px}.footer-note{text-align:center;color:#666d7e;font-size:10px;margin-top:22px}
+@media(max-width:420px){.shell{width:min(100% - 22px,680px);padding-top:15px}.heading{font-size:24px}.card{padding:13px}.nav a{padding:9px 10px;font-size:11px}}
+</style>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body><main class="shell">
+<header class="top"><a class="brand" href="Posts.html"><div class="mark">T</div><div><div class="brand-name">TREX WALLET</div><div class="brand-sub">Community feed</div></div></a>
+<nav class="nav"><a class="active" href="Posts.html">Posts</a><a href="CreatePost.html">Create</a></nav></header>
+<h1 class="heading">Community posts</h1><p class="subheading">Updates and posts shared by the Trex Wallet community.</p>
+<div class="feed-head"><strong>Latest posts</strong><span class="status"><i class="dot"></i><span id="liveLabel">Connecting…</span></span></div>
+<section id="feed"><div class="loading">Loading posts…</div></section>
+<p class="footer-note">Trex Wallet • Community</p>
+</main>
+<script>
+/*
+  Backend contract:
+  GET  /api/posts -> { posts: [{id, telegramUser:{id,username,firstName,photoUrl}, title, description, mediaUrl, mediaType, link, createdAt}] }
+  Socket.IO event "post:created" -> one post object in the same shape.
+  Send Telegram.WebApp.initData as X-Telegram-Init-Data; backend must verify it.
+*/
+const API_BASE = window.TREX_API_BASE || window.location.origin;
+const feed = document.getElementById('feed');
+const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function telegramHeaders(){const tg=window.Telegram?.WebApp;return {'X-Telegram-Init-Data':tg?.initData||''};}
+function formatDate(value){if(!value)return '';const d=new Date(value);return Number.isNaN(d.getTime())?'':d.toLocaleString();}
+function postMarkup(p){
+ const u=p.telegramUser||p.user||{};
+ const name=u.username?'@'+u.username:(u.firstName||'Telegram user');
+ const id=u.id??'Verified by Telegram';
+ const media=p.mediaUrl?(p.mediaType==='video'?`<video class="post-media" controls playsinline preload="metadata" src="${esc(p.mediaUrl)}"></video>`:`<img class="post-media" loading="lazy" src="${esc(p.mediaUrl)}" alt="Post media">`):'';
+ const link=p.link?`<a class="post-link" href="${esc(p.link)}" target="_blank" rel="noopener noreferrer">Open link ↗</a>`:'';
+ const avatar=u.photoUrl?`<img class="avatar" src="${esc(u.photoUrl)}" alt="">`:`<div class="avatar">${esc((u.firstName||u.username||'T').slice(0,1).toUpperCase())}</div>`;
+ return `<article class="card post" data-post-id="${esc(p.id)}"><div class="userline">${avatar}<div class="user-meta"><div class="username">${esc(name)}</div><div class="userid">Telegram ID: ${esc(id)}</div></div><span class="post-time">${esc(formatDate(p.createdAt))}</span></div>${p.title?`<div class="post-title">${esc(p.title)}</div>`:''}${p.description?`<p class="post-text">${esc(p.description)}</p>`:''}${media}${link}</article>`;
+}
+function render(posts){if(!Array.isArray(posts)||!posts.length){feed.innerHTML='<div class="empty"><div class="empty-icon">✦</div><strong>No posts yet</strong><p>Be the first to share something with the community.</p><a class="post-link" href="CreatePost.html">Create a post →</a></div>';return;}feed.innerHTML=posts.map(postMarkup).join('');}
+async function loadPosts(){try{const r=await fetch(`${API_BASE}/api/posts`,{headers:telegramHeaders()});if(!r.ok)throw new Error(`Server returned ${r.status}`);const data=await r.json();render(data.posts||data);}catch(e){feed.innerHTML='<div class="empty"><div class="empty-icon">⌁</div><strong>Could not load posts</strong><p>Connect the Java posts API, then refresh this page.</p></div>';console.error(e);}}
+function connectLive(){if(!window.io){document.getElementById('liveLabel').textContent='Refresh to update';return;}const socket=io(API_BASE,{transports:['websocket','polling'],auth:{telegramInitData:window.Telegram?.WebApp?.initData||''}});socket.on('connect',()=>document.getElementById('liveLabel').textContent='Live');socket.on('disconnect',()=>document.getElementById('liveLabel').textContent='Reconnecting');socket.on('post:created',p=>{const existing=document.querySelector(`[data-post-id="${CSS.escape(String(p.id))}"]`);if(existing)return;const empty=feed.querySelector('.empty,.loading');if(empty)feed.innerHTML='';feed.insertAdjacentHTML('afterbegin',postMarkup(p));});socket.on('connect_error',()=>document.getElementById('liveLabel').textContent='Offline');}
+if(window.Telegram?.WebApp){Telegram.WebApp.ready();Telegram.WebApp.expand();}
+loadPosts();connectLive();
+</script></body></html>
